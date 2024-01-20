@@ -33,7 +33,6 @@ showMenu[0].addEventListener('click', ()=>{
         menu.style.display = 'none';
         check = false;
     }
-    
     else{
         topmenu.style.height = '150px'
         menu.style.display = 'flex';
