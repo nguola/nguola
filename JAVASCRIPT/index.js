@@ -7,7 +7,6 @@ const menu = document.querySelector('.header .nav')
 var check = true
 
 window.onscroll = function() {scrollfunction()};
-window.onclick = function() {showMenuFunction()};
 
 function scrollfunction(){
     if(document.documentElement.scrollTop > 50) {
@@ -27,9 +26,8 @@ function scrollfunction(){
     }
 }
 
-back_top.addEventListener(()=>scrollfunction())
 
-function showMenuFunction(){
+showMenu[0].addEventListener('click', ()=>{
     if(check){
         topmenu.style.height = '65px'
         menu.style.display = 'none';
@@ -41,7 +39,4 @@ function showMenuFunction(){
         menu.style.display = 'flex';
         check = true;
     }
-}
-
-
-showMenu.addEventListener(()=>showMenuFunction())
+})
