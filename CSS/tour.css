@@ -203,11 +203,15 @@
 .baiviet{
     font-size: x-large;
     text-transform: capitalize;
-    font-style: italic;
     background-color: gray;
     color: white;
     height: 438px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding-right: 2%;
+}
+.baiviet{
+    text-indent: 30px;
 }
 
 .video .video_in video {
