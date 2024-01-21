@@ -20,7 +20,7 @@ header {
 .profile-image {
     width: 100px;
     height: 100px;
-    background-image: url('img/pngtree-tour-guide-greets-3d-professional-character-cute-modeling-png-image_11367316.png');
+    background-image: url('../IMAGE/pngtree-tour-guide-greets-3d-professional-character-cute-modeling-png-image_11367316.png');
     background-size: cover;
     border-radius: 50%;
     margin-right: 20px;
