@@ -7,9 +7,41 @@
     <title>HyperTravel</title>
 </head>
 <body>
-    <section class="header-video">
-        <a href="index.html"><video src="../IMAGE/Recording 2024-01-21 185326.mp4" autoplay loop muted type="mp4"></video></a>
-    </section>
+    <div class="header">
+        <div class="top_bar">
+            <img src="../IMAGE/logo.jpg" id="logo">
+            <div class="log_sign">
+                <div class="log_in">
+                    <a href="logIn.html">Log In</a>
+                </div>
+                <div class="Sign_in">
+                    <a href="signUp.html">Sign In</a>
+                </div>
+                <div class="showmenu">
+                    <p>&equiv;</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="tour.html">Tour</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">Tour 1</a></li>
+                        <li><a href="#">Tour 2</a></li>
+                        <li><a href="#">Tour 3</a></li>
+                        <li><a href="#">Tour 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="tourGuide.html">Tour Guide</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="slide_show">
+            <video src="../IMAGE/Recording 2024-01-21 185326.mp4" autoplay loop muted type="mp4"></video>
+        </div>
+    </div>  
     <h2 class="title" >Bảng Giá HyperTravel</h2>
     <section id="price">
         <div class="price_tour1">
@@ -62,8 +94,9 @@
             <div class="sildeShow"><img src="../IMAGE/bn_240103_fukufinal.webp" alt=""></div>
     </section>
     <footer>
-        <p>&copy; 2024 HyperTravel web du lịch hàng đầu việt nam</p>
+        &copy; 2024 HyperTravel web du lịch hàng đầu việt nam
     </footer>
-    
+    <div class="back_top_page"><a href="#">	🔼</a></div>
+    <script src="../JAVASCRIPT/price.js"></script>
 </body>
 </html>
