@@ -1,0 +1,114 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.header-video video{
+    width: 90%;
+    margin-left: 50px ;
+}
+.cost{
+    font-size: 20px;
+    font-weight: bolder;
+    color: red;
+    margin-bottom: 20px;
+}
+.discount{
+    margin-left: 5px;
+    padding: 10px;
+    width: 40%;
+    border-radius: 30px;
+    background-color:#FFFF00 ;
+    color: #003399;
+}
+.booking{
+    margin: 50px;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    background-color:#FF3300 ;
+    color: whitesmoke;
+}
+.booking:hover{
+    background-color: #66CCFF;
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+    color: #3366FF;
+    padding: 10px;
+}
+.title:hover{
+    font-size: 35px;
+}
+#price{
+    margin: 10px 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#price div{
+    width: 30%;
+    border-radius: 5%;
+    border: #333 1px solid;
+    margin-left: 30px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 30px;
+}
+#price div:hover{
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 30px #1b1111; 
+}
+p{
+    width: 70%;
+    margin-left: 5px;
+    padding-left: 10px;
+}
+h3{
+    padding: 10px;
+}
+h3:hover{
+    color: #9966FF;
+}
+#price img{
+    width: 100%;
+}
+
+#Homepage-promotion {
+    margin: 10px 9%;
+    display: flex;
+    margin-bottom: 50px;
+}
+#Homepage-promotion div{
+    margin-left: 30px;
+    overflow: hidden;
+    position: relative;
+}
+#Homepage-promotion div:hover{
+    transform: translateY(-5px); /* Dịch chuyển lên 5px */
+    box-shadow: 0 4px 30px #1b1111; /* Đổ bóng mờ */
+}
+#Homepage-promotion div{
+    border-radius: 20px;
+}
+.title_promotion{
+    text-align: center;
+    font-size: 30px;
+    color: #3366FF;
+}
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
