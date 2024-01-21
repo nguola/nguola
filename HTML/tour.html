@@ -11,31 +11,81 @@
 <body>
     <div class="wrapper">
         <div class="header">
-            <div class="Hotline">
-                Hotline: 9999 9999
+            <div class="top_bar">
+                <img src="../IMAGE/logo.jpg" id="logo">
+                <div class="log_sign">
+                    <div class="log_in">
+                        <a href="logIn.html">Log In</a>
+                    </div>
+                    <div class="Sign_in">
+                        <a href="signUp.html">Sign In</a>
+                    </div>
+                    <div class="showmenu">
+                        <p>&equiv;</p>
+                    </div>
+                </div>
             </div>
-            <div class="header_in">
-                <a href="">Hệ Thống Giao Dịch</a>
-                <a href="">Đăng Ký Đại Lý</a>
-                <a href="">Phiếu Góp Ý</a>
+            <div class="nav">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li><a href="tourGuide.html">Tour Guide</a></li>
+                    <li><a href="price.html">Price</a></li>
+                </ul>
             </div>
         </div>
-        <div class="nav">
-            <div class="menu">
-                <img src="../IMAGE/logo.jpg" alt="">
-                <a href="../HTML/index.html">HOME</a>
-                <a href="">ABOUT</a>
-                <a href="../HTML/tour.html">TOUR</a>
-                <a href="">RANK</a>
-                <a href="">SEARCH</a>
-                <tr>
-                    <td><input type="text" name="" id="" placeholder="Bạn muốn tìm"
-                            style="width: 15%; height:20px ;margin-top: 10px;"></td>
-                </tr>
+        <div class="main">
+            <div class="slide_show">
+                <video src="../IMAGE/Recording 2024-01-21 185326.mp4" autoplay loop muted type="mp4"></video>
             </div>
         </div>
-        <div class="content">
-            <div class="content_in"><img src="../IMAGE/page-title-background.jpg" alt=""></div>
+        <div class="search">
+            <form action="search">
+                <table>
+                    <tr>
+                        <td>
+                            <div>Keywords</div>
+                            <input type="text" class="input">
+                        </td>
+                        <td>
+                            <div>Prefecture</div>
+                            <select name="prefecture" id="" class="input cusor">
+                                <option value="Any">Any</option>
+                                <option value="TPHCM"> TP Hồ Chí Minh</option>
+                                <option value="HaNoi">Hà Nội</option>
+                                <option value="DongThap">Đồng Tháp</option>
+                                <option value="CaMau">Cà Mau</option>
+                                <option value="VungTau">Vũng Tàu</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div>Activities</div>
+                            <select name="Activities" id="" class="input cusor">
+                                <option value="Any">Any</option>
+                                <option value="Camp">Camp</option>
+                                <option value="Swimming">Swimming</option>
+                                <option value="Clam_mountain">Clam mountain</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div>Price</div>
+                            <select name="Price" id="" class="input cusor">
+                                <option value="Any">Any</option>
+                                <option value="Price_1">0 - 2.000.000</option>
+                                <option value="Price_3">2.000.000 - 5.000.000</option>
+                                <option value="Price_4">5.000.000 - 10.000.000</option>
+                                <option value="Price_5">10.000.000 - 20.000.000</option>
+                                <option value="Price_6">20.000.000+</option>
+                            </select>
+                        </td>
+                        <td></td>
+                        <td>
+                            <div>&nbsp;</div>
+                            <button id="Bt_search">SEARCH</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
         </div>
         <h1>Popular travel tours in 2024</h1>
         <div class="introduce">
@@ -90,9 +140,17 @@
         </div>
         <h1>Experience and challenge</h1>
         <div class="video">
+<<<<<<< HEAD
             <div class="baiviet">Đừng chỉ sống một cuộc đời tại một nơi cố định. Tuổi trẻ thì ngắn nhưng thế giới lại
                 rất bao la, rộng lớn. Vì thế, khi còn cơ hội, hãy đi thật nhiều nơi để ngắm nhìn mọi thứ.</div>
             <div class="video_in"><video src="../IMAGE/tour.mp4"controls></video></div>
+=======
+            <div class="baiviet">
+                <h3>Đừng chỉ sống một cuộc đời tại một nơi cố định. Tuổi trẻ thì ngắn nhưng thế giới lại
+                    rất bao la, rộng lớn. Vì thế, khi còn cơ hội, hãy đi thật nhiều nơi để ngắm nhìn mọi thứ.</h3>
+            </div>
+            <div class="video_in"><video src="../IMAGE/tour.mp4"  controls></video></div>
+>>>>>>> f61d05e413f76cff9bc275200e003524d2befd0f
         </div>
         <h1>Information</h1>
         <div class="Menu_Tour">
@@ -195,8 +253,7 @@
             <div class="some_inf">
                 <img src="../IMAGE/logo.jpg">
                 <div>
-                    <h2>Hyper Tour: Go one way and learn the other</h2>
-                    <h3>Come and go with us</h3>
+                    <h2>HyperTravel: Website du lịch hàng đầu Việt Nam</h2>
                 </div>
             </div>
             <div class="the_end">
@@ -205,6 +262,9 @@
             </div>
         </div>
     </div>
+    <div class="back_top_page"><a href="#">	🔼</a></div>
+
+    <script src="../JAVASCRIPT/tour.js"></script>
 
 </body>
 
