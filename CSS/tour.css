@@ -290,14 +290,15 @@
     padding: 50px 0px 10px 0px;
 }
 .introduce{
-    display: flex;
-    content: "";
+    display: flex;  
     margin-left: 5%;
     margin-bottom: 1%;
     border-top: 1px solid cyan;
     border-bottom: 1px solid cyan;
     margin-right: 7%;
-    font-weight: bolder;
+   font-weight: bolder;
+   font-size: x-large;
+    
 }
 .video{
     border-top: 2px solid black;
