@@ -1,0 +1,330 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 150px;
+    background-color: #212222;
+    opacity: 70%;
+    position: absolute;
+    top: 0;
+    z-index: 1001;
+}
+
+.top_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.log_sign {
+    display: flex;
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.showmenu {
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.showmenu p {
+    border-radius: 10px;
+    padding: 0px 10px 0px 10px;
+    display: block;
+    transition: 0.2s ease-in;
+}
+
+.log_in,
+.Sign_in{
+    display: flex;
+    padding: 10px;
+} 
+
+.log_in a,
+.Sign_in a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    transition: 0.2s ease-in;
+    border-radius: 10px;
+}
+
+.log_in:hover a,
+.Sign_in:hover a,
+.showmenu:hover p{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#logo {
+    width: 200px;
+    margin-left: 100px;
+}
+
+.nav {
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.menu {
+    list-style-type: none;
+    font-size: larger;
+    display: flex;
+    margin-right: 100px;
+}
+
+.menu>li {
+    padding: 0px 10px 0px 10px;
+    position: relative;
+    border-left: 2px solid white;
+}
+
+.menu>li:first-child {
+    border-left: none;
+}
+
+.menu>li>a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    border-radius: 15px;
+    transition: 0.2s ease-in;
+    padding: 10px;
+}
+
+.menu>li:hover > a{
+    background-color: white;
+    color: #181818;
+}
+.body-img{
+   width: 100%;
+   height: 480px;
+   position: relative;
+}
+.body-img img{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.body-img .body-img-posts{
+    position: absolute;
+    top: 50%;
+    left:12.5%;
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    background-color: #eff2f4;;
+}
+.container{
+    width: 80%;
+    margin: 0% auto;
+    height: 1400px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+.container-left{
+    margin-top: 30px;
+    display: flex;
+}
+.container .container-left{
+    width: 750px;
+    height: 240px;
+    background-color: white;
+}
+
+.container-left:hover{
+    transform: scale(1.13);
+}
+.container .container-left img{
+    width: 220px;
+    height: 240px;
+    opacity: 95%;
+}
+.container_posts {
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 40px;
+    margin-bottom: 25px;
+    border-right: 2px solid black;
+}
+.container_posts p{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(79, 78, 78);
+}
+.container_posts a {
+    text-decoration: none;
+    color: #181818;
+}
+.container-price{
+    width: 300px;
+}
+.container-price{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-right{
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 100px; 
+    width: 395px;
+}
+.latetetours img{
+    width: 100px;
+    height: 80px;
+}
+
+.latetetours{
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid rgb(222, 215, 215);
+}
+.latetetours_information_price p{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.latetetours a{
+    text-decoration: none;
+    color: #181818;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+.Question{
+    position: relative;
+}
+.Question img{
+    width: 350px;
+    height: 252px;
+    opacity: 40%;
+    margin: 0;
+}
+.img_background_min:hover{
+    transform: scale(1.25);
+}
+.img-backgroud{
+    width: 350px;
+    height: 252px;
+   background-color: rgb(170, 170, 233)
+}
+.Question{
+    width: 350px;
+    height: 252px;
+}
+.Question >*{
+    position: absolute;
+    top: 5px;
+}
+.Question h2{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.Question p{
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+.type{
+    color: rgb(2, 2, 2);
+    padding: 20px;
+    padding-left:0px ;
+    border-bottom: 1px solid black;
+}
+.tourcategory{
+    margin-top: 30px;
+    width: 350px;
+    height: 430px;
+}
+.footer {
+    width: 100%;
+    height: 400px;
+}
+
+.some_inf {
+    width: 100%;
+    height: 285px;
+    background-color: #202020;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.some_inf>img {
+    width: 200px;
+    height: 200px;
+    margin-right: 40px;
+    border-radius: 50%;
+    margin-left: 25%;
+}
+
+.some_inf>div {
+    padding: 10px 0px 10px 0px;
+}
+
+.the_end {
+    width: 100%;
+    height: 100px;
+    background-color: #181818;
+    color: white;
+    text-align: center;
+    padding: 50px 0px 10px 0px;
+}
+
+.back_top_page {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    padding: 0;
+    font-weight: 800;
+    color: rgb(239, 137, 46);
+    position: fixed;
+    bottom: 40px;
+    z-index: 1000;
+    right: 20px;
+    display: none;
+}
+
+.back_top_page a{
+    text-decoration: none;
+}
+.img-icon{
+    display: flex;
+    align-items: center;
+}
+#d1{
+    width: 20px;
+    height: 20px; 
+    align-items: center;
+    margin-right: 5px;
+}
+.container-price a:hover{
+    transform: scale(1.2);
+}
+.container-price a{
+    margin-top: 30%;
+    padding: 10px;
+    background-color: rgb(11, 11, 228);
+    text-decoration: none;
+    color: yellow;
+}
