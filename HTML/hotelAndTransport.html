@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel And Transport</title>
+    <link rel="stylesheet" href="../CSS/hotelAndTransport.css">
+</head>
+<body>
+    <div class="header">
+        <div class="top_bar">
+            <img src="../IMAGE/logo.jpg" id="logo">
+            <div class="log_sign">
+                <div class="log_in">
+                    <a href="logIn.html">Log In</a>
+                </div>
+                <div class="Sign_in">
+                    <a href="signUp.html">Sign In</a>
+                </div>
+                <div class="showmenu">
+                    <p>&equiv;</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tour.html">Tour</a>
+                    <ul class="sub_menu">
+                        <li><a href="tourInCountryPage1.html">Trong nước</a></li>
+                        <li><a href="#">Ngoài nước</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="tourGuide.html">Tour Guide</a></li>
+                <li><a href="price.html">Price</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="intro">
+            <video src="../AUDIO/Recording 2024-01-21 185326.mp4" autoplay loop muted type="mp4"></video>
+        </div>
+        <div class="choose">
+            <div id="hotel_button">Hotel</div>
+            <div id="transport_button">Tranport</div>
+        </div>
+        <div class="content">
+            <div class="hotel">
+                <div class="search">
+                    <form action="search">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div>Prefecture</div>
+                                    <select name="prefecture" id="" class="input cusor">
+                                        <option value="Any">Any</option>
+                                        <option value="TPHCM"> TP Hồ Chí Minh</option>
+                                        <option value="HaNoi">Hà Nội</option>
+                                        <option value="DongThap">Đồng Tháp</option>
+                                        <option value="CaMau">Cà Mau</option>
+                                        <option value="VungTau">Vũng Tàu</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <div>Price</div>
+                                    <select name="Price" id="" class="input cusor">
+                                        <option value="Any">Any</option>
+                                        <option value="Price_1">0 - 500.000</option>
+                                        <option value="Price_3">500.000 - 1.000.000</option>
+                                        <option value="Price_4">1.000.000 - 3.000.000</option>
+                                        <option value="Price_5">3.000.000 - 5.000.000</option>
+                                        <option value="Price_6">5.000.000+</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <div>&nbsp;</div>
+                                    <button id="Bt_search">SEARCH</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="hotel_img">
+                    <div class="img">
+                        <img src="../IMAGE/hotel.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="../IMAGE/hotel.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="../IMAGE/hotel.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="../IMAGE/hotel.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="transport">
+                <div class="search">
+                    <form action="search">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div>Prefecture</div>
+                                    <select name="prefecture" id="" class="input cusor">
+                                        <option value="Any">Any</option>
+                                        <option value="TPHCM">TP Hồ Chí Minh</option>
+                                        <option value="HaNoi">Hà Nội</option>
+                                        <option value="DongThap">Đồng Tháp</option>
+                                        <option value="CaMau">Cà Mau</option>
+                                        <option value="VungTau">Vũng Tàu</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <div>Type</div>
+                                    <select name="Type" id="" class="input cusor">
+                                        <option value="Plane">Plane</option>
+                                        <option value="Coach">Coach</option>
+                                        <option value="Self-drive_car_rental">Self-drive car rental</option>
+                                        <option value="Chauffeur_driven_car_hire">Chauffeur-driven car hire</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <div>Price</div>
+                                    <select name="Price" id="" class="input cusor">
+                                        <option value="Any">Any</option>
+                                        <option value="Price_1">0 - 1.000.000</option>
+                                        <option value="Price_3">1.000.000 - 2.000.000</option>
+                                        <option value="Price_4">2.000.000 - 5.000.000</option>
+                                        <option value="Price_5">5.000.000+</option>
+                                    </select>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <div>&nbsp;</div>
+                                    <button id="Bt_search">SEARCH</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="transport_img">
+                    <div class="img">
+                        <img src="../IMAGE/plane.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="../IMAGE/plane.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="../IMAGE/plane.jpg" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="../IMAGE/plane.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="some_inf">
+            <img src="../IMAGE/logo.jpg">
+            <div>
+                <h2>HyperTravel: Website du lịch hàng đầu Việt Nam</h2>
+            </div>
+        </div>
+        <div class="the_end">
+            <h2><sup></sup>&copy;</sup> Hyper Team</h2>
+            <h3>IUH.FIT.SE</h3>
+        </div>
+    </div>
+    <div class="back_top_page"><a href="#">	🔼</a></div>
+
+    <script src="../JAVASCRIPT/hotelAndTransport.js"></script>
+</body>
+</body>
+</html>
