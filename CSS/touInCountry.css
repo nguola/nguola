@@ -109,6 +109,40 @@
   color: #181818;
 }
 
+.sub_menu {
+  width: 200px;
+  position: absolute;
+  top: 45px;
+  list-style-type: none;
+  background-color: #202020;
+  transition: 0.5s ease;
+  display: none;
+}
+
+.sub_menu>li {
+  padding: 10px;
+}
+
+.sub_menu>li>a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  transition: 0.2s ease-in;
+  border-bottom: 2px solid white;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.sub_menu>li:hover>a {
+  background-color: rgb(210, 210, 210);
+  color: #000;
+  font-size: 25px;
+}
+
+.menu>li:hover .sub_menu {
+  display: block;
+}
+
 .intro {
   width: 100%;
   height: 750px;
