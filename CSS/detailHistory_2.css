@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    transition:transform 0.3s ease-in-out ;
+}
+
+.address{
+   text-align: left;
+}
+.header_img img {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+header:hover img{
+    transform: scale(1.05);
+}
+header:hover{
+    transform: translateY(-5px);
+}
+.tour-details {
+    margin-top: 20px;
+}
+
+.tour-info,
+.room-info,
+.itinerary,
+.price-info {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #3498db;
+}
+
+strong {
+    color: #e74c3c;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+img{
+    width: 100%;
+}

@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 950px;
+    width: 1500px;
+    margin: auto;
+}
+header {
+    margin-top: 5px;
+    background-color: #3498db;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    position: relative;
+    overflow: hidden; 
+}
+#logo {
+    width: 200px;
+    margin-left: 20px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.account {
+    margin-top: 20px;
+    position: absolute;
+    right: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.account i {
+    font-size: 30px;
+}
+
+.account span {
+    font-size: 14px;
+}
+
+header:hover #logo {
+    transform: rotateY(360deg);
+}
+
+header:hover .account {
+    transform: translateY(-5px);
+}
+.head{
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+}
+.head p{
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    color: blue;
+    font-weight: bolder;
+}
+
+.head h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+    color: blue; 
+    animation: changeColor 5s infinite;
+}
+
+@keyframes changeColor {
+    0% {
+        color: rgb(218, 76, 218);
+    }
+    25% {
+        color: orange;
+    }
+    50% {
+        color: rgb(221, 224, 16);
+    }
+    75% {
+        color: red;
+    }
+    100% {
+        color: blue;
+    }
+}
+
+.address{
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    display: flex;
+    position: relative;
+}
+.address{
+    transition: transform 0.3s ease-in-out;
+}
+.address:hover {
+    transform: scale(1.05);
+    transform: translateY(-5px); 
+    transform: translateX(-5px);
+    box-shadow: 0 4px 30px #c2b4b4; 
+}
+a{
+    text-decoration: none;
+}
+.done{
+    color: #CC9933;
+}
+.information p{
+   margin: 20px 0;
+}
+.title{
+    font-size: 20px;
+    font-weight: bolder;
+}
+h3{
+    font-size: 25px;
+    font-weight: bolder;
+    max-width: 1000px;
+    margin:0 auto;
+    margin-top: 30px;
+}
+.address .priceAndOrder{
+    position: absolute;
+    right: 20px;
+    top: 40px;
+}
+.priceAndOrder .order_again{
+    margin-top: 50px;
+    width: fit-content;
+    padding: 10px;
+    background-color: red;
+    border-radius: 10px;
+    color: aliceblue;
+    font-weight: lighter;
+    font-size: 20px;
+    animation: changeColorForOrder 3s infinite alternate;
+}
+
+@keyframes changeColorForOrder {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: red;
+    }
+    50% {
+        background-color: orange;
+    }
+    75% {
+        background-color: blue;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+.priceAndOrder .order_again:hover{
+    background-color: #66CCFF;
+
+}
+.address_img img {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.address:hover img{
+    transform: scale(1.1);
+}
