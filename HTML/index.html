@@ -3,183 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>index</title>
     <link rel="stylesheet" href="../CSS/index.css">
 </head>
 <body>
-    <div class="header">
-        <div class="top_bar">
-            <img src="../IMAGE/logo.jpg" id="logo">
-            <div class="log_sign">
-                <div class="log_in">
-                    <a href="logIn.html">Log In</a>
-                </div>
-                <div class="Sign_in">
-                    <a href="signUp.html">Sign In</a>
-                </div>
-                <div class="showmenu">
-                    <p>&equiv;</p>
-                </div>
+    <header>
+        <div id="top_content">
+            <div id="login">
+                <a href="logIn.html">Login</a>
+            </div>
+            <div id="signIn">
+                <a href="signUp.html">Sign in</a>
             </div>
         </div>
-        <div class="nav">
-            <ul class="menu">
+        <img src="../IMAGE/logo.jpg" alt="" id="logo">
+        <nav>
+            <ul class="mainmenu">
                 <li><a href="tour.html">Tour</a>
-                    <ul class="sub_menu">
-                        <li><a href="tourInCountryPage1.html">Trong nước</a></li>
-                        <li><a href="#">Ngoài nước</a></li>
-
+                    <ul class="submenu">
+                        <li><a href="tourabroad.html">Tour abroad</a></li>
+                        <li><a href="tourInCountryPage1.html">Tour in country</a></li>
                     </ul>
                 </li>
-                <li><a href="tourGuide.html">Tour Guide</a></li>
-                <li><a href="price.html">Price</a></li>
-                <li><a href="hotelAndTransport.html">Hotel and Transport</a></li>
+                <li><a href="#">page 2</a></li>
+                <li><a href="#">page 3</a></li>
+                <li><a href="#">page 4</a></li>
+                <li><a href="#">page 5</a></li>
+                <li><a href="#">page 6</a></li>
             </ul>
+        </nav>
+        <video src="../VIDEO/Recording 2024-01-21 185326.mp4" autoplay loop muted type="mp4" id="intro_video"></video>
+    </header>
+    <div id="container">
+        <div class="search">
+            <input type="text" placeholder="Tour name">
+            <input type="text" placeholder="Tour type">
+            <select name="destination" id="">
+                <option value="Destination">Destination</option>
+                <option value="VN">Việt Nam</option>
+                <option value="USA"> USA</option>
+                <option value="FRANCE">France</option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <input type="date" placeholder="choose the dates">
+            <button>SEARCH TOUR</button>
+        </div>
+        <div class="main">
+            
         </div>
     </div>
-    <div class="main">
-        <div class="intro">
-            <video src="../AUDIO/Recording 2024-01-21 185326.mp4" autoplay loop muted type="mp4"></video>
-        </div>
-        <div class="inf">
-            <h3>36 provinces and cities in Vietnam</h3>
-            <h3>Best price</h3>
-            <h3>Fast book</h3>
-            <h3>Friendly customer</h3>
-        </div>
-        <div class="inf_bottom">
-            <div class="search">
-                <form action="search">
-                    <table>
-                        <tr>
-                            <td>
-                                <div>Keywords</div>
-                                <input type="text" class="input">
-                            </td>
-                            <td>
-                                <div>Prefecture</div>
-                                <select name="prefecture" id="" class="input cusor">
-                                    <option value="Any">Any</option>
-                                    <option value="TPHCM"> TP Hồ Chí Minh</option>
-                                    <option value="HaNoi">Hà Nội</option>
-                                    <option value="DongThap">Đồng Tháp</option>
-                                    <option value="CaMau">Cà Mau</option>
-                                    <option value="VungTau">Vũng Tàu</option>
-                                </select>
-                            </td>
-                            <td>
-                                <div>Activities</div>
-                                <select name="Activities" id="" class="input cusor">
-                                    <option value="Any">Any</option>
-                                    <option value="Camp">Camp</option>
-                                    <option value="Swimming">Swimming</option>
-                                    <option value="Clam_mountain">Clam mountain</option>
-                                </select>
-                            </td>
-                            <td>
-                                <div>Price</div>
-                                <select name="Price" id="" class="input cusor">
-                                    <option value="Any">Any</option>
-                                    <option value="Price_1">0 - 2.000.000</option>
-                                    <option value="Price_3">2.000.000 - 5.000.000</option>
-                                    <option value="Price_4">5.000.000 - 10.000.000</option>
-                                    <option value="Price_5">10.000.000 - 20.000.000</option>
-                                    <option value="Price_6">20.000.000+</option>
-                                </select>
-                            </td>
-                            <td></td>
-                            <td>
-                                <div>&nbsp;</div>
-                                <button id="Bt_search">SEARCH</button>
-                            </td>
-                        </tr>
-                    </table>
-                </form>
-            </div>
-            <div class="tourlistbackground">
-                <img src="../IMAGE/img_5.jpg">
-            </div>
-            <div class="tour_list"> 
-                <div>Tour List</div>
-                <div class="list">
-                    <div class="img_tour">
-                        <img src="../IMAGE/img_1.jpg" alt="">
-                        <p>Vịnh Hạ Long <br>
-                            20.000.000 VND
-                        </p>
-                    </div>
-                    <div class="img_tour">
-                        <img src="../IMAGE/img_2.jpg" alt="">
-                        <p>Vịnh Hạ Long <br>
-                            10.000.000VND
-                        </p>
-                    </div>
-                    <div class="img_tour">
-                        <img src="../IMAGE/img_5.jpg" alt="">
-                        <p>Ruộng bậc thang <br>
-                            15.000.000 VND
-                        </p>
-                    </div>
-                    <div class="img_tour">
-                        <img src="../IMAGE/img_4.jpg" alt="">
-                        <p>Biển<br>
-                            40.000.000 VND
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="articles">
-            <div class="img_articles">
-                <h1>Articles</h1>
-                <div class="scr_img">
-                    <div class="scr">
-                        <img src="../IMAGE/img_2.jpg" alt="">
-                        <p>Go to expand your soul</p>
-                    </div>
-                    <div class="scr">
-                        <img src="../IMAGE/img_3.png" alt="">
-                        <p>Explore the vast world</p>
-                    </div>
-                    <div class="scr">
-                        <img src="../IMAGE/img_4.jpg" alt="">
-                        <p>Deep sea exploration</p>
-                    </div>
-                    <div class="scr">
-                        <img src="../IMAGE/img_1.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Rank_of_tour">
-            <div class="Tour">
-                <div>WINNER OF THE MONTH</div>
-                <div>
-                    <div class="win_month"><img src="../IMAGE/img_1.jpg"></div>
-                    <p>Ha Long Bay</p>
-                </div>
-            </div>
-            <div class="Rank">
-                <div>14,000+ LIKE</div>
-                <div>SECURE PAYMENT</div>
-                <div>AWARD WINNING</div>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="some_inf">
-            <img src="../IMAGE/logo.jpg">
-            <div>
-                <h2>HyperTravel: Website du lịch hàng đầu Việt Nam</h2>
-            </div>
-        </div>
-        <div class="the_end">
-            <h2><sup></sup>&copy;</sup> Hyper Team</h2>
-            <h3>IUH.FIT.SE</h3>
-        </div>
-    </div>
-    <div class="back_top_page"><a href="#">	🔼</a></div>
-
-    <script src="../JAVASCRIPT/index.js"></script>
 </body>
-</html>
+</html> 
