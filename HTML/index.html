@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <link rel="stylesheet" href="../CSS/index.css">
 </head>
+
 <body>
     <header>
         <div id="top_content">
@@ -14,6 +16,9 @@
             </div>
             <div id="signIn">
                 <a href="signUp.html">Sign in</a>
+            </div>
+            <div id="showmenu">
+                &equiv;
             </div>
         </div>
         <img src="../IMAGE/logo.jpg" alt="" id="logo">
@@ -35,6 +40,42 @@
         <video src="../VIDEO/Recording 2024-01-21 185326.mp4" autoplay loop muted type="mp4" id="intro_video"></video>
     </header>
     <div id="container">
+        <div class="advantage">
+            <h3>36 provinces and cities in Vietnam</h3>
+            <h3>Best price</h3>
+            <h3>Fast book</h3>
+            <h3>Friendly customer</h3>
+        </div>
+
+        <div class="slider">
+            <div class="radio_function">
+                <input type="radio" name="radio_btn" id="radio1" checked="checked">
+                <input type="radio" name="radio_btn" id="radio2">
+                <input type="radio" name="radio_btn" id="radio3">
+                <input type="radio" name="radio_btn" id="radio4">
+            </div>
+
+            <div class="slides">
+                <div class="slide active"><img src="../IMAGE/index-img/slide_show_img_1.webp" alt=""></div>
+                <div class="slide"><img src="../IMAGE/index-img/slide_show_img_2.jpg" alt=""></div>
+                <div class="slide"><img src="../IMAGE/index-img/slide_show_img_3.jpg" alt=""></div>
+                <div class="slide"><img src="../IMAGE/index-img/slide_show_img_4.jpg" alt=""></div>
+            </div>
+
+            <div class="navigation_auto">
+                <div class="auto_btn active"></div>
+                <div class="auto_btn"></div>
+                <div class="auto_btn"></div>
+                <div class="auto_btn"></div>
+            </div>
+
+            <div class="navigation_manual">
+                <label for="radio1" class="manual_btn active"></label>
+                <label for="radio2" class="manual_btn"></label>
+                <label for="radio3" class="manual_btn"></label>
+                <label for="radio4" class="manual_btn"></label>
+            </div>
+        </div>
         <div class="search">
             <input type="text" placeholder="Tour name">
             <input type="text" placeholder="Tour type">
@@ -49,9 +90,19 @@
             <input type="date" placeholder="choose the dates">
             <button>SEARCH TOUR</button>
         </div>
-        <div class="main">
-            
+
+        <div class="tourList">
+            <div class="tour">
+                
+            </div>
         </div>
     </div>
+    <footer>
+    </footer>
+
+    <div class="go_back_button"><a href="#">🔼</a></div>
+
+    <script src="../JAVASCRIPT/index.js"></script>
 </body>
-</html> 
+
+</html>
