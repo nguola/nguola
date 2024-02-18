@@ -6,8 +6,11 @@ const top_content = document.getElementById('top_content')
 const show_menu_button = document.getElementById('showmenu')
 const menu_li = document.getElementsByClassName('mainmenu')
 const menu = document.querySelector('.mainmenu')
+const pre_btn = document.querySelector('.pre_btn')
+const next_btn = document.querySelector('.next_btn')
 
 var current = 0
+var pre = slides.length - 1
 
 var manualNav = function (manual, pre) {
     slides.forEach((slide) => {
@@ -40,12 +43,56 @@ manual_btn.forEach((btn, i) => {
 
     btn.addEventListener('click', () => {
         manualNav(i, current)
+
+        const slide_current = document.querySelector('.slides .active')
+        const slide_pre = document.querySelector('.slides .pre')
+
+        if(current > i){
+            slide_current.style.animation = 'slide_pre_show 3s'
+            slide_pre.style.animation = 'slide_pre_off 3s'
+        }
+        else{
+            slide_current.style.animation = 'slide_next_show 3s'
+            slide_pre.style.animation = 'slide_next_off 3s'
+        }
+
         current = i
     })
 })
 
+pre_btn.addEventListener('click', ()=> {
+    pre = current
+    if(current == 0)
+        current = slides.length - 1
+    else
+        current--
+
+    manualNav(current, pre)
+
+    const slide_current = document.querySelector('.slides .active')
+    const slide_pre = document.querySelector('.slides .pre')
+
+    slide_current.style.animation = 'slide_pre_show 3s'
+    slide_pre.style.animation = 'slide_pre_off 3s'
+})
+
+next_btn.addEventListener('click', ()=> {
+    pre = current
+    if(current == slides.length - 1)
+        current = 0
+    else
+        current++
+
+    manualNav(current, pre)
+
+    const slide_current = document.querySelector('.slides .active')
+    const slide_pre = document.querySelector('.slides .pre')
+
+    slide_current.style.animation = 'slide_next_show 3s'
+    slide_pre.style.animation = 'slide_next_off 3s'
+})
+
 setInterval(() => {
-    slides[current].style.amination = ''
     
     var tmp = current
 
@@ -55,6 +102,12 @@ setInterval(() => {
         current++
 
     manualNav(current, tmp)
+
+    const slide_current = document.querySelector('.slides .active')
+    const slide_pre = document.querySelector('.slides .pre')
+
+    slide_current.style.animation = 'slide_next_show 3s'
+    slide_pre.style.animation = 'slide_next_off 3s'
 }, 12000);
 
 window.onscroll = function (){

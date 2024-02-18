@@ -107,26 +107,22 @@
     }
 
     .mainmenu>li:nth-child(1) {
-        right: 700px;
+        right: 740px;
     }
 
     .mainmenu>li:nth-child(2) {
-        right: 580px;
+        right: 570px;
     }
 
     .mainmenu>li:nth-child(3) {
-        right: 460px;
+        right: 320px;
     }
 
     .mainmenu>li:nth-child(4) {
-        right: 340px;
+        right: 230px;
     }
 
     .mainmenu>li:nth-child(5) {
-        right: 220px;
-    }
-
-    .mainmenu>li:nth-child(6) {
         right: 100px;
     }
 
@@ -203,7 +199,7 @@
 
     .slider {
         width: 1518px;
-        height: 90vh;
+        height: 85vh;
         position: relative;
         display: flex;
         justify-content: center;
@@ -238,16 +234,14 @@
     }
 
     .slides .active {
-        animation: slide_show 3s;
         z-index: 2;
     }
 
     .slides .pre {
-        animation: slide_off 3s;
         z-index: 1;
     }
 
-    @keyframes slide_off {
+    @keyframes slide_next_off {
         0% {
             transform: translateX(0%);
         }
@@ -256,7 +250,7 @@
         }
     }
 
-    @keyframes slide_show {
+    @keyframes slide_next_show {
         0% {
             transform: translateX(100%);
         }
@@ -265,8 +259,26 @@
         }
     }
 
+    @keyframes slide_pre_off {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    @keyframes slide_pre_show {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
     .navigation_auto .active {
-        background: rgb(97, 100, 98);
+        background: rgba(71, 67, 67, 0.868);
     }
 
     .navigation_manual,
@@ -281,7 +293,7 @@
 
     .manual_btn,
     .navigation_auto > *{
-        border: 3px solid rgb(108, 107, 107);
+        border: 1px solid rgba(41, 38, 38, 0.559);
         padding: 5px;
         border-radius: 10px;
         cursor: pointer;
@@ -322,11 +334,78 @@
         background-color: #e3e4dc;
     }
 
-    .tour {
+    .tourListMain {
         margin-top: 30px;
         width: 80%;
         height: 80%;
         background-color: white;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide_show_btn_function > *{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #e3e4dc57;
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        border: none;
+        position: absolute;
+        z-index: 10;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+    }
+
+    .pre_btn {
+        top: 50%;
+        transform: translateY(-50%);
+        left: 40px;
+    }
+
+    .next_btn {
+        top: 50%;
+        transform: translateY(-50%);
+        right: 40px;
+    }
+
+    .slide_show_btn_function > *:hover {
+        background-color: rgba(62, 61, 61, 0.381);
+        color: white;
+    }
+
+    .tourDisplay {
+        width: 80%;
+        height: 60%;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .tours {
+        width: 300%;
+        height: 80%;
+        position: absolute;
+        z-index: 0;
+        left: 0%;
+        transform: translateX(-50%);
+        top: 10%;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .tour {
+        width: 100px;
+        height: 300px;
+        background-color: red;
+    }
+
+    .tours > *:not(:last-child) {
+        right: 20px;
     }
 
     footer {
