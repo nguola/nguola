@@ -1,434 +1,603 @@
-    body {
-        margin: 0px;
-        padding: 0px;
+body {
+    margin: 0px;
+    padding: 0px;
+}
+/* start css for header */
+header {
+    position: relative;
+    height: 100vh;
+}
+
+/* start css for top_content */
+#top_content {
+    width: 100%;
+    height: 50px;
+    background: black;
+    position: relative;
+    z-index: 10;
+    top: 0px;
+}
+
+#top_content>* {
+    position: absolute;
+}
+
+#top_content>*:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 230px;
+}
+
+#top_content>*:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 140px;
+}
+
+#top_content>* a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    display: block;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+#top_content>*:nth-child(1) a:hover {
+    background-color: #b4e2f7;
+    color: rgb(68, 67, 67);
+}
+
+#top_content>*:nth-child(2) a:hover {
+    background-color: #d0f7b4;
+    color: rgb(68, 67, 67);
+}
+
+#showmenu {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 80px;
+    display: none;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    font-size: 40px;
+    padding: 10px 12px 10px 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+#showmenu:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+/* end css for top_content */
+
+/* start css for nav */
+
+#logo {
+    width: 25vh;
+    border-radius: 40px;
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: 100px;
+}
+
+/* start css  for dropdown menu*/
+
+.mainmenu {
+    list-style-type: none;
+}
+
+.mainmenu>li {
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    transform: translateY(50%);
+}
+
+.mainmenu>li>a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    display: block;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    transition: 0.4s ease-out;
+}
+
+.mainmenu>li:nth-child(1) {
+    right: 830px;
+}
+
+.mainmenu>li:nth-child(1) a {
+    background-color: black;
+    color: white;
+}
+
+.mainmenu>li:nth-child(2) {
+    right: 740px;
+}
+
+.mainmenu>li:nth-child(3) {
+    right: 570px;
+}
+
+.mainmenu>li:nth-child(4) {
+    right: 320px;
+}
+
+.mainmenu>li:nth-child(5) {
+    right: 230px;
+}
+
+.mainmenu>li:nth-child(6) {
+    right: 100px;
+}
+
+.mainmenu>li>a:hover {
+    background-color: black;
+    color: white;
+}
+
+.submenu {
+    list-style-type: none;
+    position: absolute;
+    z-index: 1;
+    top: 45px;
+    left: -40px;
+    display: none;
+}
+
+.submenu>li {
+    width: 170px;
+    background-color: rgb(47, 46, 46);
+    padding: 10px;
+}
+
+.submenu>li>a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.submenu>li>a:hover {
+    background-color: white;
+    color: black;
+}
+
+.mainmenu>li:hover .submenu {
+    display: block;
+}
+
+/* end css for dropdown menu */
+
+/* end css for nav */
+
+#intro_video {
+    width: 180vh;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* end css for header */
+
+/* start css for container */
+
+/* start css for advantage of website */
+
+.advantage {
+    width: 100%;
+    height: 100px;
+    background-color: #0e6edcb4;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+.advantage h3:first-child {
+    margin-left: 100px;
+}
+
+.advantage h3:last-child {
+    margin-right: 100px;
+}
+
+.advantage>*:hover {
+    cursor: pointer;
+}
+
+/* end css for advantage of website */
+
+/* start css for slide show */
+
+.slider {
+    width: 1518px;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* start css for display slide area */
+
+.slides {
+    width: 1300px;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.slide {
+    width: 1300px;
+    height: 80vh;
+    z-index: 0;
+    position: absolute;
+}
+
+.slide img {
+    width: 1300px;
+    height: 80vh;
+    cursor: pointer;
+}
+
+.slide p {
+    position: absolute;
+    text-align: justify;
+    cursor: pointer;
+}
+
+.slide:nth-child(1) p {
+    width: 50vh;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(245, 94, 7);
+    bottom: 25%;
+    left: 8%;
+}
+
+.slide:nth-child(2) p {
+    width: 100vh;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(228, 29, 29, 0.77);
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.slide:nth-child(3) p {
+    top: 35%;
+    right: 6%;
+    rotate: 35deg;
+    color: rgba(214, 208, 208, 0.629);
+    font-weight: bold;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.slide:nth-child(4) p {
+    top: 10%;
+    right: 40%;
+    transform: translateX(50%);
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.611);
+    text-transform: uppercase;
+    font-weight: bold;
+    rotate: 7deg;
+}
+
+.slides .current {
+    z-index: 2;
+}
+
+.slides .pre {
+    z-index: 1;
+}
+
+/* end css for display slide area */
+
+/* start css for animation */
+
+@keyframes slide_off_left {
+    0% {
+        transform: translateX(0%);
     }
 
-    header {
-        position: relative;
-        height: 100vh;
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide_show_right {
+    0% {
+        transform: translateX(100%);
     }
 
-    #top_content {
-        width: 100%;
-        height: 50px;
-        background: black;
-        position: relative;
-        z-index: 10;
-        top: 0px;
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide_off_right {
+    0% {
+        transform: translateX(0%);
     }
 
-    #top_content>* {
-        position: absolute;
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slide_show_left {
+    0% {
+        transform: translateX(-100%);
     }
 
-    #top_content>*:nth-child(1) {
-        top: 50%;
-        transform: translateY(-50%);
-        right: 230px;
+    100% {
+        transform: translateX(0%);
     }
+}
 
-    #top_content>*:nth-child(2) {
-        top: 50%;
-        transform: translateY(-50%);
-        right: 140px;
-    }
+/* end css for animation */
 
-    #top_content>* a {
-        text-decoration: none;
-        color: white;
-        font-size: 20px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-        display: block;
-        padding: 5px 10px 5px 10px;
-        border-radius: 10px;
-        transition: 0.4s;
-    }
+/* start css for slideshow radio button */
+.navigation_auto .current {
+    background: rgba(71, 67, 67, 0.868);
+}
 
-    #top_content>*:nth-child(1) a:hover {
-        background-color: #b4e2f7;
-        color: rgb(68, 67, 67);
-    }
+.navigation_manual,
+.navigation_auto {
+    position: absolute;
+    z-index: 10;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
 
-    #top_content>*:nth-child(2) a:hover {
-        background-color: #d0f7b4;
-        color: rgb(68, 67, 67);
-    }
+.manual_btn,
+.navigation_auto>* {
+    border: 1px solid rgba(41, 38, 38, 0.559);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 2s;
+}
 
-    #showmenu {
-        top: 50%;
-        transform: translateY(-50%);
-        right: 80px;
-        display: none;
-        align-items: center;
-        width: 20px;
-        height: 20px;
-        font-size: 40px;
-        padding: 10px 12px 10px 10px;
-        border-radius: 10px;
-        color: white;
-    }
+.manual_btn:not(:last-child),
+.navigation_auto div:not(:last-child) {
+    margin-right: 15px;
+}
 
-    #showmenu:hover {
-        background-color: white;
-        color: black;
-        cursor: pointer;
-    }
+.radio_function {
+    display: none;
+}
 
-    #logo {
-        width: 25vh;
-        border-radius: 40px;
-        position: absolute;
-        z-index: 1;
-        top: 70px;
-        left: 100px;
-    }
+/* end css for slideshow radio button */
 
-    .mainmenu {
-        list-style-type: none;
-    }
+/* start css for slideshow function buttons */
 
-    .mainmenu>li {
-        position: absolute;
-        z-index: 1;
-        top: 60px;
-        transform: translateY(50%);
-    }
+.slide_show_btn_function > *{
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.364);
+    cursor: pointer;
+    transition: 0.6s ease;
+}
 
-    .mainmenu>li>a {
-        text-decoration: none;
-        color: black;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 30px;
-        display: block;
-        padding: 5px 10px 5px 10px;
-        border-radius: 10px;
-        transition: 0.4s ease-out;
-    }
+.pre_btn {
+    left: 40px;
+}
 
-    .mainmenu>li:nth-child(1) {
-        right: 740px;
-    }
+.next_btn {
+    right: 40px;
+}
 
-    .mainmenu>li:nth-child(2) {
-        right: 570px;
-    }
+.slide_show_btn_function > *:hover {
+    background-color: rgba(0, 0, 0, 0.277);
+    color: white;
+}
 
-    .mainmenu>li:nth-child(3) {
-        right: 320px;
-    }
+/* end css for slideshow function buttons */
 
-    .mainmenu>li:nth-child(4) {
-        right: 230px;
-    }
+/* end css for slideshow */
 
-    .mainmenu>li:nth-child(5) {
-        right: 100px;
-    }
+/* start for search area */
 
-    .mainmenu>li>a:hover {
-        background-color: black;
-        color: white;
-    }
+.search {
+    background-color: #0e6edcb4;
+    height: 70px;
+    display: flex;
+    padding: 10px 0px 10px 0px;
+    justify-content: center;
+    align-items: center;
+}
 
-    .submenu {
-        list-style-type: none;
-        position: absolute;
-        z-index: 1;
-        top: 45px;
-        left: -40px;
-        display: none;
-    }
+.search>* {
+    width: 250px;
+    height: 40px;
+    margin: 0px 10px 0px 10px;
+}
 
-    .submenu>li {
-        width: 170px;
-        background-color: rgb(47, 46, 46);
-        padding: 10px;
-    }
+.search button {
+    background-color: #008cff;
+    color: white;
+    font-size: large;
+    border-radius: 20px;
+}
 
-    .submenu>li>a {
-        text-decoration: none;
-        display: block;
-        padding: 10px;
-        color: white;
-        font-size: 20px;
-        transition: 0.4s;
-    }
+/* end css for search area */
 
-    .submenu>li>a:hover {
-        background-color: white;
-        color: black;
-    }
+/* start css for display tours area */
 
-    .mainmenu>li:hover .submenu {
-        display: block;
-    }
+.tour_slide_show {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    #intro_video {
-        width: 180vh;
-        position: absolute;
-        top: 18%;
-        left: 50%;
-        transform: translate(-50%);
-    }
+.tours {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
 
-    .advantage {
-        width: 100%;
-        height: 100px;
-        background-color: #4690e7;
-        position: relative;
-        display: flex;
-        align-items: center;
-        font-size: 20px;
-        color: white;
-        text-transform: uppercase;
-        justify-content: space-between;
-    }
-    
-    .advantage h3:first-child {
-        margin-left: 100px;
-    }
-    
-    .advantage h3:last-child {
-        margin-right: 100px;
-    }
-    
-    .advantage > *:hover {
-        cursor: pointer;
-    }
+.tour {
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.7s ease;
+    background-color: black;
+}
 
-    .slider {
-        width: 1518px;
-        height: 85vh;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        background-color: #faf0f0;
-    }
+.tour:first-child,
+.tour:last-child {
+    height: 460px;
+}
 
-    .slider input {
-        display: none;
-    }
+.tour:nth-child(2),
+.tour:nth-child(4) {
+    height: 540px;
+}
 
-    .slides {
-        width: 1300px;
-        height: 80vh;
-        position: relative;
-        overflow: hidden;
-        margin-top: 20px;
-        border-radius: 20px;
-        border: 2px solid black;
-    }
 
-    .slide {
-        width: 1300px;
-        height: 80vh;
-        z-index: 0;
-        position: absolute;
-    }
+.tour:nth-child(3) {
+    height: 610px;
+}
 
-    .slide img {
-        width: 1300px;
-        height: 80vh;
-        cursor: pointer;
-    }
+.tour img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 60%;
+}
 
-    .slides .active {
-        z-index: 2;
-    }
+.tour h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-100%);
+    /* rotate: -90deg; */
+    transition: 0.7s ease;
+}
 
-    .slides .pre {
-        z-index: 1;
-    }
+.details {
+    position: absolute;
+    bottom: 43px;
+    left: 43px;
+    display: none;
+}
 
-    @keyframes slide_next_off {
-        0% {
-            transform: translateX(0%);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
-    }
+.details h2 {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 44px;
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.7s ease;
+}
 
-    @keyframes slide_next_show {
-        0% {
-            transform: translateX(100%);
-        }
-        100% {
-            transform: translateX(0%);
-        }
-    }
+.details p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 33px;
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.7s ease;
+}
 
-    @keyframes slide_pre_off {
-        0% {
-            transform: translateX(0%);
-        }
-        100% {
-            transform: translateX(100%);
-        }
-    }
+.tour.active {
+    width: 550px !important;
+    height: 610px !important;
+}
 
-    @keyframes slide_pre_show {
-        0% {
-            transform: translateX(-100%);
-        }
-        100% {
-            transform: translateX(0%);
-        }
-    }
+.tour.active img {
+    opacity: 100% !important;
+}
 
-    .navigation_auto .active {
-        background: rgba(71, 67, 67, 0.868);
-    }
+.tour.active h1 {
+    /* display: none; */
+}
 
-    .navigation_manual,
-    .navigation_auto{
-        position: absolute;
-        z-index: 10;
-        bottom: 15px;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-    }
+.tour.active .details {
+    display: block;
+}
 
-    .manual_btn,
-    .navigation_auto > *{
-        border: 1px solid rgba(41, 38, 38, 0.559);
-        padding: 5px;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: 2s;
-    }
+/* end css for display tours area */
 
-    .manual_btn:not(:last-child),
-    .navigation_auto div:not(:last-child){
-        margin-right: 15px;
-    }
-    
-    .search {
-        background-color: #7798c7;
-        height: 70px;
-        display: flex;
-        padding: 10px 0px 10px 0px;
-        justify-content: center;
-        align-items: center;
-    }
+/* end css for container */
 
-    .search>* {
-        width: 250px;
-        height: 40px;
-        margin: 0px 10px 0px 10px;
-    }
+/* start css for footer */
 
-    .search button {
-        background-color: #0064b8;
-        color: white;
-        font-size: large;
-    }
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
 
-    .tourList {
-        width: 100%;
-        height: 90vh;
-        display: flex;
-        justify-content: center;
-        background-color: #e3e4dc;
-    }
+/* end css for footer */
 
-    .tourListMain {
-        margin-top: 30px;
-        width: 80%;
-        height: 80%;
-        background-color: white;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+/* start css for go back top page button */
 
-    .slide_show_btn_function > *{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: #e3e4dc57;
-        color: black;
-        font-size: 30px;
-        font-weight: bold;
-        border: none;
-        position: absolute;
-        z-index: 10;
-        cursor: pointer;
-        transition: 0.4s ease-in-out;
-    }
+.go_back_button {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    padding: 0;
+    font-weight: 800;
+    color: rgb(239, 137, 46);
+    position: fixed;
+    bottom: 40px;
+    z-index: 1000;
+    right: 40px;
+    display: none;
+}
 
-    .pre_btn {
-        top: 50%;
-        transform: translateY(-50%);
-        left: 40px;
-    }
+.go_back_button a {
+    text-decoration: none;
+}
 
-    .next_btn {
-        top: 50%;
-        transform: translateY(-50%);
-        right: 40px;
-    }
-
-    .slide_show_btn_function > *:hover {
-        background-color: rgba(62, 61, 61, 0.381);
-        color: white;
-    }
-
-    .tourDisplay {
-        width: 80%;
-        height: 60%;
-        display: flex;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .tours {
-        width: 300%;
-        height: 80%;
-        position: absolute;
-        z-index: 0;
-        left: 0%;
-        transform: translateX(-50%);
-        top: 10%;
-        display: flex;
-        align-items: center;
-        justify-self: center;
-    }
-
-    .tour {
-        width: 100px;
-        height: 300px;
-        background-color: red;
-    }
-
-    .tours > *:not(:last-child) {
-        right: 20px;
-    }
-
-    footer {
-        width: 100%;
-        height: 200px;
-        background-color: black;
-    }
-    
-    .go_back_button {
-        width: 40px;
-        height: 40px;
-        font-size: 30px;
-        text-align: center;
-        padding: 0;
-        font-weight: 800;
-        color: rgb(239, 137, 46);
-        position: fixed;
-        bottom: 40px;
-        z-index: 1000;
-        right: 40px;
-        display: none;
-    }
-    
-    .go_back_button a{
-        text-decoration: none;
-    }
+/* end css for go back top page button */

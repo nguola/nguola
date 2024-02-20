@@ -1,117 +1,107 @@
 var slides = document.querySelectorAll('.slide')
 var manual_btn = document.querySelectorAll('.manual_btn')
 var auto_btn = document.querySelectorAll('.auto_btn')
-const back_top = document.querySelector('.go_back_button')
-const top_content = document.getElementById('top_content')
-const show_menu_button = document.getElementById('showmenu')
-const menu_li = document.getElementsByClassName('mainmenu')
-const menu = document.querySelector('.mainmenu')
 const pre_btn = document.querySelector('.pre_btn')
 const next_btn = document.querySelector('.next_btn')
 
+const tours = document.querySelectorAll('.tour')
+
+const back_top = document.querySelector('.go_back_button')
+
 var current = 0
-var pre = slides.length - 1
+var active = 2
 
 var manualNav = function (manual, pre) {
-    slides.forEach((slide) => {
-        slide.classList.remove('pre')
+    var pre_element_array = document.querySelectorAll('.pre')
 
-        manual_btn.forEach((btn) => {
-            btn.classList.remove('pre')
-
-            auto_btn.forEach((a_btn) => {
-                a_btn.classList.remove('pre')
-            })
-        })
+    pre_element_array.forEach((element) => {
+        element.classList.remove('pre')
     })
 
-    slides[pre].classList.remove('active')
-    manual_btn[pre].classList.remove('active')
-    auto_btn[pre].classList.remove('active')
-
     slides[pre].classList.add('pre')
-    manual_btn[pre].classList.add('pre')
     auto_btn[pre].classList.add('pre')
+    
+    slides[pre].classList.remove('current')
+    auto_btn[pre].classList.remove('current')
 
-    slides[manual].classList.add('active')
-    manual_btn[manual].classList.add('active')
-    auto_btn[manual].classList.add('active')
+    slides[manual].classList.add('current')
+    auto_btn[manual].classList.add('current')
+}
+
+var show_slide_next = function (current, pre) {
+    slides[current].style.animation = 'slide_show_right 2s'
+    slides[pre].style.animation = 'slide_off_left 2s'
+}
+
+var show_slide_pre = function (current, pre) {
+    slides[current].style.animation = 'slide_show_left 2s'
+    slides[pre].style.animation = 'slide_off_right 2s'
 }
 
 manual_btn.forEach((btn, i) => {
-    slides[current].style.amination = ''
-
     btn.addEventListener('click', () => {
+
         manualNav(i, current)
 
-        const slide_current = document.querySelector('.slides .active')
-        const slide_pre = document.querySelector('.slides .pre')
-
-        if(current > i){
-            slide_current.style.animation = 'slide_pre_show 3s'
-            slide_pre.style.animation = 'slide_pre_off 3s'
+        if (current > i) {
+            show_slide_pre(i, current)
         }
-        else{
-            slide_current.style.animation = 'slide_next_show 3s'
-            slide_pre.style.animation = 'slide_next_off 3s'
+        else {
+            show_slide_next(i, current)
         }
 
         current = i
     })
 })
 
-pre_btn.addEventListener('click', ()=> {
-    pre = current
-    if(current == 0)
+pre_btn.addEventListener('click', () => {
+    var pre = current
+    if (current == 0)
         current = slides.length - 1
     else
         current--
 
     manualNav(current, pre)
 
-    const slide_current = document.querySelector('.slides .active')
-    const slide_pre = document.querySelector('.slides .pre')
-
-    slide_current.style.animation = 'slide_pre_show 3s'
-    slide_pre.style.animation = 'slide_pre_off 3s'
+    show_slide_pre(current, pre)
 })
 
-next_btn.addEventListener('click', ()=> {
-    pre = current
-    if(current == slides.length - 1)
+next_btn.addEventListener('click', () => {
+    var pre = current
+    if (current == slides.length - 1)
         current = 0
     else
         current++
 
     manualNav(current, pre)
 
-    const slide_current = document.querySelector('.slides .active')
-    const slide_pre = document.querySelector('.slides .pre')
-
-    slide_current.style.animation = 'slide_next_show 3s'
-    slide_pre.style.animation = 'slide_next_off 3s'
+    show_slide_next(current, pre)
 })
 
 setInterval(() => {
-    
-    var tmp = current
 
-    if(current == slides.length - 1)
+    var pre = current
+
+    if (current == slides.length - 1)
         current = 0
     else
         current++
 
-    manualNav(current, tmp)
+    manualNav(current, pre)
 
-    const slide_current = document.querySelector('.slides .active')
-    const slide_pre = document.querySelector('.slides .pre')
+    show_slide_next(current, pre)
+}, 15000);
 
-    slide_current.style.animation = 'slide_next_show 3s'
-    slide_pre.style.animation = 'slide_next_off 3s'
-}, 12000);
+tours.forEach((tour, i)=>{
+    tour.addEventListener('click', ()=>{
+        tours[active].classList.remove('active')
+        tours[i].classList.add('active')
+        active = i
+    })
+})
 
-window.onscroll = function (){
-    if(document.documentElement.scrollTop > 150) {
+window.onscroll = function () {
+    if (document.documentElement.scrollTop > 150) {
         back_top.style.display = "block";
 
     } else {

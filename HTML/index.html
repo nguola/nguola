@@ -24,6 +24,7 @@
         <img src="../IMAGE/logo.jpg" alt="" id="logo">
         <nav>
             <ul class="mainmenu">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="tour.html">Tour</a>
                     <ul class="submenu">
                         <li><a href="tourabroad.html">Tour abroad</a></li>
@@ -47,66 +48,112 @@
         </div>
 
         <div class="slider">
-            <div class="radio_function">
-                <input type="radio" name="radio_btn" id="radio1" checked="checked">
-                <input type="radio" name="radio_btn" id="radio2">
-                <input type="radio" name="radio_btn" id="radio3">
-                <input type="radio" name="radio_btn" id="radio4">
-            </div>
-
             <div class="slides">
-                <div class="slide active"><img src="../IMAGE/index-img/slide_show_img_1.webp" alt=""></div>
-                <div class="slide"><img src="../IMAGE/index-img/slide_show_img_2.png" alt=""></div>
-                <div class="slide"><img src="../IMAGE/index-img/slide_show_img_3.jpg" alt=""></div>
-                <div class="slide"><img src="../IMAGE/index-img/slide_show_img_4.jpg" alt=""></div>
-                <div class="slide_show_btn_function">
-                    <button class="pre_btn"><</button>
-                    <button class="next_btn">></button>
+                <div class="slide current">
+                    <img src="../IMAGE/index-img/slide_show_img_1.webp" alt="">
+                    <p>Các voucher hot lên đến 300.000 chỉ từ ngày 18/4/2024 -20/4/2024</p>
+                </div>
+                <div class="slide">
+                    <img src="../IMAGE/index-img/slide_show_img_2.png" alt="">
+                    <p>Giảm 10% đối với các tour cho 2-3 người</p>
+                </div>
+                <div class="slide">
+                    <img src="../IMAGE/index-img/slide_show_img_3.jpg" alt="">
+                    <p>Voucher mua sắm hấp dẫn tại các resort và khu nghĩ dưỡng</p>
+                </div>
+                <div class="slide">
+                    <img src="../IMAGE/index-img/slide_show_img_4.jpg" alt="">
+                    <p>Giảm 50% cho các cặp đôi vào valentine này</p>
                 </div>
 
+
+                <div class="slide_show_btn_function">
+                    <button class="pre_btn"><</button>
+                            <button class="next_btn">></button>
+                </div>
                 <div class="navigation_auto">
                     <div class="auto_btn active"></div>
                     <div class="auto_btn"></div>
                     <div class="auto_btn"></div>
                     <div class="auto_btn"></div>
                 </div>
-    
+
                 <div class="navigation_manual">
                     <label for="radio1" class="manual_btn active"></label>
                     <label for="radio2" class="manual_btn"></label>
                     <label for="radio3" class="manual_btn"></label>
                     <label for="radio4" class="manual_btn"></label>
                 </div>
-            </div>
-        </div>
-        <div class="search">
-            <input type="text" placeholder="Tour name">
-            <input type="text" placeholder="Tour type">
-            <select name="destination" id="">
-                <option value="Destination">Destination</option>
-                <option value="VN">Việt Nam</option>
-                <option value="USA"> USA</option>
-                <option value="FRANCE">France</option>
-                <option value=""></option>
-                <option value=""></option>
-            </select>
-            <input type="date" placeholder="choose the dates">
-            <button>SEARCH TOUR</button>
-        </div>
 
-        <div class="tourList">
-            <div class="tourListMain">
-                
-                <div class="tourDisplay">
-                    <div class="tours">
-                        <div class="tour"></div>
-                        <div class="tour"></div>
-                        <div class="tour"></div>
-                        <div class="tour"></div>
-                    </div>
+                <div class="radio_function">
+                    <input type="radio" name="radio_btn" id="radio1" checked="checked">
+                    <input type="radio" name="radio_btn" id="radio2">
+                    <input type="radio" name="radio_btn" id="radio3">
+                    <input type="radio" name="radio_btn" id="radio4">
                 </div>
             </div>
         </div>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Tour name">
+        <input type="text" placeholder="Tour type">
+        <select name="destination" id="">
+            <option value="Destination">Destination</option>
+            <option value="VN">Việt Nam</option>
+            <option value="USA"> USA</option>
+            <option value="FRANCE">France</option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+        <input type="date" placeholder="choose the dates">
+        <button>SEARCH TOUR</button>
+    </div>
+
+    <div class="tour_slide_show">
+
+        <div class="tours">
+            <div class="tour">
+                <img src="" alt="">
+                <h1></h1>
+                <div class="details">
+                    <h2></h2>
+                    <p></p>
+                </div>
+            </div>
+            <div class="tour">
+                <img src="" alt="">
+                <h1></h1>
+                <div class="details">
+                    <h2></h2>
+                    <p></p>
+                </div>
+            </div>
+            <div class="tour active">
+                <img src="" alt="">
+                <h1></h1>
+                <div class="details">
+                    <h2></h2>
+                    <p></p>
+                </div>
+            </div>
+            <div class="tour">
+                <img src="" alt="">
+                <h1></h1>
+                <div class="details">
+                    <h2></h2>
+                    <p></p>
+                </div>
+            </div>
+            <div class="tour">
+                <img src="" alt="">
+                <h1></h1>
+                <div class="details">
+                    <h2></h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
     <footer>
     </footer>
