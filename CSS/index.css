@@ -335,14 +335,12 @@ header {
 
     100% {
         transform: translateX(-100%);
-        rotate: -2deg;
     }
 }
 
 @keyframes slide_show_right {
     0% {
         transform: translateX(100%);
-        rotate: 2deg;
     }
 
     100% {
@@ -357,14 +355,12 @@ header {
 
     100% {
         transform: translateX(100%);
-        rotate: 2deg;
     }
 }
 
 @keyframes slide_show_left {
     0% {
         transform: translateX(-100%);
-        rotate: -2deg;
     }
 
     100% {
@@ -444,31 +440,10 @@ header {
 
 /* end css for slideshow */
 
-/* start for search area */
-
-.search {
+.block {
     background-color: #0e6edcb4;
     height: 70px;
-    display: flex;
-    padding: 10px 0px 10px 0px;
-    justify-content: center;
-    align-items: center;
 }
-
-.search>* {
-    width: 250px;
-    height: 40px;
-    margin: 0px 10px 0px 10px;
-}
-
-.search button {
-    background-color: #008cff;
-    color: white;
-    font-size: large;
-    border-radius: 20px;
-}
-
-/* end css for search area */
 
 /* start css for display tours area */
 
