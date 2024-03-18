@@ -36,10 +36,41 @@
 
 .destination {
     margin: 0px auto;
-    width: 50px;
-    height: 50px;
-    background-color: black;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.418);
     margin: 10px;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+    position: relative;
+}
+
+.destination > img {
+    width: 120px;
+    height: 120px;
+    opacity: 60%;
+}
+
+.destination > p{
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 10;
+    bottom: 10%;
+    left: 10%;
+    display: none;
+    font-weight: bold;
+}
+
+.destination:hover img{
+    cursor: pointer;
+    opacity: 100%;
+    scale: 1.1;
+}
+
+.destination:hover p {
+    cursor: pointer;
+    display: block;
 }
 
 .go_back_btn {
@@ -48,12 +79,15 @@
     right: 40px;
 }
 
+@media screen and (max-width: 1194px) {
+    .footer_content {
+        grid-template-columns: 40% 60%;
+    }
+
+}
+
 @media screen and (max-width: 770px) {
     .footer_content {
         grid-template-columns: auto;
-    }
-
-    .top_destination {
-        grid-template-columns: auto auto;
     }
 }
