@@ -83,11 +83,15 @@
     .footer_content {
         grid-template-columns: 40% 60%;
     }
-
 }
 
 @media screen and (max-width: 770px) {
     .footer_content {
         grid-template-columns: auto;
+    }
+
+    .top_destination {
+        display: grid;
+        grid-template-columns: auto auto;
     }
 }
