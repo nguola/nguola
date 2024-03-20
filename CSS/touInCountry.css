@@ -167,7 +167,8 @@
 
 .listTour {
   display: flex;
-  width: 80%;
+  width: 100%;
+  justify-content: center;
   margin: 0 auto;
   flex-wrap: wrap;
 }
@@ -176,7 +177,7 @@
   position: relative;
   flex: 1 0 250px;
   margin: 20px;
-  max-width: 300px;
+  max-width: 350px;
 }
 
 .tour img {
