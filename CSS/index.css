@@ -1,3 +1,7 @@
+body >.container-fluid {
+    position: relative;
+}
+
 .login:hover >*,
 .Signup:hover >*{
     color: yellow !important;
@@ -6,6 +10,11 @@
 
 .nav-item:hover > .nav-link{
     color: rgba(241, 139, 139, 0.688) !important;
+}
+
+.advantage {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 
 .footer_content {
@@ -80,18 +89,35 @@
 }
 
 @media screen and (max-width: 1194px) {
+    .advantage{
+        grid-template-columns: auto auto auto;
+    }
+
     .footer_content {
         grid-template-columns: 40% 60%;
     }
 }
 
 @media screen and (max-width: 770px) {
+    .advantage{
+        grid-template-columns: auto auto;
+    }
     .footer_content {
         grid-template-columns: auto;
     }
 
     .top_destination {
         display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .advantage{
+        grid-template-columns: auto;
+    }
+
+    .top_destination {
         grid-template-columns: auto auto;
     }
 }
