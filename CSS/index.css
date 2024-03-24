@@ -12,6 +12,71 @@ body >.container-fluid {
     color: rgba(241, 139, 139, 0.688) !important;
 }
 
+.back_ground_slideshow {
+    position: relative;
+    background-color: black;
+}
+
+.back_ground_slideshow>img {
+    width: 100%;
+    opacity: 60%;
+}
+
+.back_ground_slideshow>p {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+.slide_show {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 13%;
+    background-color: black;
+    width: 70%;
+    height: 60%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.imgs {
+    width: 400%;
+}
+
+#btn_pre,
+#btn_next {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+#btn_pre {
+    left: 4%;
+}
+
+#btn_next {
+    right: 4%;
+}
+
+#btn_pre:hover,
+#btn_next:hover {
+    cursor: pointer;
+    background-color: rgba(10, 10, 10, 0.544);
+    color: wheat;
+}
+
 .des {
     position: relative;
 }
