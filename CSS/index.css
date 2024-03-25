@@ -95,6 +95,7 @@ body >.container-fluid {
 .active,
 .dot:hover {
     border-color: #3498db;
+    background-color: #26679384;
 }
 
 .txt {
