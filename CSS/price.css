@@ -110,16 +110,16 @@ main{
     margin: auto;
 }
 .card_group{
-    padding: 30px 0;
+    padding: 20px 0;
     display: flex;
-    gap :50px;
+    gap :35px;
     justify-content: center;
     align-items: center;
 }
 .card{
-    width: 400px;
-    height: 400px;
-    border-radius: 16px;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
     overflow: hidden;
     position: relative;
     transition: 0.5s;
@@ -174,9 +174,9 @@ main{
     opacity: 80%;
 
 }
-/* .card:hover > .layer{
+.card:hover > .layer{
     opacity: 1;
-} */
+}
 .card:hover > .infor{
     bottom: 0;
     opacity: 1;
@@ -189,7 +189,7 @@ main{
         flex: 1 0 250px; /* Đảm bảo rằng các card có cùng kích thước và tự động điều chỉnh */
         max-width: 250px; /* Chiều rộng tối đa cho mỗi thẻ card */
         max-height: 250px;
-        border-radius: 16px;
+        border-radius: 10px;
         overflow: hidden;
         position: relative;
         transition: 0.5s;
@@ -198,4 +198,7 @@ main{
     .card_group{
         flex-wrap: wrap; /* Cho phép các mục flex tự động xuống dòng khi cần */
     }
+}
+@media screen and(min-width: 600) {
+    
 }
