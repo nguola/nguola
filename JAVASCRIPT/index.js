@@ -8,7 +8,7 @@ dots[index].classList.add('active')
 
 let curr = 0
 
-let t = setInterval(autoUpdate, 3000)
+let t = setInterval(autoUpdate, 8000)
 
 function autoUpdate(){
     curr += 1
@@ -47,5 +47,5 @@ function updateSlide(){
 
 function resetTime(){
     clearInterval(t)
-    t = setInterval(autoUpdate, 3000)
+    t = setInterval(autoUpdate, 8000)
 }
