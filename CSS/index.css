@@ -8,77 +8,172 @@ body >.container-fluid {
     cursor: pointer;
 }
 
+.nav-item {
+    position: relative !important;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.nav-item div {
+    background-color: rgba(241, 139, 139, 0.688);
+    height: 5px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    bottom: -5px;
+    transition: 0.4s ease-in-out;
+}
+
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.252);
+}
+
 .nav-item:hover > .nav-link{
     color: rgba(241, 139, 139, 0.688) !important;
 }
 
-.back_ground_slideshow {
+.nav-item:hover > div{
+    bottom: -0px;
+}
+
+.slider {
     position: relative;
-    background-color: black;
-}
-
-.back_ground_slideshow>img {
     width: 100%;
-    opacity: 60%;
+    height: 388px;
+    background-color: #2c3e50;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
-.back_ground_slideshow>p {
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.prev,
+.next {
     position: absolute;
-    top: 5%;
-    left: 10%;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 50px;
+    padding: 15px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s ease-in-out;
+    z-index: 3;
 }
 
-.slide_show {
+.prev:hover,
+.next:hover {
+    color: #3949db;
+}
+
+.next {
+    right: 0px;
+}
+
+.dotsbox {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    bottom: 13%;
-    background-color: black;
-    width: 70%;
-    height: 60%;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.imgs {
-    width: 400%;
-}
-
-#btn_pre,
-#btn_next {
-    background-color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    font-weight: bold;
-    transition: 0.4s ease-in-out;
-    position: absolute;
-    top: 55%;
-    transform: translateY(-50%);
-    z-index: 10;
-}
-
-#btn_pre {
-    left: 4%;
-}
-
-#btn_next {
-    right: 4%;
-}
-
-#btn_pre:hover,
-#btn_next:hover {
+    transform: translate(-50%);
+    bottom: 20px;
     cursor: pointer;
-    background-color: rgba(10, 10, 10, 0.544);
-    color: wheat;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.active,
+.dot:hover {
+    border-color: #3498db;
+}
+
+.txt {
+    position: absolute;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 35px;
+    top: 40%;
+    left: 15%;
+    transform: translateY(-40%);
+    -webkit-animation-name: posi;
+    -webkit-animation-duration: 2s;
+    animation-name: posi;
+    animation-duration: 2s;
+    z-index: 1;
+}
+
+@-webkit-keyframes posi {
+    from {
+        left: 25%;
+    }
+    to {
+        left: 15%;;
+    }
+}
+
+@keyframes posi {
+    from {
+        left: 25%;
+    }
+    to {
+        left: 15%;
+    }
+}
+
+.txt h1 {
+    color: #3498db;
+    font-weight: bold;
+    margin: 20px;
+    font-size: 60px;
+}
+
+.txt p {
+    color: #3498db;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.slide img {
+    transform: scale(1.3, 1.3);
+    -webkit-animation-name: zoomin;
+    -webkit-animation-duration: 40s;
+    animation-name: zoomin;
+    animation-duration: 40s;
+    width: 100%;
+    height: 100%;
+}
+
+@-webkit-keyframes zoomin {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.3, 1.3);
+    }
+}
+
+@keyframes zoomin {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.3, 1.3);
+    }
 }
 
 .des {
     position: relative;
+    overflow: hidden;
 }
 
 .des img {
@@ -89,23 +184,18 @@ body >.container-fluid {
 
 .des_content {
     position: absolute;
-    width: 80%;
-    bottom: 5px;
-    margin: 0px 10px;
+    bottom: -25px;
+    width: 100%;
+    transition: 0.4s ease-in-out;
 }
 
 .des:hover img{
-    opacity: 30%;
+    opacity: 20%;
 }
 
-.hidden {
-    display: none;
-    transition: 1s ease-in-out;
-    bottom: -50%;
-}
-
-.des:hover .hidden {
+.des:hover .des_content {
     display: block;
+    bottom: 0px;
 }
 
 .discount {
@@ -245,6 +335,15 @@ body >.container-fluid {
 }
 
 @media screen and (max-width: 770px) {
+    .slide h1 {
+        font-size: 40px;
+        margin: 5px;
+    }
+
+    .slide p {
+        font-size: 20px;
+    }
+
     .article {
         width: 200px;
         height: 200px;
@@ -269,6 +368,11 @@ body >.container-fluid {
 }
 
 @media screen and (max-width: 570px) {
+    .slide h1 {
+        font-size: 30px;
+        margin: 0px;
+    }
+
     .top_destination {
         grid-template-columns: auto auto;
     }
