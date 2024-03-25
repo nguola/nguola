@@ -1,277 +1,201 @@
-* {
-    margin: 0%;
-    padding: 0%;
-}
-
-.header {
-    width: 100%;
-    height: 150px;
-    background-color: #003399;
-    opacity: 80%;
-    position: absolute;
-    top: 0;
-    z-index: 1001;
-}
-
-.top_bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.log_sign {
-    display: flex;
-    color: white;
-    font-size: 18px;
-    align-items: center;
-    margin-right: 100px;
-}
-
-.showmenu {
-    font-size: 35px;
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.showmenu p {
-    border-radius: 10px;
-    padding: 0px 10px 0px 10px;
-    display: block;
-    transition: 0.2s ease-in;
-}
-
-.log_in,
-.Sign_in{
-    display: flex;
-    padding: 10px;
-} 
-
-.log_in a,
-.Sign_in a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    padding: 10px;
-    transition: 0.2s ease-in;
-    border-radius: 10px;
-}
-
-.log_in:hover a,
-.Sign_in:hover a,
-.showmenu:hover p{
-    background-color: white;
-    color: black;
+.login:hover >*,
+.Signup:hover >*{
+    color: yellow !important;
     cursor: pointer;
 }
 
-#logo {
-    width: 200px;
-    margin-left: 100px;
+.nav-item:hover > .nav-link{
+    color: rgba(241, 139, 139, 0.688) !important;
 }
 
-.nav {
-    display: flex;
-    align-self: center;
-    justify-content: flex-end;
+.footer_content {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+.footer_content >* { 
     margin-top: 20px;
 }
 
-.menu {
-    list-style-type: none;
-    font-size: larger;
-    display: flex;
-    margin-right: 100px;
+.footer_content >*:not(:last-child) {
+    margin-right: 20px;
 }
 
-.menu>li {
-    padding: 0px 10px 0px 10px;
+.footer_detail {
+    text-align: center;
+    padding: 20px 0px 10px 0px;
+    color: rgba(153, 150, 150, 0.693);
+    background-color: rgba(18, 18, 18, 0.573);
+    border-top: 1px solid white;
+}
+
+.top_destination {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.destination {
+    margin: 0px auto;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.418);
+    margin: 10px;
+    overflow: hidden;
+    transition: 1s ease-in-out;
     position: relative;
-    border-left: 2px solid white;
 }
 
-.menu>li:first-child {
-    border-left: none;
+.destination > img {
+    width: 120px;
+    height: 120px;
+    opacity: 60%;
 }
 
-.menu>li>a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    border-radius: 15px;
-    transition: 0.2s ease-in;
-    padding: 10px;
-}
-
-.menu>li:hover > a{
-    background-color: white;
-    color: #181818;
-}
-
-.sub_menu {
-    width: 200px;
+.destination > p{
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
     position: absolute;
-    top: 45px;
-    list-style-type: none;
-    background-color: #202020;
-    transition: 0.5s ease;
+    z-index: 10;
+    bottom: 10%;
+    left: 10%;
     display: none;
+    font-weight: bold;
 }
 
-.sub_menu>li {
-    padding: 10px;
+.destination:hover img{
+    cursor: pointer;
+    opacity: 100%;
+    scale: 1.1;
 }
 
-.sub_menu>li>a {
-    text-decoration: none;
+.destination:hover p {
+    cursor: pointer;
+    display: block;
+}
+
+.go_back_btn {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+@media screen and (max-width: 1194px) {
+    .footer_content {
+        grid-template-columns: 40% 60%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .footer_content {
+        grid-template-columns: auto;
+    }
+
+    .top_destination {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+/* chỉnh phần main */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit, sans-serif;
     color: white;
-    display: block;
-    padding: 10px;
-    transition: 0.2s ease-in;
-    border-bottom: 2px solid white;
-    border-radius: 10px 10px 0px 0px;
 }
-
-.sub_menu>li:hover>a {
-    background-color: rgb(210, 210, 210);
-    color: #000;
-    font-size: 25px;
-}
-
-.menu>li:hover .sub_menu {
-    display: block;
-}
-
-.slide_show {
+main{
+    background: #0A0617;
     width: 100%;
-    height: 750px;
-    position: relative;
+    height: fit-content;
+    margin: auto;
 }
-
-.slide_show video {
-    width: 90%;
-    margin-left: 50px ;
-    margin-top: 110px;
-}
-.cost{
-    font-size: 20px;
-    font-weight: bolder;
-    color: red;
-    margin-bottom: 20px;
-}
-.discount{
-    margin-left: 5px;
-    padding: 10px;
-    width: 40%;
-    border-radius: 30px;
-    background-color:#FFFF00 ;
-    color: #003399;
-}
-.booking{
-    margin: 50px;
-    padding: 10px;
-    width: 20%;
-    border-radius: 10px;
-    background-color:#FF3300 ;
-    color: whitesmoke;
-}
-.booking:hover{
-    background-color: #66CCFF;
-}
-.title{
-    text-align: center;
-    font-size: 30px;
-    color: #3366FF;
-    padding: 10px;
-}
-.title:hover{
-    font-size: 35px;
-}
-#price{
-    margin: 10px 5%;
+.card_group{
+    padding: 30px 0;
     display: flex;
-    flex-wrap: wrap;
-}
-#price div{
-    width: 30%;
-    border-radius: 5%;
-    border: #333 1px solid;
-    margin-left: 30px;
-    overflow: hidden;
-    margin-bottom: 20px;
-    position: relative;
-    padding-bottom: 30px;
-}
-#price div:hover{
-    transform: translateY(-5px); 
-    box-shadow: 0 4px 30px #1b1111; 
-}
-p{
-    width: 70%;
-    margin-left: 5px;
-    padding-left: 10px;
-}
-h3{
-    padding: 10px;
-}
-h3:hover{
-    color: #9966FF;
-}
-#price img{
-    width: 100%;
-}
-
-#Homepage-promotion {
-    margin: 10px 9%;
-    display: flex;
-    margin-bottom: 50px;
-}
-#Homepage-promotion div{
-    margin-left: 30px;
-    overflow: hidden;
-    position: relative;
-}
-#Homepage-promotion div:hover{
-    transform: translateY(-5px); /* Dịch chuyển lên 5px */
-    box-shadow: 0 4px 30px #1b1111; /* Đổ bóng mờ */
-}
-#Homepage-promotion div{
-    border-radius: 20px;
-}
-.title_promotion{
-    text-align: center;
-    font-size: 30px;
-    color: #3366FF;
-}
-
-footer {
-    display: flex;
+    gap :50px;
     justify-content: center;
     align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    bottom: 0;
+}
+.card{
+    width: 400px;
+    height: 400px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.card img{
     width: 100%;
-    height: 80px;
-    font-size: 20px;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    transition: 0.5s;
 }
-
-.back_top_page {
-    width: 40px;
-    height: 40px;
-    font-size: 30px;
-    text-align: center;
-    font-weight: 800;
-    color: rgb(239, 137, 46);
-    position: fixed;
-    bottom: 40px;
-    z-index: 1000;
-    right: 20px;
-    display: none;
+.card .layer{
+    background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s;
 }
+.card .infor{
+    position: absolute;
+    bottom: -50%;
+    padding: 15px;
+    opacity: 0;
+    transition: 0.5s bottom, 1.75s opacity;
+}
+.infor p{
+    font-size: 14px;
+    margin-top: 3px;
+    /* color: #490CCC; */
+    color: aliceblue;
+}
+.infor h1{
+    /* color: #490CCC; */
+    color: aliceblue;
+}
+.infor button{
+    padding: 5px;
+    background: #490CCC;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+.card:hover,
+.card:hover img,
+.card:hover .layer{
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.418);
+    opacity: 80%;
 
-.back_top_page a{
-    text-decoration: none;
-    display: block;
+}
+/* .card:hover > .layer{
+    opacity: 1;
+} */
+.card:hover > .infor{
+    bottom: 0;
+    opacity: 1;
+}
+.card_group:hover > .card:not(:hover){
+    filter: blur(5px);
+}
+@media screen and (max-width: 768px) {
+    .card{
+        flex: 1 0 250px; /* Đảm bảo rằng các card có cùng kích thước và tự động điều chỉnh */
+        max-width: 250px; /* Chiều rộng tối đa cho mỗi thẻ card */
+        max-height: 250px;
+        border-radius: 16px;
+        overflow: hidden;
+        position: relative;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .card_group{
+        flex-wrap: wrap; /* Cho phép các mục flex tự động xuống dòng khi cần */
+    }
 }
