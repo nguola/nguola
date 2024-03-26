@@ -67,7 +67,7 @@ body >.container-fluid {
 
 .prev:hover,
 .next:hover {
-    color: #3949db !important;
+    color: #162ae1a2 !important;
 }
 
 .next {
@@ -96,6 +96,31 @@ body >.container-fluid {
 .dot:hover {
     border-color: #3498db;
     background-color: #26679384;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 8s;
+    animation-name: fade;
+    animation-duration: 8s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 0.9;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 0.9;
+    }
 }
 
 .txt {

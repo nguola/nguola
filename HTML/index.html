@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../Bootstrap/bootstrap.css">
     <link rel="stylesheet" href="../CSS/index.css">
     <link rel="stylesheet" href="../Bootstrap/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <script src="../jquery/jquery-3.7.1.min.js"></script>
     <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
 </head>
 
@@ -35,7 +36,8 @@
                 </div>
                 <nav class="navbar navbar-expand-sm navbar-dark bg-dark pb-0">
                     <div class="container d-flex justify-content-end">
-                        <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#menu">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
@@ -52,7 +54,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link h5 text-light text-uppercase mr-2" href="tourGuide.html">Tour
                                         Guide</a>
-                                        <div></div>
+                                    <div></div>
                                 </li>
                                 <div class="nav-item">
                                     <a class="nav-link h5 text-light text-uppercase mr-2" href="price.html">Price</a>
@@ -61,12 +63,12 @@
                                 <li class="nav-item">
                                     <a class="nav-link h5 text-light text-uppercase mr-2"
                                         href="historyTour.html">History</a>
-                                        <div></div>
+                                    <div></div>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link h5 text-light text-uppercase mr-2"
                                         href="service.html">Service</a>
-                                        <div></div>
+                                    <div></div>
                                 </li>
                                 <li class="nav-item">
                                     <button class="btn text-light" data-bs-toggle="modal"
@@ -173,35 +175,36 @@
             </div>
             <div class="container mt-5">
                 <div class="slider">
-                    <div class="slide">
+                    <div class="slide fade">
                         <div class="txt">
                             <h1 class="text-uppercase text-dark">comfortable</h1>
                             <p class="text-primary">Enjoy the new feeling</p>
                         </div>
                         <img src="../IMAGE/index-img/slide_img_1.jpg" alt="" style="width: 100%;">
                     </div>
-                    <div class="slide">
+                    <div class="slide fade">
                         <div class="txt">
                             <h1 class="text-uppercase text-danger">A Wonderful Place</h1>
-                            <p class="text-primary" style="max-width: 70%;">Strange places make you feel like you're lost in a dream</p>
+                            <p class="text-primary" style="max-width: 70%;">Strange places make you feel like you're
+                                lost in a dream</p>
                         </div>
                         <img src="../IMAGE/index-img/slide_img_2.jpg" alt="" style="width: 100%;">
                     </div>
-                    <div class="slide">
+                    <div class="slide fade">
                         <div class="txt">
                             <h1 class="text-uppercase text-warning">New Friends</h1>
                             <p class="text-light" style="max-width: 70%;">Trusted companions on your journey</p>
                         </div>
                         <img src="../IMAGE/index-img/slide_img_3.jpg" alt="" style="width: 100%;">
                     </div>
-                    <div class="slide">
+                    <div class="slide fade">
                         <div class="txt">
                             <h1 class="text-uppercase text-warning">never-ending parties</h1>
                             <p class="text-light" style="max-width: 70%;">immersed in strange feelings</p>
                         </div>
                         <img src="../IMAGE/index-img/slide_img_4.jpg" alt="" style="width: 100%;">
                     </div>
-                    <div class="slide">
+                    <div class="slide fade">
                         <div class="txt">
                             <h1 class="text-uppercase text-primary">immersed in nature</h1>
                             <p class="text-light" style="max-width: 70%;">return to your being</p>
@@ -339,7 +342,8 @@
                         <table class="table table-borderless m-0">
                             <tr>
                                 <td colspan="2">
-                                    <i class="bi bi-distribute-vertical" style="font-size: 30px; color: rgb(50, 50, 184); margin-right: 5px;"></i>
+                                    <i class="bi bi-distribute-vertical"
+                                        style="font-size: 30px; color: rgb(50, 50, 184); margin-right: 5px;"></i>
                                     <span class="text-dark h3">Browse Tours By Activity</span>
                                 </td>
                             </tr>
@@ -362,32 +366,48 @@
                         </table>
                     </div>
                     <div class="col-sm-5">
-                        <form action="">
-                            <table class="table table-borderless m-0">
-                                <tr>
-                                    <td colspan="2">
-                                        <i class="bi bi-envelope" style="font-size: 30px; color: rgb(50, 50, 184); margin-right: 5px;"></i>
-                                        <span class="h3">Get News Letter Earliest</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>Subscribe for updates & promotions</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><input type="text" class="form-control rounded-pill" placeholder="Your Email Address"></td>
-                                    <td><button class="btn btn-primary rounded-pill text-uppercase">Subcribe</button></td>
-                                </tr>
-                                <tr>
-                                    <td class="d-flex justify-content-center">
-                                        <a href="#"><i class="bi bi-facebook" style="font-size: 20px; margin-right: 10px;"></i></a>
-                                        <a href="#"><i class="bi bi-envelope" style="font-size: 20px; margin-right: 10px;"></i></a>
-                                        <a href="#"><i class="bi bi-instagram" style="font-size: 20px;"></i></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </form>
+                        <table class="table table-borderless m-0">
+                            <tr>
+                                <td colspan="2">
+                                    <i class="bi bi-envelope"
+                                        style="font-size: 30px; color: rgb(50, 50, 184); margin-right: 5px;"></i>
+                                    <span class="h3">Get News Letter Earliest</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Subscribe for updates & promotions</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control rounded-pill"
+                                        placeholder="Your Email Address" id="customer_email"></td>
+                                <td><button class="btn btn-primary rounded-pill text-uppercase"
+                                        id="subcribe_btn">Subcribe</button></td>
+                            </tr>
+                            <script>
+                                $(document).ready(function () {
+                                    function subcribe() {
+                                        let email = $('#customer_email').value
+
+                                        alert("thanh cong")
+                                    }
+
+                                    $('#subcribe_btn').click(function () {
+                                        subcribe()
+                                    })
+                                })
+                            </script>
+                            <tr>
+                                <td class="d-flex justify-content-center">
+                                    <a href="#"><i class="bi bi-facebook"
+                                            style="font-size: 20px; margin-right: 10px;"></i></a>
+                                    <a href="#"><i class="bi bi-envelope"
+                                            style="font-size: 20px; margin-right: 10px;"></i></a>
+                                    <a href="#"><i class="bi bi-instagram" style="font-size: 20px;"></i></a>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
