@@ -16,10 +16,15 @@
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   .group {
     padding: 0 10px;
     flex: 1 0 250px;
   }
+}
+
+.group p {
+  font-size: small;
 }
 .btn_group {
   display: flex;
@@ -28,7 +33,7 @@
   width: 60%;
   margin: auto;
   button {
-    flex: 1 0 250px;
+    flex: 1 0 230px;
     margin: 5px;
     height: 40px;
   }
