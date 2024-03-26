@@ -534,7 +534,7 @@
     </div>
 
     <div class="modal" id="modal_search">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-dialog modal-dialog-centered modal-m">
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="row">
@@ -557,9 +557,12 @@
     <script>
         $(document).ready(function () {
             function subcribe() {
-                let email = $('#customer_email').value
+                let email = document.getElementById('customer_email').value
 
-                alert("Thanks for subcribe!!")
+                if(email == '')
+                    alert("Fill Your Email!!")
+                else
+                    alert("Thanks For Subcribe My Web!!")
             }
 
             $('#subcribe_btn').click(function () {
