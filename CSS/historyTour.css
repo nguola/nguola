@@ -9,7 +9,7 @@
 }
 header {
     margin-top: 5px;
-    background-color: #3498db;
+    background-color: rgba(18, 18, 18, 0.573);
     border-radius: 15px 15px 0 0;
     display: flex;
     position: relative;

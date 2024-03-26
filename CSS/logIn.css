@@ -31,13 +31,18 @@
     color: white;
     background-color: #1877f2;
   }
+  
   .twitter {
     color: white;
     background-color: black ;
   }
+
   .google {
     color: black;
     box-shadow: 1px 1px 5px gray;
   }
+}
 
+.log_in {
+  box-shadow: 1px 1px 5px rgba(23, 23, 23, 0.44);
 }
