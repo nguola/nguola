@@ -8,38 +8,51 @@
   background-color: #343a40;
   height: 100px;
 }
+
 .form_login {
   margin-bottom: 50px;
 }
+
 .form_group {
   width: 60%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+
   .group {
     padding: 0 10px;
     flex: 1 0 250px;
   }
 }
+
+.group p {
+  font-size: small;
+}
+
 .btn_group {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 60%;
   margin: auto;
+
   button {
-    flex: 1 0 250px;
+    flex: 1 0 230px;
     margin: 5px;
     height: 40px;
   }
+
   .face {
     color: white;
     background-color: #1877f2;
   }
+
   .twitter {
     color: white;
-    background-color: black ;
+    background-color: black;
   }
+
   .google {
     color: black;
     box-shadow: 1px 1px 5px gray;

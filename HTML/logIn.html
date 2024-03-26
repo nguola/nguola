@@ -33,9 +33,10 @@
                         </div>
                     </div>
                 </div>
-                <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark pb-0">
                     <div class="container d-flex justify-content-end">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#menu">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
@@ -43,17 +44,30 @@
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a class="nav-link h5 text-light text-uppercase mr-2" href="index.html">Home</a>
+                                    <div></div>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link h5 text-light text-uppercase mr-2" href="tour.html">Tour</a>
+                                    <div></div>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link h5 text-light text-uppercase mr-2" href="tourGuide.html">Tour
                                         Guide</a>
+                                    <div></div>
                                 </li>
+                                <div class="nav-item">
+                                    <a class="nav-link h5 text-light text-uppercase mr-2" href="price.html">Price</a>
+                                    <div></div>
+                                </div>
                                 <li class="nav-item">
                                     <a class="nav-link h5 text-light text-uppercase mr-2"
                                         href="historyTour.html">History</a>
+                                    <div></div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link h5 text-light text-uppercase mr-2"
+                                        href="service.html">Service</a>
+                                    <div></div>
                                 </li>
                                 <li class="nav-item">
                                     <button class="btn text-light" data-bs-toggle="modal"
@@ -80,77 +94,79 @@
                         <label class="form-label">Password</label>
                         <input type="password" class="form-control">
                     </div>
-                    <button class="btn btn-success form-control mb-2 log_in">Log in</button>
-                </div>
-                <div class="btn_group">
-                    <button class="btn face"><i class="bi bi-facebook"></i> Continue with Facebook</button>
-                    <button class="btn google"><i class="bi bi-google"></i> Continue with Google</button>
-                    <button class="btn twitter"><i class="bi bi-twitter-x"></i> Continue with Twitter</button>
-                </div>
-
-                <div class="forgot text-center p-4">
-                    <a href="#"> Forgot Password</a>
-                    <a href="signUp.html" class="btn btn-danger">Sign up <i class="bi bi-arrow-right-short"></i></a>
                 </div>
             </div>
-        </main>
-        <footer>
-            <div class="container-fluid bg-dark p-0">
-                <div class="footer_header container">
-                    <div class="footer_content">
-                        <div class="content_1">
-                            <p class="text-uppercase text-light h4"><i class="bi bi-send"></i> <span
-                                    class="text-primary">Hyper</span> Travel</p>
-                            <br>
-                            <p class="text-light">Far far away, behind the word mountains, far from the countries
-                                Vokalia and Consonantia, there live the blind texts</p>
-                        </div>
-                        <div class="content_2 text-light">
-                            <p class="text-uppercase h6">Top Destionation</p>
-                            <div class="top_destination">
-                                <div class="destination">
-                                    <p>Cố đô Huế</p>
-                                    <img src="../IMAGE/codohue.jpg" alt="">
-                                </div>
-                                <div class="destination">
-                                    <p>Cambrirge</p>
-                                    <img src="../IMAGE/cambirge.jpg" alt="">
-                                </div>
-                                <div class="destination">
-                                    <p>Đà Lạt</p>
-                                    <img src="../IMAGE/dalat.jpg" alt="">
-                                </div>
-                                <div class="destination">
-                                    <p>Hà Lan</p>
-                                    <img src="../IMAGE/halan-img.jpg" alt="">
-                                </div>
-                                <div class="destination">
-                                    <p>Hội an</p>
-                                    <img src="../IMAGE/hoian.jpg" alt="">
-                                </div>
-                                <div class="destination">
-                                    <p>Nha Trang</p>
-                                    <img src="../IMAGE/nhatrang.jpg" alt="">
-                                </div>
+            <div class="form_group">
+                <div class="mb-3 mt-3 group">
+                    <button class="form-control btn btn-outline-dark">Login</button>
+                </div>
+            </div>
+            <div class="btn_group mb-3">
+                <button class="btn face"><i class="bi bi-facebook"></i> Continue with Facebook</button>
+                <button class="btn google"><i class="bi bi-google"></i> Continue with Google</button>
+                <button class="btn twitter"><i class="bi bi-twitter-x"></i> Continue with Twitter</button>
+            </div>
+            <div class="form_group">
+                <div class="mb-3 mt-3 group ">
+                    <a href="signUp.html" class="text-align-end">Don't have account? Sign up</a>
+                </div>
+            </div>
+    </div>
+    </main>
+    <footer>
+        <div class="container-fluid bg-dark p-0">
+            <div class="container">
+                <div class="row p-2">
+                    <div class="content_1 col-sm">
+                        <p class="text-uppercase text-light h4"><i class="bi bi-send"></i> <span
+                                class="text-primary">Hyper</span> Travel</p>
+                        <br>
+                        <p class="text-light">Far far away, behind the word mountains, far from the countries
+                            Vokalia and Consonantia, there live the blind texts</p>
+                    </div>
+                    <div class="content_2 col-sm text-light">
+                        <p class="text-uppercase h5 text-warning">Top Destionation</p>
+                        <div class="top_destination">
+                            <div class="destination">
+                                <p>Cố đô Huế</p>
+                                <img src="../IMAGE/index-img/codohue.jpg" alt="">
+                            </div>
+                            <div class="destination">
+                                <p>Cambrirge</p>
+                                <img src="../IMAGE/index-img/cambirge.jpg" alt="">
+                            </div>
+                            <div class="destination">
+                                <p>Đà Lạt</p>
+                                <img src="../IMAGE/index-img/dalat.jpg" alt="">
+                            </div>
+                            <div class="destination">
+                                <p>Hà Lan</p>
+                                <img src="../IMAGE/index-img/halan-img.jpg" alt="">
+                            </div>
+                            <div class="destination">
+                                <p>Hội an</p>
+                                <img src="../IMAGE/index-img/hoian.jpg" alt="">
+                            </div>
+                            <div class="destination">
+                                <p>Nha Trang</p>
+                                <img src="../IMAGE/index-img/nhatrang.jpg" alt="">
                             </div>
                         </div>
-                        <div class="content_3 text-light">
-                            <p class="text-uppercase">Contact info</p>
-                            <br>
-                            <p>Address: 12 Nguyễn Văn Bảo, Phường 3, Gò Vấp</p>
-                            <p>Phone: +840........</p>
-                            <p>Email: Hypertravel@gmail.com</p>
-                        </div>
+                    </div>
+                    <div class="content_3 col-sm text-light">
+                        <p class="text-uppercase text-success h5">Contact info</p>
+                        <br>
+                        <p>Address: 12 Nguyễn Văn Bảo, Phường 3, Gò Vấp</p>
+                        <p>Phone: +840........</p>
+                        <p>Email: Hypertravel@gmail.com</p>
                     </div>
                 </div>
-                <div class="footer_detail text-uppercase">
-                    copyright 2024 goodplayer all rightreserved
-                </div>
             </div>
-        </footer>
-        <div class="go_back_btn">
-            <i class="bi bi-arrow-up-circle" style="size: 3rem;"></i>
+            <div class="footer_detail text-uppercase h6 m-0">
+                copyright 2024 goodplayer all rightreserved
+            </div>
         </div>
+    </footer>
     </div>
 
     <div class="modal" id="modal_search">
