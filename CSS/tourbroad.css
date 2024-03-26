@@ -28,7 +28,31 @@ header {
     background-color: rgb(72, 109, 109) !important;
 }
 
+.Slide {
+    display: none;
+}
 
+.active {
+    display: block;
+    background: none;
+}
+
+.btn_function>* {
+    padding: 10px 15px;
+    background-color: #1d262f;
+    color: white;
+    border-radius: 50%;
+}
+
+#pre {
+    display: none;
+}
+
+.btn_function span:hover{
+    cursor: pointer;
+    background-color: rgba(47, 50, 47, 0.479);
+    color: black;
+}
 
 
 @media only screen and (min-width: 740px) and (max-width: 1024px) {
