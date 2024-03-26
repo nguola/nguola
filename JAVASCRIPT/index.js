@@ -1,5 +1,6 @@
 const slides = document.getElementsByClassName('slide')
 const dots = document.getElementsByClassName('dot')
+const nav = document.getElementsByTagName('nav');
 
 let index = 0
 
@@ -48,4 +49,19 @@ function updateSlide() {
 function resetTime() {
     clearInterval(t)
     t = setInterval(autoUpdate, 8000)
+}
+
+window.onscroll = function () {
+    if (document.documentElement.scrollTop > 150) {
+        nav[0].style.position = 'fixed'
+        nav[0].style.background = 'black'
+        nav[0].style.right = '0px'
+        nav[0].style.top = '0px'
+        nav[0].style.width = '100%'
+        nav[0].style.opacity = 'none'
+        nav[0].style.animation = 'showNavbar 1s forwards';
+    } else {
+        nav[0].style.position = 'unset'
+        nav[0].style.animation = 'hiddenNavbar 1s forwards';
+    }
 }
