@@ -141,6 +141,146 @@ nav {
     }
 }
 
+/* chỉnh slide show */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 50px;
+    padding: 15px;
+    cursor: pointer;
+    color: rgba(141, 131, 131, 0.748) !important;
+    transition: 0.3s ease-in-out;
+    z-index: 3;
+}
+
+.prev:hover,
+.next:hover {
+    color: #3949db !important;
+}
+
+.next {
+    right: 0px;
+}
+
+.dotsbox {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.active,
+.dot:hover {
+    border-color: #3498db;
+    background-color: #26679384;
+}
+
+.txt {
+    position: absolute;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 35px;
+    top: 40%;
+    left: 15%;
+    transform: translateY(-40%);
+    -webkit-animation-name: posi;
+    -webkit-animation-duration: 2s;
+    animation-name: posi;
+    animation-duration: 2s;
+    z-index: 1;
+}
+.container_slideShow button{
+    background-color: #4692E7;
+    font-size: 14px;
+    padding: 10px;
+}
+@-webkit-keyframes posi {
+    from {
+        left: 25%;
+    }
+    to {
+        left: 15%;;
+    }
+}
+
+@keyframes posi {
+    from {
+        left: 25%;
+    }
+    to {
+        left: 15%;
+    }
+}
+
+.txt h1 {
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: 60px;
+}
+
+.txt p {
+    font-weight: bold;
+    font-size: 30px;
+}
+.txt button{
+    font-weight: bolder;
+}
+.slide img {
+    transform: scale(1.3, 1.3);
+    -webkit-animation-name: zoomin;
+    -webkit-animation-duration: 25s;
+    animation-name: zoomin;
+    animation-duration: 25s;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+@-webkit-keyframes zoomin {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.3, 1.3);
+    }
+}
+
+@keyframes zoomin {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.3, 1.3);
+    }
+}
+
 /* chỉnh phần main */
 * {
     margin: 0;
@@ -173,6 +313,7 @@ main {
     position: relative;
     transition: 0.5s;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .card img {
@@ -262,6 +403,15 @@ main {
         flex-wrap: wrap;
         /* Cho phép các mục flex tự động xuống dòng khi cần */
     }
+    .txt h1 {
+        margin: 20px 0;
+        font-size: 30px;
+    }
+    .txt p {
+        font-size: 20px;
+    }
 }
 
-@media screen and(min-width: 600) {}
+@media screen and(min-width: 600) {
+    
+}
