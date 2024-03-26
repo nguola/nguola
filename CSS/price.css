@@ -1,11 +1,40 @@
+body >.container-fluid {
+    position: relative;
+}
+
 .login:hover >*,
 .Signup:hover >*{
     color: yellow !important;
     cursor: pointer;
 }
 
+.nav-item {
+    position: relative !important;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.nav-item div {
+    background-color: rgba(241, 139, 139, 0.688);
+    height: 5px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    bottom: -5px;
+    transition: 0.4s ease-in-out;
+}
+
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.252);
+}
+
 .nav-item:hover > .nav-link{
     color: rgba(241, 139, 139, 0.688) !important;
+}
+
+.nav-item:hover > div{
+    bottom: -0px;
 }
 
 .footer_content {
@@ -71,12 +100,6 @@
 .destination:hover p {
     cursor: pointer;
     display: block;
-}
-
-.go_back_btn {
-    position: absolute;
-    bottom: 40px;
-    right: 40px;
 }
 
 @media screen and (max-width: 1194px) {

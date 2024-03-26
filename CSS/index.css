@@ -332,12 +332,6 @@ body >.container-fluid {
     display: block;
 }
 
-.go_back_btn {
-    position: absolute;
-    bottom: 40px;
-    right: 40px;
-}
-
 @media screen and (max-width: 1200px) {
     .txt h1{
         font-size: 40px;
