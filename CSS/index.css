@@ -4,6 +4,12 @@
     cursor: pointer;
 }
 
+nav {
+    z-index: 10;
+    transition: 0.3s ease;
+    top: 0%;
+}
+
 .nav-item {
     position: relative !important;
     overflow: hidden;
@@ -127,6 +133,16 @@
     }
     to {
         top: 0px;
+    }
+}
+
+@keyframes hiddenNavbar {
+    from {
+        top: 0px;
+    }
+    to {
+        top: -100%;
+        position: unset;
     }
 }
 

@@ -52,16 +52,11 @@ function resetTime() {
 }
 
 window.onscroll = function () {
-    if (document.documentElement.scrollTop > 150) {
+    if (document.documentElement.scrollTop > 500) {
         nav[0].style.position = 'fixed'
-        nav[0].style.background = 'black'
-        nav[0].style.right = '0px'
-        nav[0].style.top = '0px'
         nav[0].style.width = '100%'
-        nav[0].style.opacity = 'none'
         nav[0].style.animation = 'showNavbar 1s forwards';
     } else {
-        nav[0].style.position = 'unset'
-        nav[0].style.animation = 'hiddenNavbar 1s forwards';
+        nav[0].style.animation = 'hiddenNavbar 1.5s forwards';
     }
 }
