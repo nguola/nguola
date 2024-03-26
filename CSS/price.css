@@ -100,8 +100,6 @@
     position: relative;
     width: 100%;
     height: 600px;
-    /* background-color:rgba(0, 0, 0, 0.418) ;
-    opacity: 70%; */
     overflow: hidden;
     border-radius: 10px;
 }
@@ -197,7 +195,7 @@
 
 .txt h1 {
     font-weight: bold;
-    margin: 20px;
+    margin: 20px 0;
     font-size: 60px;
 }
 
@@ -265,6 +263,7 @@ main{
     position: relative;
     transition: 0.5s;
     cursor: pointer;
+    background-color: transparent;
 }
 .card img{
     width: 100%;
@@ -339,7 +338,16 @@ main{
     .card_group{
         flex-wrap: wrap; /* Cho phép các mục flex tự động xuống dòng khi cần */
     }
+    .txt h1 {
+        margin: 20px 0;
+        font-size: 30px;
+    }
+    .txt p {
+        font-size: 20px;
+    }
 }
 @media screen and(min-width: 600) {
     
 }
+
+
