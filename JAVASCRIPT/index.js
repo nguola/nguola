@@ -52,7 +52,7 @@ function resetTime() {
 }
 
 window.onscroll = function () {
-    if (document.documentElement.scrollTop > 500) {
+    if (document.documentElement.scrollTop > 400) {
         nav[0].style.position = 'fixed'
         nav[0].style.width = '100%'
         nav[0].style.animation = 'showNavbar 1s forwards';

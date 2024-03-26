@@ -10,6 +10,25 @@ nav {
     top: 0%;
 }
 
+@keyframes showNavbar {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+@keyframes hiddenNavbar {
+    from {
+        top: 0px;
+    }
+    to {
+        top: -100%;
+        position: unset;
+    }
+}
+
 .nav-item {
     position: relative !important;
     overflow: hidden;
@@ -124,25 +143,6 @@ nav {
 
     to {
         opacity: 0.9;
-    }
-}
-
-@keyframes showNavbar {
-    from {
-        top: -100%;
-    }
-    to {
-        top: 0px;
-    }
-}
-
-@keyframes hiddenNavbar {
-    from {
-        top: 0px;
-    }
-    to {
-        top: -100%;
-        position: unset;
     }
 }
 

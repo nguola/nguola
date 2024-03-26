@@ -1,11 +1,32 @@
-body>.container-fluid {
-    position: relative;
-}
-
 .login:hover>*,
 .Signup:hover>* {
     color: yellow !important;
     cursor: pointer;
+}
+
+nav {
+    z-index: 10;
+    transition: 0.3s ease;
+    top: 0%;
+}
+
+@keyframes showNavbar {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+@keyframes hiddenNavbar {
+    from {
+        top: 0px;
+    }
+    to {
+        top: -100%;
+        position: unset;
+    }
 }
 
 .nav-item {
