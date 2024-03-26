@@ -10,42 +10,42 @@ let curr = 0
 
 let t = setInterval(autoUpdate, 8000)
 
-function autoUpdate(){
+function autoUpdate() {
     curr += 1
     updateSlide()
 }
 
-function plusSlide(n){
+function plusSlide(n) {
     curr += n
     updateSlide()
 }
 
-function currentSlide(n){
+function currentSlide(n) {
     curr = n
     updateSlide()
 }
 
-function updateSlide(){
+function updateSlide() {
     slides[index].style.display = 'none'
     dots[index].classList.remove('active')
 
-    if(!(curr < slides.length)){
+    if (!(curr < slides.length)) {
         curr = 0
     }
 
-    if(curr < 0) {
+    if (curr < 0) {
         curr = slides.length - 1
     }
 
     index = curr
 
     slides[index].style.display = 'block'
-    dots[index].classList.add('active') 
+    dots[index].classList.add('active')
 
     resetTime()
 }
 
-function resetTime(){
+function resetTime() {
     clearInterval(t)
     t = setInterval(autoUpdate, 8000)
 }
