@@ -1,6 +1,5 @@
 const slides = document.getElementsByClassName('slide')
 const dots = document.getElementsByClassName('dot')
-const nav = document.getElementsByTagName('nav');
 
 let index = 0
 
@@ -49,14 +48,4 @@ function updateSlide() {
 function resetTime() {
     clearInterval(t)
     t = setInterval(autoUpdate, 8000)
-}
-
-window.onscroll = function () {
-    if (document.documentElement.scrollTop > 400) {
-        nav[0].style.position = 'fixed'
-        nav[0].style.width = '100%'
-        nav[0].style.animation = 'showNavbar 1s forwards';
-    } else {
-        nav[0].style.animation = 'hiddenNavbar 1.5s forwards';
-    }
 }
