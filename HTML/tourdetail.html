@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../Bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="../CSS/index.css">
+  <link rel="stylesheet" href="../Bootstrap/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../CSS/tourdetail.css">
+  <script src="../jquery/jquery-3.7.1.min.js"></script>
+  <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+    <header style="position: relative;">
+      <div class="top-bar bg-dark pt-3" style="opacity: 90%;">
+        <div class="container d-flex justify-content-between">
+          <div class="logo">
+            <img src="../IMAGE/logo.jpg" alt="" style="width: 150px;" class="img-fluid rounded-pill">
+          </div>
+          <div class="login_signin d-flex">
+            <div class="login d-flex mr-3 align-items-center">
+              <i class="bi bi-box-arrow-in-right" style="size: 1rem; color: white;"></i>
+              <a href="logIn.html" class="h6 text-light ml-2 mt-1" style="text-decoration: none;">Login</a>
+            </div>
+            <div class="Signup d-flex align-items-center text-align-center">
+              <i class="bi bi-person-fill pt-0" style="color: white;"></i>
+              <a href="signUp.html" class="h6 text-light ml-2 mt-1" style="text-decoration: none;">Sign
+                up</a>
+            </div>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark pb-0">
+          <div class="container d-flex justify-content-end">
+            <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link h5 text-light text-uppercase mr-2" href="index.html">Home</a>
+                  <div></div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link h5 text-light text-uppercase mr-2" href="tour.html">Tour</a>
+                  <div></div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link h5 text-light text-uppercase mr-2" href="tourGuide.html">Tour
+                    Guide</a>
+                  <div></div>
+                </li>
+                <div class="nav-item">
+                  <a class="nav-link h5 text-light text-uppercase mr-2" href="price.html">Price</a>
+                  <div></div>
+                </div>
+                <li class="nav-item">
+                  <a class="nav-link h5 text-light text-uppercase mr-2" href="historyTour.html">History</a>
+                  <div></div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link h5 text-light text-uppercase mr-2" href="service.html">Service</a>
+                  <div></div>
+                </li>
+                <li class="nav-item">
+                  <button class="btn text-light" data-bs-toggle="modal" data-bs-target="#modal_search"><i
+                      class="bi bi-search"></i></button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="container d-flex justify-content-center">
+        <video src="../VIDEO/Recording 2024-01-21 185326.mp4" style="width: 100%;" autoplay loop></video>
+      </div>
+      <div style="height:100px;"></div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="carousel">
+          <div class="list">
+            <div class="item">
+              <img src="../IMAGE/hoian.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="../IMAGE/Container-img-paris-2.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="../IMAGE/Container-img-Paris_.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="../IMAGE/container-img-right-3.jpg" alt="">
+            </div>
+          </div>
+          <div class="thumbnail">
+            <div class="item">
+              <img src="../IMAGE/Container-img-paris-2.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="../IMAGE/Container-img-Paris_.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="../IMAGE/container-img-right-3.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="../IMAGE/hoian.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid hero">
+        <section>
+          <div class="header">
+            <h1>Nha Trang</h1>
+            <p class="price">Từ 500.000VND</p>
+          </div>
+          <div class="description">
+            <h5>Giới thiệu</h5>
+            <div class="place">
+              <div class="group_place">
+                <i class="bi bi-1-circle-fill"></i>
+                <span>Chùa Long Sơn</span>
+              </div>
+              <div class="group_place">
+                <i class="bi bi-2-circle-fill"></i>
+                <span>Biển Nhũ Tiên</span>
+              </div>
+              <div class="group_place">
+                <i class="bi bi-3-circle-fill"></i>
+                <span>Vinwonder</span>
+              </div>
+              <div class="group_place">
+                <i class="bi bi-4-circle-fill"></i>
+                <span>Làng Gốm Bàu Trúc</span>
+              </div>
+            </div>
+            <div class="content">
+              <p>
+                Nha Trang là một thành phố nổi tiếng và là điểm đến du lịch hàng đầu tại Việt Nam, nằm ở tỉnh Khánh Hòa,
+                miền Trung Việt Nam. Với bãi biển dài, cát trắng mịn, nước biển trong xanh và không khí trong lành, Nha
+                Trang thu hút hàng nghìn du khách mỗi năm.
+                Với vị trí địa lý thuận lợi và cảnh quan thiên nhiên đẹp, Nha Trang còn được biết đến như một thành phố
+                biển với nhiều hoạt động giải trí và thể thao nước đa dạng. Du khách có thể tham gia vào các hoạt động
+                như lướt sóng, lặn biển, đi thuyền trên vịnh, hoặc tham gia các tour thám hiểm đảo.
+              </p>
+            </div>
+          </div>
+          <div class="more">
+            <h1>More Tour</h1>
+            <div class="card_group">
+              <div class="card">
+                  <img src="../IMAGE/tf_230630023851_307950_Doc let.webp" alt="">
+                  <div class="layer"></div>
+                  <div class="infor">
+                      <h1>Nha Trang</h1>
+                      <p>Nha Trang - Chùa Long Sơn - Biển Nhũ Tiên - Vinwonder - Làng Gốm Bàu Trúc - Khám Phá Cao
+                          Tốc
+                          Mới - Khách Sạn 4 sao</p>
+                      <button style="background-color: #F2CB05; color: #D95032;">Ưu đãi:10%</button>
+                      <button>Đặt ngay</button>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="../IMAGE/tf_231117021819_056639_Lang Gom Bau Truc - Hinh Quy COC Tu (2).webp" alt="">
+                  <div class="layer"></div>
+                  <div class="infor">
+                      <h1>Ninh Chữ</h1>
+                      <p>Ninh Chữ - Vịnh Vĩnh Hy - Trùng Sơn Cổ Tự - Vườn Nho - Hang Rái - Làng gốm Bàu Trúc</p>
+                      <button style="background-color: #F2CB05; color: #D95032;">Ưu đãi:15%</button>
+                      <button>Đặt ngay</button>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="../IMAGE/tf_220113042956_869488.jpg" alt="">
+                  <div class="layer"></div>
+                  <div class="infor">
+                      <h1>Đà Lạt</h1>
+                      <p>Hành trình Hoa và Biển: Đà Lạt - Nha Trang</p>
+                      <button style="background-color: #F2CB05; color: #D95032;">Ưu đãi:30%</button>
+                      <button>Đặt ngay</button>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="../IMAGE/hoian.jpg" alt="">
+                  <div class="layer"></div>
+                  <div class="infor">
+                      <h1>Hội an</h1>
+                      <p>Vinwonder - Làng Gốm Bàu Trúc - Khám Phá Cao Tốc Mới - Khách Sạn 4 sao</p>
+                      <button style="background-color: #F2CB05; color: #D95032;">Ưu đãi:10%</button>
+                      <button>Đặt ngay</button>
+                  </div>
+              </div>
+          </div>
+        </section>
+        <aside>
+          <div class="booking">
+            <form action="">
+              <h4>Book Tour</h4>
+              <div class="form-group">
+                <label for="" class="form-label">Check in</label>
+                <input type="date" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="" class="form-label">Check out</label>
+                <input type="date" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="" class="form-label">Number people</label>
+                <input type="number" class="form-control">
+              </div>
+              <div class="form-group">
+                <input class="btn btn-outline-dark" type="submit" value="Tìm Tour">
+              </div>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer>
+      <div class="container-fluid bg-dark p-0">
+        <div class="container">
+          <div class="row p-2">
+            <div class="content_1 col-sm">
+              <p class="text-uppercase text-light h4"><i class="bi bi-send"></i> <span class="text-primary">Hyper</span>
+                Travel</p>
+              <br>
+              <p class="text-light">Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts</p>
+            </div>
+            <div class="content_2 col-sm text-light">
+              <p class="text-uppercase h5 text-warning">Top Destionation</p>
+              <div class="top_destination">
+                <div class="destination">
+                  <p>Cố đô Huế</p>
+                  <img src="../IMAGE/index-img/codohue.jpg" alt="">
+                </div>
+                <div class="destination">
+                  <p>Cambrirge</p>
+                  <img src="../IMAGE/index-img/cambirge.jpg" alt="">
+                </div>
+                <div class="destination">
+                  <p>Đà Lạt</p>
+                  <img src="../IMAGE/index-img/dalat.jpg" alt="">
+                </div>
+                <div class="destination">
+                  <p>Hà Lan</p>
+                  <img src="../IMAGE/index-img/halan-img.jpg" alt="">
+                </div>
+                <div class="destination">
+                  <p>Hội an</p>
+                  <img src="../IMAGE/index-img/hoian.jpg" alt="">
+                </div>
+                <div class="destination">
+                  <p>Nha Trang</p>
+                  <img src="../IMAGE/index-img/nhatrang.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="content_3 col-sm text-light">
+              <p class="text-uppercase text-success h5">Contact info</p>
+              <br>
+              <p>Address: 12 Nguyễn Văn Bảo, Phường 3, Gò Vấp</p>
+              <p>Phone: +840........</p>
+              <p>Email: Hypertravel@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer_detail text-uppercase h6 m-0">
+          copyright 2024 goodplayer all rightreserved
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal" id="modal_search">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-8">
+              <input type="text" name="" id="" placeholder="Search" class="form-control mt-2">
+            </div>
+            <div class="col-2 d-flex justify-content-center">
+              <button class="btn btn-primary mr-2 mt-2">Search</button>
+            </div>
+            <div class="col-2 d-flex justify-content-center">
+              <button type="button" class="btn btn-danger btn-close mt-2" data-bs-dismiss="modal"><i
+                  class="bi bi-x-lg"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../JAVASCRIPT/index.js"></script>
+  <script src="../JAVASCRIPT/tourDetail.js"></script>
+</body>
+
+</html>
