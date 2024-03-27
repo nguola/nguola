@@ -1,5 +1,7 @@
 const nav = document.getElementsByTagName('nav');
 
+
+
 window.onscroll = function () {
     if (document.documentElement.scrollTop > 400) {
         nav[0].style.position = 'fixed'
