@@ -9,7 +9,8 @@ window.onscroll = function () {
         logo.style.position = 'fixed'
         logo.style.width = '5%'
         logo.style.animation = 'showNavbar 1s forwards';
-    } else {
+    } 
+    else {
         nav[0].style.animation = 'hiddenNavbar 1.5s forwards';
         logo.style.animation = 'hiddenNavbar 1s forwards';
         logo.style.width = '100px'
