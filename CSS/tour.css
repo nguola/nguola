@@ -184,8 +184,17 @@ nav {
     justify-content: center;
     align-items: center;
 }
-.inspriration-info h2{
+.Listour-info-info h2{
     transform: translateX(10%);
+}
+.Listour-info p{
+    transform: translateX(5%);
+}
+.inspriration-info h2{
+    transform: translateX(2%);
+}
+.inspriration-info p{
+    transform: translateX(-5%);
 }
 .favorite-slide-item img{
     transform: scale(1);
@@ -248,6 +257,13 @@ nav {
 }
 .service-show-item-img-info a:hover{
     color: orange;
+}
+.form-control{
+    transform: scale(1.5);
+}
+.form-control:hover{
+    background-color: blue;
+    color: white;
 }
 @keyframes infor_img {
     from {
@@ -330,8 +346,17 @@ nav {
         grid-template-columns: 40% 60%;
     }
 }
-
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+    .description{
+        transform: translate(-25%,-50%);
+        
+    }
+}
 @media only screen and (max-width: 739px) {
+    .description{
+        transform: translate(-20%,-50%);
+        
+    }
     .infor-tour-link h4{
         font-size: 0.6rem;
     }
@@ -346,11 +371,11 @@ nav {
         width: 100%;
         height: 150px;
     }
-    .experience-info h2,.inspriration-info h2{
+    .experience-info h2,.inspriration-info h2,.Listour-info h2{
         font-size: 1.2rem;
         margin-left: 10%;
     }
-    .experience-info p,.inspriration-info p{
+    .experience-info p,.inspriration-info p,.Listour-info p{
         font-size: 0.8rem;
     }
     .show-experience-info{
@@ -421,7 +446,6 @@ nav {
 
 
 
-
     .footer_content {
         grid-template-columns: auto;
     }
@@ -431,4 +455,14 @@ nav {
         grid-template-columns: auto auto;
     }
     
+}
+
+@media only screen and (max-width: 590px){
+    /* .first-letter-big {
+        font-size: 20px;
+    } */
+
+    .slider {
+        height: 300px;
+    }
 }
