@@ -291,7 +291,6 @@ nav {
     padding: 0;
     box-sizing: border-box;
     font-family: inherit, sans-serif;
-    color: white;
 }
 
 main {
@@ -299,6 +298,8 @@ main {
     width: 100%;
     height: fit-content;
     margin: auto;
+    color: white;
+
 }
 
 .card_group {
@@ -376,11 +377,11 @@ main {
 
 }
 
-.card:hover>.layer {
+.card:hover> .layer {
     opacity: 1;
 }
 
-.card:hover>.infor {
+.card:hover> .infor {
     bottom: 0;
     opacity: 1;
 }
@@ -418,4 +419,46 @@ main {
 
 @media screen and(min-width: 600) {
     
+}
+/* chỉnh slideshow page end */
+.slideShowEnd .card .card-body h4 .card-body p{
+    opacity: 1;
+    color: #0A0617;
+    z-index: 1;
+}
+.slideShowEnd .card:hover{
+    background-color: white;
+    opacity: 90%;
+}
+.card {
+    /* width: 300px; */
+    height: fit-content;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+}
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+.card-body {
+    padding: 20px;
+}
+.price_son {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price h3 {
+    margin: 0;
+}
+.rating {
+    margin-top: 10px;
+}
+.discount {
+    margin-top: 10px;
+}
+.slideShowEnd .btn {
+    margin-top: 10px;
 }
