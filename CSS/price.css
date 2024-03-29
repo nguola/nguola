@@ -4,6 +4,10 @@
     cursor: pointer;
 }
 
+#logo {
+    z-index: 20;
+}
+
 nav {
     z-index: 10;
     transition: 0.3s ease;

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service</title>
     <link rel="stylesheet" href="../Bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/service.css">
     <link rel="stylesheet" href="../Bootstrap/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
     <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
 </head>
@@ -16,9 +16,7 @@
         <header>
             <div class="top-bar bg-dark pt-3">
                 <div class="container d-flex justify-content-between">
-                    <div class="logo">
-                        <img src="../IMAGE/logo.jpg" alt="" style="width: 150px;" class="img-fluid rounded-pill">
-                    </div>
+                    <img src="../IMAGE/logo.png" alt="" style="width: 100px;" class="img-fluid" id="logo">
                     <div class="login_signin d-flex">
                         <div class="login d-flex mr-3 align-items-center">
                             <i class="bi bi-box-arrow-in-right" style="size: 1rem; color: white;"></i>
@@ -63,11 +61,6 @@
                                     <div></div>
                                 </div>
                                 <li class="nav-item">
-                                    <a class="nav-link h5 text-light text-uppercase mr-2"
-                                        href="historyTour.html">History</a>
-                                    <div></div>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link h5 text-light text-uppercase mr-2" href="service.html"><i
                                             class="bi bi-database-fill-gear"></i> Service</a>
                                     <div></div>
@@ -87,8 +80,76 @@
             </div>
         </header>
         <main>
-            <div class="container-fluid">
-
+            <div class="container-fluid bg-dark" style="height: 40px;"></div>
+            <div class="container pt-5 pb-5" style="overflow: hidden;">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="slider">
+                            <div class="slide">
+                                <div class="slide_item">
+                                    <img src="../IMAGE/service-img/restaurant1.jpg" alt="">
+                                    <div class="content">
+                                        <h2>themgido</h2>
+                                        <p>adsfsadjfhkfsdhfksadkfh</p>
+                                    </div>
+                                </div>
+                                <div class="slide_item">
+                                    <img src="../IMAGE/service-img/restaurant2.jpg" alt="">
+                                    <div class="content">
+                                        <h2>themgido</h2>
+                                        <p>dfasdfsdafsdfsdafsadfsd</p>
+                                    </div>
+                                </div>
+                                <div class="slide_item">
+                                    <img src="../IMAGE/service-img/restaurant3.jpg" alt="">
+                                    <div class="content">
+                                        <h2>themgido</h2>
+                                        <p>dfasdfsdafsdfsdafsadfsd</p>
+                                    </div>
+                                </div>
+                                <div class="slide_item">
+                                    <img src="../IMAGE/service-img/restaurant4.jpg" alt="">
+                                    <div class="content">
+                                        <h2>themgido</h2>
+                                        <p>dfasdfsdafsdfsdafsadfsd</p>
+                                    </div>
+                                </div>
+                                <div class="slide_item">
+                                    <img src="../IMAGE/service-img/restaurant5.jpg" alt="">
+                                    <div class="content">
+                                        <h2>themgido</h2>
+                                        <p>dfasdfsdafsdfsdafsadfsd</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="container form_apply text-center">
+                            <form action="">
+                                <table class="table table-borderless">
+                                    <tr>
+                                        <td><label for="position">Position:</label></td>
+                                        <td><input type="text" name="" id="position" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="Name">Name:</label></td>
+                                        <td><input type="text" name="" id="Name" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="Phone">Phone:</label></td>
+                                        <td><input type="text" name="" id="Phone" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="email">Email</label></td>
+                                        <td><input type="text" name="" id="email" class="form-control"></td>
+                                    </tr>
+                                </table>
+                            </form>
+                            <button class="btn btn-primary">Apply</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         <footer>
@@ -167,6 +228,9 @@
             </div>
         </div>
     </div>
+
+    <script src="../JAVASCRIPT/showmenu.js"></script>
+    <script src="../JAVASCRIPT/service.js"></script>
 </body>
 
 </html>
