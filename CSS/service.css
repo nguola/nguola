@@ -83,8 +83,8 @@ nav {
     margin-left: 10px;
 }
 
-.form_search {
-    background-color: rgba(217, 211, 201, 0.651);
+.form_apply {
+    background: rgba(0, 0, 0, 0.341);
 }
 
 .footer_content {
@@ -171,8 +171,13 @@ nav {
 }   
 
 @media screen and (max-width: 770px) {
-    .content h1 {
+    .content h2 {
         font-size: 1.3rem;
+    }
+
+    .form_search {
+        transform: translateX(100%);
+        display: none;
     }
 
     .footer_content {

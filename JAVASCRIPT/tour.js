@@ -12,6 +12,11 @@ slides[pre].style.zIndex = '1';
 let t = setInterval(autoUpdate, 8000)
 
 function autoUpdate() {
+    index = (current + 1) % slides.length;
+
+    if(!(index <= slides.length))
+    index = 0
+
     // Hide current slide's description
     descriptions[current].querySelectorAll('span, h1, p, button').forEach(el => {
         el.style.opacity = '0';
