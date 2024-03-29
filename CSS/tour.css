@@ -151,6 +151,7 @@ nav {
     font-size: 1.6rem;
     transform: translateY(100%);
     top: 70%;
+    left: 5%;
     opacity: 0;
     transition: opacity 0.5s ease;
 }
@@ -178,6 +179,12 @@ nav {
 }
 .favorite-info p{
     transform: translateX(5%);
+}
+.inspiration-infor h2{
+ margin-left: 10% !important;
+}
+.inspiration-infor p{
+    margin-left: 2%;
 }
 .inspiration,.favorite {
     display: flex;
@@ -258,13 +265,7 @@ nav {
 .service-show-item-img-info a:hover{
     color: orange;
 }
-.form-control{
-    transform: scale(1.5);
-}
-.form-control:hover{
-    background-color: blue;
-    color: white;
-}
+
 @keyframes infor_img {
     from {
         opacity: 0;
@@ -351,6 +352,9 @@ nav {
         transform: translate(-25%,-50%);
         
     }
+    .infor p{
+        margin-left: 0px !important;
+    }
 }
 @media only screen and (max-width: 739px) {
     .description{
@@ -366,6 +370,9 @@ nav {
     }
     .infor p{
         font-size: 0.6rem;
+    }
+    .infor p{
+        margin-left: 0px !important;
     }
     .image-container img{
         width: 100%;
@@ -393,10 +400,11 @@ nav {
     }
     .favorite-info h2{
         font-size: 1.2rem;
-        margin-left: 10%;
+        margin-left: 7%;
     }
     .favorite-info p{
         font-size: 0.8rem;
+        margin-left: -3%;
     }
     .slide-show-first{
         flex-direction: column;

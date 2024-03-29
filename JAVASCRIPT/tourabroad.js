@@ -1,4 +1,4 @@
-const slides = document.getElementsByClassName('Slide')
+const slides = document.querySelectorAll('.Slide')
 const dots = document.querySelectorAll('.function_btn span')
 const pre = document.querySelector('#pre')
 const next = document.querySelector('#next')
@@ -12,9 +12,9 @@ function updateSlide(n) {
 
     current = n
 
-    dots[current].style.background = 'rgba(47, 50, 47, 0.479)'
-    dots[current].style.color = 'black'
-    slides[current].classList.add('active')
+    slides[n].classList.add('active')   
+    dots[n].style.background = 'rgba(47, 50, 47, 0.479)'
+    dots[n].style.color = 'black'
 
     if (!(current > 0)) {
         pre.style.display = 'none'
