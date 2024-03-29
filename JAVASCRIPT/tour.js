@@ -12,7 +12,7 @@ let index = 0;
 let t = setInterval(autoUpdate, 5000);
 
 function autoUpdate() {
-    index = (current + 1) % slides.length;
+    index =1
 
     if(!(index <= slides.length))
     index = 0
