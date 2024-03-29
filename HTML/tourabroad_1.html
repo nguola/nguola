@@ -11,202 +11,84 @@
     <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
     <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
 </head>
-<style>
-    @media only screen and (max-width: 739px) {
-        .formnav li {
-            width: 20%;
-        }
-
-        .formnav input,
-        .formnav select,
-        .formnav button {
-            width: 100%;
-        }
-
-        .formnav input,
-        .formnav a {
-            padding: 0px !important;
-            height: 40px;
-        }
-
-        .formnav a {
-            font-size: 0.6rem !important;
-            height: 20px;
-        }
-
-        .nav-item select option {
-            font-size: 0.6rem;
-        }
-
-        .formnav {
-            flex-direction: row !important;
-
-        }
-
-        .body-center,
-        .body-center-content {
-            flex-direction: column !important;
-        }
-
-        .body-center {
-            margin-top: 30px !important;
-        }
-
-        .body-center-img {
-            width: 100%;
-        }
-
-        .formnav input[type="search"],
-        .formnav input[type="date"],
-        .formnav select,
-        .formnav button {
-            height: 30px;
-            font-size: 0.8rem;
-            padding: 5px;
-        }
-
-        .formnav .nav-item {
-            flex: 1;
-            text-align: center;
-            margin: 5px !important;
-
-        }
-
-        .body-center-manger {
-            width: 100%;
-        }
-
-        .formnav li {
-            padding: 0px !important;
-        }
-
-
-        .a_search {
-            margin: 0px !important;
-        }
-
-        .bt_search {
-            margin: 0px !important;
-        }
-
-        .boxsadow_nav {
-            margin-top: 25%;
-            margin-left: 2px;
-        }
-
-        .body-center-if {
-            margin: 0px !important;
-            width: 100%;
-        }
-
-        .body-center-js {
-            border-left: none !important;
-            margin-left: 55px;
-        }
-
-        .body-center-footer {
-            margin-right: 0px !important;
-            margin-left: 30px !important;
-        }
-
-        .footer-manager {
-            width: 100%;
-        }
-
-        .sa {
-            order: 1 !important;
-        }
-
-        .as {
-            order: 2 !important;
-        }
-
-        .footer_content {
-            grid-template-columns: auto;
-        }
-
-        .top_destination {
-            display: grid;
-            grid-template-columns: auto auto;
-        }
-
-        .text-light {}
-
-        .infor {
-            margin-left: 40px !important;
-            margin-bottom: 40px !important;
-        }
-
-        .infor h6 {
-            margin-bottom: 0px !important;
-        }
-    }
-</style>
-
 <body>
     <div class="container-fluid px-0" style="background-color: #f5f5f5;">
         <header>
-            <div class="col-12">
-                <nav class="navbar navbar-expand-sm p-0">
-                    <div class="container-fluid p-0 d1">
-                        <div class="row w-100  text-white">
-                            <div class="d-flex justify-content-between m-0 ">
-                                <a href="" class="navbar-brand my-0 text-white mx-2"><i class="bi bi-send-fill"></i>
-                                    TRAVEL TOUR</a>
-                                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#idnavbar">
-                                    <span class="navbar-toggler-icon "><i class="bi bi-list"
-                                            style="color: white;"></i></span>
-                                </button>
-                            </div>
+            <div class="top-bar bg-dark pt-3">
+                <div class="container d-flex justify-content-between">
+                    <img src="../IMAGE/logo.png" alt="" style="width: 100px;" class="img-fluid" id="logo">
+                    <div class="login_signin d-flex">
+                        <div class="login d-flex mr-3 align-items-center">
+                            <i class="bi bi-box-arrow-in-right" style="size: 1rem; color: white;"></i>
+                            <a href="logIn.html" class="h6 text-light ml-2 mt-1"
+                                style="text-decoration: none;">Login</a>
+                        </div>
+                        <div class="Signup d-flex align-items-center text-align-center">
+                            <i class="bi bi-person-fill pt-0" style="color: white;"></i>
+                            <a href="signUp.html" class="h6 text-light ml-2 mt-1" style="text-decoration: none;">Sign
+                                up</a>
                         </div>
                     </div>
-                </nav>
-                <nav class="navbar navbar-expand-sm p-0 my-5 ">
-                    <div class="row w-100 boxsadow_nav my-5">
-                        <div class="collapse navbar-collapse " id="idnavbar">
-                            <ul class="navbar-nav my-5 formnav">
-                                <li class="nav-item mx-4 my-5 "><a href="" class="nav-link text-white">Keywords</a>
-                                    <input type="search" name="" id="" class="form-control">
+                </div>
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                    <div class="container d-flex justify-content-end">
+                        <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#menu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-end" id="menu">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link h5 text-light text-uppercase mr-2" href="index.html"><i
+                                            class="bi bi-house"></i> Home</a>
+                                    <div></div>
                                 </li>
-                                <li class="nav-item mx-4 my-5  "><a href="" class="nav-link text-white">Activity</a>
-                                    <select name="" id="" class="form-control w-100">
-                                        <option value="">Any</option>
-                                    </select>
+                                <li class="nav-item">
+                                    <a class="nav-link h5 text-light text-uppercase mr-2" href="tour.html"><i
+                                            class="bi bi-airplane"></i> Tour</a>
+                                    <div></div>
                                 </li>
-                                <li class="nav-item dropdown mx-4 my-5  "><a href=""
-                                        class="nav-link text-white">Destination</a>
-                                    <select name="" id="" class="form-control w-100">
-                                        <option value="">Any</option>
-                                    </select>
+                                <li class="nav-item">
+                                    <a class="nav-link h5 text-light text-uppercase mr-2" href="tourGuide.html"><i
+                                            class="bi bi-book-half"></i> Tour
+                                        Guide</a>
+                                    <div></div>
                                 </li>
-                                <li class="nav-item mx-4 my-5  "><a href="" class="nav-link text-white">Duration</a>
-                                    <select name="" id="" class="form-control w-100">
-                                        <option value="">Any</option>
-                                    </select>
+                                <div class="nav-item">
+                                    <a class="nav-link h5 text-light text-uppercase mr-2" href="price.html"><i
+                                            class="bi bi-coin"></i> Price</a>
+                                    <div></div>
+                                </div>
+                                <li class="nav-item">
+                                    <a class="nav-link h5 text-light text-uppercase mr-2" href="service.html"><i
+                                            class="bi bi-database-fill-gear"></i> Service</a>
+                                    <div></div>
                                 </li>
-                                <li class="nav-item mx-4 my-5  "><a href="" class="nav-link text-white">Date</a>
-                                    <input type="date" name="" id="" class="form-control">
-                                </li>
-                                <li class="nav-item mx-4 my-5  ">
-                                    <a href="" class="nav-link m-1 a_search"></a>
-                                    <button class="form-control my-3 btn btn-primary bt_search">Search</button>
+                                <li class="nav-item">
+                                    <button class="btn text-light" data-bs-toggle="modal"
+                                        data-bs-target="#modal_search"><i class="bi bi-search"></i></button>
+                                    <div></div>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
             </div>
+            <div class="container d-flex justify-content-center">
+                <video src="../VIDEO/Recording 2024-01-21 185326.mp4" style="width: 100%;" autoplay loop></video>
+            </div>
         </header>
-        <main>
+        <main >
             <div class="container-fluid d-flex" style="background-color: #f5f5f5;">
                 <div class="container">
-                    <div class="row ">
-                        <div class="col-8 body-center-manger">
-                            <div class="Slide active">
+                    <div class="row">
+                        <div class="col-8 body-center-manger" >
+                            <div class="Slide active " style="background-color: #f5f5f5;" >
                                 <div class="col-10 d-flex my-5 bg-white px-0 body-center-content">
                                     <div class="col-9 d-flex body-center ">
                                         <div class="col-5 mx-0 body-center-img"><img
-                                                src="../IMAGE/container-img-right-3.jpg" alt=""
+                                                src="../IMAGE/price-img/hoian.jpg" alt=""
                                                 style="height: 250px;background-size: cover;background-position: center;"
                                                 class="mx-0 img-fluid ">
                                         </div>
@@ -239,7 +121,7 @@
                                 <div class="col-10 d-flex my-5 bg-white px-0 body-center-content">
                                     <div class="col-9 d-flex body-center ">
                                         <div class="col-5 mx-0 body-center-img"><img
-                                                src="../IMAGE/image-abroudtour-4.webp" alt=""
+                                                src="../IMAGE/price-img/nhatrang.jpg" alt=""
                                                 style="height: 250px;background-size: cover;background-position: center;"
                                                 class="mx-0 img-fluid ">
                                         </div>
@@ -272,7 +154,7 @@
                                 <div class="col-10 d-flex my-5 bg-white px-0 body-center-content">
                                     <div class="col-9 d-flex body-center ">
                                         <div class="col-5 mx-0 body-center-img"><img
-                                                src="../IMAGE/image-abroudtour-4.webp" alt=""
+                                                src="../IMAGE/price-img/codohue.jpg" alt=""
                                                 style="height: 250px;background-size: cover;background-position: center;"
                                                 class="mx-0 img-fluid ">
                                         </div>
@@ -305,7 +187,7 @@
                                 <div class="col-10 d-flex my-5 bg-white px-0 body-center-content">
                                     <div class="col-9 d-flex body-center ">
                                         <div class="col-5 mx-0 body-center-img"><img
-                                                src="../IMAGE/image-abroudtour-4.webp" alt=""
+                                                src="../IMAGE/price-img/download (1).jpg" alt=""
                                                 style="height: 250px;background-size: cover;background-position: center;"
                                                 class="mx-0 img-fluid ">
                                         </div>
@@ -338,7 +220,7 @@
                                 <div class="col-10 d-flex my-5 bg-white px-0 body-center-content">
                                     <div class="col-9 d-flex body-center ">
                                         <div class="col-5 mx-0 body-center-img"><img
-                                                src="../IMAGE/image-abroudtour-4.webp" alt=""
+                                                src="../IMAGE/price-img/tf_220113042956_869488.jpg" alt=""
                                                 style="height: 250px;background-size: cover;background-position: center;"
                                                 class="mx-0 img-fluid ">
                                         </div>
@@ -876,8 +758,8 @@
                                 <div class="col-12 my-5 px-0">
                                     <h4>LATEST TOURS</h4>
                                     <div class="row my-5">
-                                        <div class="col-6 px-0 ">
-                                            <img src="../IMAGE/image-abroudtour-4.webp" alt="" style="width: 130px;"
+                                        <div class="col-6 px-0 latest-tour">
+                                            <img src="../IMAGE//index-img/codohue.jpg" alt="" style="width: 130px;"
                                                 class="img-fluid">
                                         </div>
                                         <div class="col-6 px-0">
@@ -886,38 +768,38 @@
                                         </div>
                                     </div>
                                     <div class="row ">
-                                        <div class="col-6 px-0 ">
-                                            <img src="../IMAGE/img-abroadtour_5.jpeg" alt="" style="width: 130px;"
+                                        <div class="col-6 px-0 latest-tour ">
+                                            <img src="../IMAGE/index-img/cambirge.jpg" alt="" style="width: 130px;"
                                                 class="img-fluid">
                                         </div>
-                                        <div class="col-6 px-0">
+                                        <div class="col-6 px-0 latest-tour">
                                             <h6>Africa – Amazing African Safari</h6> &nbsp
                                             <p>From $100</p>
                                         </div>
                                     </div>
                                     <div class="row my-5">
-                                        <div class="col-6 px-0 ">
-                                            <img src="../IMAGE/img-abroadtour.jpg" alt="" style="width: 130px;"
+                                        <div class="col-6 px-0 latest-tour ">
+                                            <img src="../IMAGE/index-img/dalat.jpg" alt="" style="width: 130px;"
                                                 class="img-fluid">
                                         </div>
-                                        <div class="col-6 px-0">
+                                        <div class="col-6 px-0 latest-tour">
                                             <h6>Africa – Amazing African Safari</h6> &nbsp
                                             <p>From $100</p>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-6 px-0 ">
-                                            <img src="../IMAGE/img-abroadtour-thuysy.webp" alt=""
+                                        <div class="col-6 px-0 latest-tour ">
+                                            <img src="../IMAGE/index-img/halan-img.jpg" alt=""
                                                 style="width: 130px; height: 95px;" class="img-fluid">
                                         </div>
-                                        <div class="col-6 px-0">
+                                        <div class="col-6 px-0 latest-tour">
                                             <h6>Africa – Amazing African Safari</h6> &nbsp
                                             <p>From $100</p>
                                         </div>
                                     </div>
                                     <div class=" row my-5 text-white ">
                                         <div class="col-12 position-relative ball">
-                                            <img src="../IMAGE/dalat.jpg" alt="" width="355px" class="img-fluid ">
+                                            <img src="../IMAGE/price-img/download (1).jpg" alt="" width="356px", class="img-fluid ">
                                         </div>
                                         <div
                                             class="col-3 position-absolute d-flex Justify-content-center align-items-center my-4">
@@ -988,27 +870,27 @@
                             <div class="top_destination">
                                 <div class="destination">
                                     <p>Cố đô Huế</p>
-                                    <img src="../IMAGE/codohue.jpg" alt="">
+                                    <img src="../IMAGE/index-img/codohue.jpg" alt="">
                                 </div>
                                 <div class="destination">
                                     <p>Cambrirge</p>
-                                    <img src="../IMAGE/cambirge.jpg" alt="">
+                                    <img src="../IMAGE/index-img/cambirge.jpg" alt="">
                                 </div>
                                 <div class="destination">
                                     <p>Đà Lạt</p>
-                                    <img src="../IMAGE/dalat.jpg" alt="">
+                                    <img src="../IMAGE/index-img/dalat.jpg" alt="">
                                 </div>
                                 <div class="destination">
                                     <p>Hà Lan</p>
-                                    <img src="../IMAGE/halan-img.jpg" alt="">
+                                    <img src="../IMAGE/index-img/halan-img.jpg" alt="">
                                 </div>
                                 <div class="destination">
                                     <p>Hội an</p>
-                                    <img src="../IMAGE/hoian.jpg" alt="">
+                                    <img src="../IMAGE/index-img/hoian.jpg" alt="">
                                 </div>
                                 <div class="destination">
                                     <p>Nha Trang</p>
-                                    <img src="../IMAGE/nhatrang.jpg" alt="">
+                                    <img src="../IMAGE/index-img/nhatrang.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -1027,6 +909,7 @@
             </div>
         </footer>
     </div>
+
     <script src="../JAVASCRIPT/tourabroad.js"></script>
 </body>
 
