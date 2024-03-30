@@ -4,11 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>index</title>
+  <title>SignUp</title>
   <link rel="stylesheet" href="../Bootstrap/bootstrap.css">
   <link rel="stylesheet" href="../CSS/index.css">
   <link rel="stylesheet" href="../Bootstrap/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="../CSS/signUp.css">
+  <script src="../jquery/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
   <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
 </head>
 
@@ -84,7 +86,7 @@
           <div class="form_group">
             <div class="mt-3 mb-2 group checkvalid">
               <label class="form-label">Username</label>
-              <input type="text" class="form-control"
+              <input type="text" class="form-control" id="username"
                 onblur="checkValidate('UserName invalid', 'Look good!', /[A-Za-z][A-Za-z0-9]*/)">
               <p></p>
             </div>
@@ -112,7 +114,7 @@
             </div>
             <div class="mb-2 group checkvalid">
               <label class="form-label">Confirm Password</label>
-              <input type="password" class="form-control" onblur="checkConfPass()">
+              <input type="password" class="form-control" onblur="checkConfPass()" id="pass">
               <p></p>
             </div>
           </div>
@@ -205,11 +207,10 @@
       </div>
     </div>
   </div>
-  <div class="alert alert-danger" role="alert">
-    <i class="bi bi-x-circle"></i>
-  </div>
 
-  <a href=""> Hello</a>
+  <div class="alert alert-danger" role="alert" id="errorAlert">
+    <p class="mb-0">Đăng Ký không thành công</p>
+  </div>
 
   <script>
     function checkValidate(messErro, messSucces, regex) {
@@ -241,6 +242,22 @@
       }
     }
 
+    function showErrorAlert(message, duration) {
+      let errorAlert = document.getElementById('errorAlert');
+      errorAlert.textContent = message;
+      errorAlert.style.display = 'block';
+      errorAlert.classList.add('move-right');
+      setTimeout(function() {
+        errorAlert.classList.remove('move-right'); 
+        errorAlert.classList.add('move-left'); 
+        setTimeout(function() {
+          errorAlert.style.display = 'none';
+          errorAlert.classList.remove('move-left');
+        }, 1000);
+      }, duration);
+    }
+
+
     function submit() {
       let ps = document.querySelectorAll('.checkvalid p');
       let status = 1;
@@ -251,14 +268,13 @@
       });
 
       if (status == 1) {
+        let username = $('#username').val();
+        let pass = $('#pass').val();
+        localStorage.setItem(username, JSON.stringify({pass: pass, status: 0}))
         window.location.href = "logIn.html";
       } else {
-        alert("Loi");
+        showErrorAlert('Đăng ký không thành công', 3000);
       }
-    }
-
-    function alertErro(messErro) {
-
     }
   </script>
   <script src="../JAVASCRIPT/showmenu.js"></script>
