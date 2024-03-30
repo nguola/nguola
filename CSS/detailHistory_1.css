@@ -4,59 +4,44 @@ body {
     padding: 0;
 }
 
-.container {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f4f4f4;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-header {
-    color: lightgray;;
-    background-color: rgba(18, 18, 18, 0.573);
-    padding: 10px;
-    text-align: center;
+header{
+    color: #fff;
+    width: 90%;
+    margin: auto;
+    background-image: url("../IMAGE/price-img/page-title-background.jpg");
+    object-fit: cover;
+    height: max-content;
+    transition: transform 0.3s ease-in-out;
     border-radius: 5px;
-    display: flex;
-    transition:transform 0.3s ease-in-out ;
+    padding: 10px;
+}
+.address {
+    line-height: 2;
+    font-size: 18px;
 }
 
-.address{
-   text-align: left;
-}
-.header_img img {
-    width: 150px;
-    height: 150px;
+.header_img img {  
+    width: 80%;
+    height: 100%;
     background-size: cover;
     border-radius: 10px;
     margin-right: 20px;
     transition: transform 0.3s ease-in-out;
 }
-header:hover img{
+
+header:hover img {
     transform: scale(1.05);
 }
-header:hover{
+
+header:hover {
     transform: translateY(-5px);
 }
+
 .tour-details {
     margin-top: 20px;
 }
-
-.tour-info,
-.room-info,
-.itinerary,
-.price-info {
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 20px;
-    color: #3498db;
-}
-
 strong {
-    color: #e74c3c;
+    color: black;
 }
 
 ul {
@@ -69,4 +54,185 @@ li {
 }
 img{
     width: 100%;
+}
+.tour-info p,
+.room-content p,
+.room-info p,
+.capacity p,
+.price-info p,
+.policy p, 
+.information_more p {
+    color: #656565;
+    font-size: 18px;
+}
+
+/* chỉnh các tiện ích  */
+.room-content {
+    position: relative;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.row {
+    padding: 3% 0;
+    position: relative;
+    /* border-bottom: 1px solid #e6e6e6; */
+}
+.room-service .inner{
+    display: flex;
+    align-items: center;
+    margin: 5% 0;
+}
+.inner i {
+    font-size: 33px;
+    line-height: 33px;
+    width: 33px;
+    color: #0a0a0a;
+}
+.inner h3{
+    margin-left: 5%;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: none;
+    color: #383838;
+    line-height: 1.55;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+.inner img {
+    max-width: 30%;
+    line-height: 1;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+.room-amenities .inner{
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px;
+    transition: transform 150ms ease-out, box-shadow 150ms ease-out, border-color 300ms ease-out, border-width 300ms;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #e5e5e5;
+    color: #848484;
+
+}
+.room-amenities .inner:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+}
+.room-rules h3 {
+    margin-bottom: 30px;
+    margin-top: 60px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #383838;
+    text-transform: capitalize;
+}
+li {
+    position: relative;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 18px;
+    color: #656565;
+    line-height: 30.6px;
+    text-align: left;
+    padding-left: 30px;
+}
+ li::before {
+    position: absolute;
+    content: "\f192";
+    top: 0;
+    left: 0;
+    font-family: fontawesome;
+    color: #000;
+}
+@media (max-width: 767px) {
+   
+    .header_img img {
+        width: 100px; /* Giảm kích thước ảnh trong header */
+        height: 100px;
+    }
+    .address {
+        text-align: center; /* Căn giữa địa chỉ trong header */
+    }
+    .room-service .inner h3{
+        margin-left: 20px;
+    }
+    .room-amenities .inner {
+        padding: 10px; /* Giảm padding cho tiện ích phòng */
+    }
+    .inner h3 {
+        font-size: 12px; /* Giảm kích thước font cho tiện ích phòng */
+    }
+    .list-rules li {
+        font-size: 15px; /* Giảm kích thước font cho nội quy khách sạn */
+    } 
+
+    .booking {
+        padding: 10px;
+    }
+
+    .booking h4 {
+        font-size: 18px;
+    }
+
+    .recent-work img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .tag-items p {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .header_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    header .row .address{
+        margin-top: 5%;
+        font-size: 15px;
+    }
+}    
+/* chỉnh css phần bên cạnh */
+.booking {
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+}
+.booking h4{
+    margin-top: 5%;
+    font-size: large;
+    font-weight: bolder;
+    margin-bottom: 5%;
+}
+.text p{
+    color: #817a7a;
+}
+.recent-work {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.recent-work img{
+    margin:5px 5px;
+    width: 100px;
+    height: 80px;
+}
+.tag-items p{
+    padding: 20px;
+    border: 1px solid #383838;
+    width: fit-content;
+    font-weight: bolder;
+    margin-right: 5%;
+    background-color: rgb(241, 240, 240);
+}
+.tag-items{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
