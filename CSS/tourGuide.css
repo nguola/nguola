@@ -175,10 +175,23 @@ li:hover {
 .experience-item:hover {
     transform: scale(1.02);
 }
-
+/* chỉnh phần tourGuideOther  */
+.card-group{
+    height: 100% !important;
+}
+#tourGuideOther .card{
+    margin: 10px auto;
+    border-radius: 10px;
+    border:1px #1b1111 solid;
+    width: 400px !important;
+}
+img .card-img-top{
+    height: 200px;
+}
 /* feedback */
 
 .feedback {
+    position: sticky;
     margin: 20px auto;
     /* box-shadow: 1px 1px 5px gray; */
     border-radius: 10px;
@@ -189,6 +202,37 @@ li:hover {
         border-bottom: 1px solid #edeeef;
     }
 }
+.feedback_content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.feedback_content .avgfeedback {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: red;
+  }
+}
+
+.avgstart {
+  flex: 1;
+}
+
+.avgstart .progress_block {
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  .progress {
+    width: 60%;
+    height: 10px;
+  }
+}
+
 .comment_group {
     display: flex;
     padding: 10px 0;
