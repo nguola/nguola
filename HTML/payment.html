@@ -26,7 +26,7 @@
             </div>
         </header>
         <main>
-            <div class="container mt-5">
+            <div class="container my-5">
                 <div class="row">
                     <div class="col-sm">
                         <div class="container">
@@ -38,43 +38,176 @@
                         </div>
                     </div>
                     <div class="col-sm">
-                        <form action="">
+                        <form action="" class="was-validated">
                             <table class="table table-borderless">
                                 <tr>
                                     <td><label for="name">Name(*):</label></td>
-                                    <td><input type="text" class="form-control" id="name" placeholder="Fill your name!"></td>
+                                    <td>
+                                        <input type="text" class="form-control" id="name" placeholder="Fill your name!"
+                                            required>
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill out your name.</div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><label for="phone">Phone(*):</label></td>
-                                    <td><input type="text" class="form-control" id="phone" placeholder="Fill your phone!"></td>
+                                    <td>
+                                        <input type="text" class="form-control" id="phone"
+                                            placeholder="Fill your phone!" required>
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill out your phone.</div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><label for="address">Address(*):</label></td>
-                                    <td><input type="text" class="form-control" id="address"  placeholder="Fill your address!"></td>
+                                    <td>
+                                        <input type="text" class="form-control" id="address"
+                                            placeholder="Fill your address!" required>
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill out your address.</div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><label for="email">Email:</label></td>
-                                    <td><input type="text" class="form-control" id="email"  placeholder="Fill your email!"></td>
+                                    <td><input type="text" class="form-control" id="email"
+                                            placeholder="Fill your email!"></td>
                                 </tr>
                                 <tr>
-                                    <td><label for="adult">Number Of Adult:</label></td>
-                                    <td><input type="text" class="form-control" id="adult"></td>
+                                    <td><label for="members">Number Of Members(*):</label></td>
+                                    <td>
+                                        <input type="text" class="form-control" id="members" required>
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill out number of members.</div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><label for="children">Number Of Children:</label></td>
                                     <td><input type="text" class="form-control" id="children"></td>
                                 </tr>
-                                <tr>
-                                    <td colspan="2"><button class="btn btn-primary form-control">Continue</button></td>
-                                </tr>
                             </table>
                         </form>
+                        <button class="btn btn-primary form-control" id="btn_continue"
+                            onclick="show_payment()">Continue</button>
                     </div>
                 </div>
             </div>
-            <div class="payment">
-                <div class="list_payment">
-                    
+            <div id="payment" style="display: none;">
+                <div class="payment_item container p-5 text-center">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="slide_btn" onclick="show_bank()">
+                                <img src="../IMAGE/payment-img/bank_icon.png" alt="" width="50px" height="50px">
+                                <span>Bank</span>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="slide_btn" onclick="show_momo()">
+                                <img src="../IMAGE/payment-img/momo_icon.webp" alt="" width="50px" height="50px">
+                                <span>Momo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider container p-5">
+                    <div class="slides">
+
+                        <!-- slide bank payment -->
+                        <div class="slide">
+                            <form action="" class="was-validated">
+                                <table class="table table-borderless">
+                                    <tr>
+                                        <td colspan="2">
+                                            <select name="bank" id="bank" class="form-control">
+                                                <option value="../IMAGE/payment-img/bidv_icon.png">
+                                                    BIDV Bank
+                                                </option>
+                                                <option value="../IMAGE/payment-img/mb_icon.webp">
+                                                    MB Bank
+                                                </option>
+                                                <option value="../IMAGE/payment-img/techcombank_icon.webp">
+                                                    Techcombank
+                                                </option>
+                                                <option value="../IMAGE/payment-img/agribank_icon.png">
+                                                    Agribank
+                                                </option>
+                                                <option value="../IMAGE/payment-img/acb_icon.svg">
+                                                    ACB Bank
+                                                </option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><img src="../IMAGE/payment-img/bidv_icon.png" alt=""
+                                                id="img_bank" width="60%" height="80px">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="Beneficiaryname">Beneficiary name:</label></td>
+                                        <td>
+                                            <input type="text" id="Beneficiaryname" class="form-control" required>
+                                            <div class="valid-feedback">Valid.</div>
+                                            <div class="invalid-feedback">Please fill out this beneficiary name.</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="code">Code:</label></td>
+                                        <td>
+                                            <input type="text" id="code" class="form-control" required>
+                                            <div class="valid-feedback">Valid.</div>
+                                            <div class="invalid-feedback">Please fill out this code.</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col-sm">
+                                                    <span>Verification:</span>
+                                                </div>
+                                                <div class="col-sm">
+                                                    <img src="../IMAGE/payment-img/verification.png" alt="" id="Verification">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" id="verification" class="form-control" required>
+                                            <div class="valid-feedback">Valid.</div>
+                                            <div class="invalid-feedback">Please fill out this verification.</div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                            <button class="btn btn-primary form-control" data-bs-toggle="modal"
+                                data-bs-target="#modal_success">Accept</button>
+                        </div>
+
+                        <!-- slide momo payment -->
+                        <div class="slide">
+                            <form action="" class="was-validated">
+                                <table class="table table-borderless">
+                                    <tr>
+                                        <td><label for="momo_code">Momo code:</label></td>
+                                        <td>
+                                            <input type="text" id="momo_code" class="form-control" required>
+                                            <div class="valid-feedback">Greate!!</div>
+                                            <div class="invalid-feedback">Please fill out this momo code!!</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><span id="QRcode_btn" onclick="show_qr()">Pay by QR code</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="text-center">
+                                            <img src="../IMAGE/payment-img/Qrcode.png" alt="" style="display: none;"
+                                                id="qr">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                            <button class="btn btn-primary form-control" data-bs-toggle="modal"
+                                data-bs-target="#modal_success">Accept</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
@@ -134,20 +267,14 @@
         </footer>
     </div>
 
-    <div class="modal" id="modal_search">
+    <div class="modal" id="modal_success">
         <div class="modal-dialog modal-dialog-centered modal-m">
             <div class="modal-content">
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-8">
-                            <input type="text" name="" id="" placeholder="Search" class="form-control mt-2">
-                        </div>
-                        <div class="col-2 d-flex justify-content-center">
-                            <button class="btn btn-primary mr-2 mt-2">Search</button>
-                        </div>
-                        <div class="col-2 d-flex justify-content-center">
-                            <button type="button" class="btn btn-danger btn-close mt-2" data-bs-dismiss="modal"><i
-                                    class="bi bi-x-lg"></i></button>
+                    <div class="row d-flex justify-content-center">
+                        <div class="text-center">
+                            <i class="bi bi-check-circle" style="font-size: 50px; color: greenyellow;"></i>
+                            <h1 class="text-success">Pay success!!</h1>
                         </div>
                     </div>
                 </div>
@@ -155,7 +282,51 @@
         </div>
     </div>
 
+    <script>
+        $(document).ready(function () {
+            $('#bank').change(function () {
+                let src = $('option:checked').val()
+                let img_bank = document.getElementById('img_bank')
+                img_bank.src = src
+            })
+
+            $(btn_continue).click(function () {
+                let name = $('#name').val()
+                let phone = $('#name').val()
+                let address = $('#name').val()
+                let email = $('#name').val()
+                let members = $('#members').val()
+                let children = $('#children').val()
+
+                // if ($.trim(name) == "" || $.trim(phone) == "" || $.trim(address) == "" || $.trim(members) == "") {
+
+                //     return false
+                // }
+
+                // if (/[A-Z][a-z]+/.test(name)) {
+                //     return false
+                // }
+
+                // if (/[0-9]{10}]/.test(phone)) {
+
+                //     return false
+                // }
+
+                // if (/[A-Z][a-z]+/.test(address)) {
+                //     return false
+                // }
+
+                // if (email != "" && /[a-z].+@gmail\.\w*\.com/.test(email)) {
+                //     return false
+                // }
+
+                show_payment()
+            })
+        })
+    </script>
+
     <script src="../JAVASCRIPT/showmenu.js"></script>
+    <script src="../JAVASCRIPT/payment.js"></script>
 </body>
 
 </html>
