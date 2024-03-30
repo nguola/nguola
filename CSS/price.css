@@ -343,7 +343,7 @@ main {
     bottom: -50%;
     padding: 15px;
     opacity: 0;
-    transition: 0.5s bottom, 1.75s opacity;
+    transition: 0.5s bottom, 0.5s opacity;
 }
 
 .infor p {
@@ -361,6 +361,7 @@ main {
 .infor button {
     padding: 5px;
     background: #490CCC;
+    color: aliceblue;
     border: none;
     font-weight: bold;
     border-radius: 8px;
@@ -368,8 +369,8 @@ main {
     margin-left: 5px;
 }
 
-.card:hover,
-.card:hover img,
+main .card:hover,
+main .card:hover img,
 .card:hover .layer {
     transform: scale(1.1);
     background-color: rgba(0, 0, 0, 0.418);
@@ -391,7 +392,7 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-    .card {
+    main .card {
         flex: 1 0 250px;
         /* Đảm bảo rằng các card có cùng kích thước và tự động điều chỉnh */
         max-width: 250px;
@@ -427,16 +428,15 @@ main {
     z-index: 1;
 }
 .slideShowEnd .card:hover{
-    background-color: white;
     opacity: 90%;
 }
-.card {
-    /* width: 300px; */
-    height: fit-content;
+.caurousel .card {
+    height: 100%;
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
-    margin: 10px;
+    display: flex;
+    scroll-snap-align: start;
 }
 .card-img-top {
     width: 100%;
@@ -444,6 +444,7 @@ main {
 }
 .card-body {
     padding: 20px;
+    background-color: white;
 }
 .price_son {
     display: flex;
@@ -459,6 +460,73 @@ main {
 .discount {
     margin-top: 10px;
 }
+.slideShowEnd-all{
+    background-image: url("../IMAGE/price-img/page-title-background.jpg");
+    opacity: 90%;
+    position: relative;
+}
 .slideShowEnd .btn {
     margin-top: 10px;
+}
+.caurousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100%/3)-12px);
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+.caurousel::-webkit-scrollbar{
+    display: none;
+}
+.caurousel .no-transition{
+    scroll-behavior: auto;
+
+}
+.caurousel .dragging{
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+.caurousel .dragging .card{
+    cursor: grab;
+    user-select: none;
+}
+.slideShowEnd {
+    overflow: hidden;
+    max-width: 1100px;
+    width: 100%;
+    padding: 2rem 0;
+}
+.slideShowEnd .card:hover img{
+    transform: scale(1.1);
+}
+@media screen and (max-width:900px) {
+    .slideShowEnd .caurousel{
+        grid-auto-columns: calc((100%/2)-9px);
+    }
+}
+@media screen and (max-width:600px) {
+    .slideShowEnd .caurousel{
+        grid-auto-columns: calc((100%/3)-30px);
+    }
+}
+.pprev{
+    position: absolute;
+    top: 40%;
+    font-weight: bolder;
+    left: 10px;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: #3498db;
+  }
+.nnext{
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: #3498db;
+
 }
