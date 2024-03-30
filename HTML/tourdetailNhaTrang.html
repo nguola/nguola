@@ -3,83 +3,85 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Document</title>
   <link rel="stylesheet" href="../Bootstrap/bootstrap.css">
-  <link rel="stylesheet" href="../CSS/index.css">
   <link rel="stylesheet" href="../Bootstrap/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="../CSS/tourdetail.css">
+  <link rel="stylesheet" href="../CSS/index.css">
   <script src="../jquery/jquery-3.7.1.min.js"></script>
   <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="../JAVASCRIPT/showmenu.js"></script>
 </head>
 
 <body>
   <div class="container-fluid p-0">
-    <header style="position: relative;">
-      <div class="top-bar bg-dark pt-3" style="opacity: 90%;">
-        <div class="container d-flex justify-content-between">
-          <div class="logo">
-            <img src="../IMAGE/logo.jpg" alt="" style="width: 150px;" class="img-fluid rounded-pill">
+    <header>
+      <div class="top-bar bg-dark pt-3">
+          <div class="container d-flex justify-content-between">
+              <img src="../IMAGE/logo.png" alt="" style="width: 100px;" class="img-fluid" id="logo">
+              <div class="login_signin d-flex">
+                  <div class="login d-flex mr-3 align-items-center">
+                      <i class="bi bi-box-arrow-in-right" style="size: 1rem; color: white;"></i>
+                      <a href="logIn.html" class="h6 text-light ml-2 mt-1"
+                          style="text-decoration: none;">Login</a>
+                  </div>
+                  <div class="Signup d-flex align-items-center text-align-center">
+                      <i class="bi bi-person-fill pt-0" style="color: white;"></i>
+                      <a href="signUp.html" class="h6 text-light ml-2 mt-1" style="text-decoration: none;">Sign
+                          up</a>
+                  </div>
+              </div>
           </div>
-          <div class="login_signin d-flex">
-            <div class="login d-flex mr-3 align-items-center">
-              <i class="bi bi-box-arrow-in-right" style="size: 1rem; color: white;"></i>
-              <a href="logIn.html" class="h6 text-light ml-2 mt-1" style="text-decoration: none;">Login</a>
-            </div>
-            <div class="Signup d-flex align-items-center text-align-center">
-              <i class="bi bi-person-fill pt-0" style="color: white;"></i>
-              <a href="signUp.html" class="h6 text-light ml-2 mt-1" style="text-decoration: none;">Sign
-                up</a>
-            </div>
-          </div>
-        </div>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark pb-0">
-          <div class="container d-flex justify-content-end">
-            <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+          <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+              <div class="container d-flex justify-content-end">
+                  <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#menu">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
 
-            <div class="collapse navbar-collapse justify-content-end" id="menu">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link h5 text-light text-uppercase mr-2" href="index.html">Home</a>
-                  <div></div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link h5 text-light text-uppercase mr-2" href="tour.html">Tour</a>
-                  <div></div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link h5 text-light text-uppercase mr-2" href="tourGuide.html">Tour
-                    Guide</a>
-                  <div></div>
-                </li>
-                <div class="nav-item">
-                  <a class="nav-link h5 text-light text-uppercase mr-2" href="price.html">Price</a>
-                  <div></div>
-                </div>
-                <li class="nav-item">
-                  <a class="nav-link h5 text-light text-uppercase mr-2" href="historyTour.html">History</a>
-                  <div></div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link h5 text-light text-uppercase mr-2" href="service.html">Service</a>
-                  <div></div>
-                </li>
-                <li class="nav-item">
-                  <button class="btn text-light" data-bs-toggle="modal" data-bs-target="#modal_search"><i
-                      class="bi bi-search"></i></button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+                  <div class="collapse navbar-collapse justify-content-end" id="menu">
+                      <ul class="navbar-nav">
+                          <li class="nav-item">
+                              <a class="nav-link h5 text-light text-uppercase mr-2" href="index.html"><i
+                                      class="bi bi-house"></i> Home</a>
+                              <div></div>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link h5 text-light text-uppercase mr-2" href="tour.html"><i
+                                      class="bi bi-airplane"></i> Tour</a>
+                              <div></div>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link h5 text-light text-uppercase mr-2" href="tourGuide.html"><i
+                                      class="bi bi-book-half"></i> Tour
+                                  Guide</a>
+                              <div></div>
+                          </li>
+                          <div class="nav-item">
+                              <a class="nav-link h5 text-light text-uppercase mr-2" href="price.html"><i
+                                      class="bi bi-coin"></i> Price</a>
+                              <div></div>
+                          </div>
+                          <li class="nav-item">
+                              <a class="nav-link h5 text-light text-uppercase mr-2" href="service.html"><i
+                                      class="bi bi-database-fill-gear"></i> Service</a>
+                              <div></div>
+                          </li>
+                          <li class="nav-item">
+                              <button class="btn text-light" data-bs-toggle="modal"
+                                  data-bs-target="#modal_search"><i class="bi bi-search"></i></button>
+                              <div></div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
       </div>
       <div class="container d-flex justify-content-center">
-        <video src="../VIDEO/Recording 2024-01-21 185326.mp4" style="width: 100%;" autoplay loop></video>
+          <video src="../VIDEO/Recording 2024-01-21 185326.mp4" style="width: 100%;" autoplay loop></video>
       </div>
-      <div style="height:100px;"></div>
-    </header>
+  </header>
     <main>
       <div class="container">
         <div class="carousel">
@@ -121,20 +123,20 @@
           </div>
           <div class="description">
             <h5>Giới thiệu</h5>
-            <div class="place">
-              <div class="group_place">
+            <div class="place row">
+              <div class="group_place col-sm">
                 <i class="bi bi-1-circle-fill"></i>
                 <span>Chùa Long Sơn</span>
               </div>
-              <div class="group_place">
+              <div class="group_place col-sm">
                 <i class="bi bi-2-circle-fill"></i>
                 <span>Biển Nhũ Tiên</span>
               </div>
-              <div class="group_place">
+              <div class="group_place col-sm">
                 <i class="bi bi-3-circle-fill"></i>
                 <span>Vinwonder</span>
               </div>
-              <div class="group_place">
+              <div class="group_place col-sm">
                 <i class="bi bi-4-circle-fill"></i>
                 <span>Làng Gốm Bàu Trúc</span>
               </div>
@@ -200,7 +202,6 @@
         </section>
         <aside>
           <div class="booking">
-            <form action="">
               <h4>Book Tour</h4>
               <div class="form-group">
                 <label for="" class="form-label">Check in</label>
@@ -215,9 +216,8 @@
                 <input type="number" class="form-control">
               </div>
               <div class="form-group">
-                <input class="btn btn-outline-dark" type="submit" value="Đặt tour">
+                <a href="payment.html"><input class="btn btn-outline-dark" type="submit" value="Đặt tour"></a>
               </div>
-            </form>
           </div>
         </aside>
       </div>
@@ -374,7 +374,7 @@
     </footer>
   </div>
 
-  <div class="modal" id="modal_search">
+  <!-- <div class="modal" id="modal_search">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <div class="modal-body">
@@ -393,7 +393,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <script src="../JAVASCRIPT/index.js"></script>
   <script src="../JAVASCRIPT/tourDetail.js"></script>
 </body>
