@@ -1,4 +1,4 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -34,7 +34,7 @@
   bottom: 50px;
   left: 50%;
   width: max-content;
-  z-index: 100;
+  z-index: 2;
   display: flex;
   gap: 20px;
 }
@@ -246,17 +246,9 @@
   h5 {
     opacity: 0.6;
   }
-  .place {
-    display: flex;
-    flex-wrap: wrap;
-
-  }
-
   .place .group_place {
     margin: 15px 0;
-    justify-content: center;
-    flex: 1 0 400px;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 600;
   }
 }
@@ -269,13 +261,13 @@
 
 .hero aside {
   flex: 3;
-  min-width: 300px;
+  min-width: 250px;
 }
 
 .hero aside .booking {
   position: sticky;
-  top: 20px;
-  z-index: 100;
+  top: 90px;
+  z-index: 2;
   h4 {
     text-align: center;
     font-weight: 400;
