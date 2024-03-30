@@ -269,7 +269,7 @@
 
 .hero aside {
   flex: 3;
-  min-width: 300px;
+  min-width: 250px;
 }
 
 .hero aside .booking {
