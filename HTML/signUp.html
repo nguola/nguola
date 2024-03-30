@@ -80,10 +80,9 @@
     </header>
     <main>
       <div class="background_color"></div>
-      <form action="index.html" method="get" class="">
         <div class="form_login">
           <div class="form_group">
-            <div class="mb-2 mt-3 group">
+            <div class="mt-3 mb-2 group checkvalid">
               <label class="form-label">Username</label>
               <input type="text" class="form-control"
                 onblur="checkValidate('UserName invalid', 'Look good!', /[A-Za-z][A-Za-z0-9]*/)">
@@ -91,13 +90,13 @@
             </div>
           </div>
           <div class="form_group">
-            <div class="mb-2 group">
+            <div class="mb-2 group checkvalid">
               <label class="form-label">PhoneNumber</label>
               <input type="text" class="form-control"
                 onblur="checkValidate('PhoneNumber invalid', 'Look good!', /[0-9]{10}/)">
               <p></p>
             </div>
-            <div class="mb-2 group">
+            <div class="mb-2 group checkvalid">
               <label class="form-label">Email</label>
               <input type="email" class="form-control"
                 onblur="checkValidate('Email invalid', 'Look good!', /[A-Za-z0-9]+@(gmail|yahoo|hotmail|outlook).com/)">
@@ -105,13 +104,13 @@
             </div>
           </div>
           <div class="form_group">
-            <div class="mb-2 group">
+            <div class="mb-2 group checkvalid">
               <label class="form-label">Password</label>
               <input type="password" class="form-control"
                 onblur="checkValidate('Password invalid', 'Look good!', /[A-Za-z0-9]+/)">
               <p></p>
             </div>
-            <div class="mb-2 group">
+            <div class="mb-2 group checkvalid">
               <label class="form-label">Confirm Password</label>
               <input type="password" class="form-control" onblur="checkConfPass()">
               <p></p>
@@ -129,7 +128,6 @@
             <button class="btn twitter"><i class="bi bi-twitter-x"></i> Continue with Twitter</button>
           </div>
         </div>
-      </form>
     </main>
     <footer>
       <div class="container-fluid bg-dark p-0">
@@ -207,6 +205,11 @@
       </div>
     </div>
   </div>
+  <div class="alert alert-danger" role="alert">
+    <i class="bi bi-x-circle"></i>
+  </div>
+
+  <a href=""> Hello</a>
 
   <script>
     function checkValidate(messErro, messSucces, regex) {
@@ -216,9 +219,11 @@
       if (regex.test(input)) {
         p.style.color = 'green';
         p.textContent = messSucces;
+        p.classList.add('valid');
       } else {
         p.style.color = 'red';
         p.textContent = messErro;
+        p.classList.remove('valid');
       }
     }
 
@@ -228,28 +233,32 @@
       if (pass == null || pass == '' || pass != event.target.value) {
         p.style.color = 'red';
         p.textContent = 'Password incorrectly'
-      } else {
+        p.classList.remove('valid');
+      } else {  
+        p.classList.add('valid');
         p.style.color = 'green';
         p.textContent = 'Look good!';
       }
     }
 
     function submit() {
-      let form = document.querySelector('form');
-      let ps = document.querySelectorAll('p');
+      let ps = document.querySelectorAll('.checkvalid p');
       let status = 1;
       ps.forEach(p => {
-        if (p.style.color !== 'green') {
+        if (!p.classList.contains('valid') || p.textContent.trim() === "") {
           status = 0;
         }
       });
 
-      form.addEventListener('submit', (event) => {
-        if (status == 0) {
-          alert('lỗi');
-          event.preventDefault();
-        }
-      });
+      if (status == 1) {
+        window.location.href = "logIn.html";
+      } else {
+        alert("Loi");
+      }
+    }
+
+    function alertErro(messErro) {
+
     }
   </script>
   <script src="../JAVASCRIPT/showmenu.js"></script>
