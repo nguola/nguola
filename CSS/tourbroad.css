@@ -1,3 +1,4 @@
+
 .login:hover>*,
 .Signup:hover>* {
     color: yellow !important;
@@ -124,32 +125,47 @@ nav {
 }
 
 
-@media only screen and (min-width: 740px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
     .formnav input,
     .formnav select,
     .formnav button {
         width: 100%;
     }
-    .body-center-manger{
+    .col-8{
+        margin: 0px !important;
+        width: 90% !important;
+    }
+    .col-10{
         width: 100% !important;
-        margin: 0px;
     }
     .body-center-if{
-        margin-left: 30% !important;
-        width: 100% !important;
+        width: 400px !important;
+    }
+    .body-center-if p{
+        font-size: 1.5rem !important;
+    }
+    .body-center-js p{
+        margin-left: 45px !important;
+    }
+    .body-center-js h3{
+        margin-left: 20px !important;
+    }
+    .body-center-if>*{
+        margin-left: 0px !important;
     }
     .body-center-js{
         border-left: none !important;
-        margin-right: 35%;
+        margin-left: 205px;
     }
     .body-center-footer{
         margin-right: 0px !important;
-        margin-left: 30px !important;
+        margin-left: 50px !important;
     }
     .body-center,.body-center-content{
         flex-direction: column !important;
 
     }
+
     .body-center-img{
         width: 100% !important;
         
@@ -163,7 +179,8 @@ nav {
         margin-left: 13%;
     }
     .footer-manager {
-        width: 80% !important;
+        display: inline-block;
+        width: 400% !important;
     }
     .sa {
         order: 1 !important;
@@ -175,6 +192,39 @@ nav {
     .footer_content {
         grid-template-columns: 40% 60%;
     }
+    .col-8{
+        width: 100% !important;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    .col-10{
+        margin: 0px !important;
+    }
+    .col-9{
+        margin: 0px !important;
+        width: 100% !important;
+    }
+    .body-center .col-5{
+        margin: 0px !important;
+        width: 100% !important;
+    }
+    .container-fluid .container .row{
+        width: 100%;
+        margin-left: 1px;
+    }
+    .infor{
+        margin-left: 38%;
+    }
+    .body-center-content .col-3 p{
+        margin-left: 50% !important;
+    }
+    .body-center-content .col-3 h3{
+        margin-left: 33% !important;
+    }
+    .body-center-content .col-3 button{
+        margin-left: 35% !important;
+    }
+    
 }
 .footer_content {
     display: grid;
@@ -196,7 +246,7 @@ nav {
     background-color: rgba(18, 18, 18, 0.573);
     border-top: 1px solid white;
 }
-@media only screen and (max-width: 739px) {
+@media only screen and (min-width: 431px) and (max-width: 768px) {
     .formnav li {
         width: 20%;
     }
@@ -206,7 +256,22 @@ nav {
     .formnav button {
         width: 100%;
     }
-
+    .col-8{
+        width: 90% !important;
+        margin: 0px !important;
+        margin-left: 6% !important;
+    }
+    .col-10{
+        margin: 0px !important;
+    }
+    .col-9{
+        margin: 0px !important;
+        width: 100% !important;
+    }
+    .body-center .col-5{
+        margin: 0px !important;
+        width: 100% !important;
+    }
     .formnav input,
     .formnav a {
         padding: 0px !important;
@@ -227,7 +292,7 @@ nav {
 
     }
     .body-center img{
-        width: 100%;
+        width: 516px !important;
     }
     .body-center,
     .body-center-content {
@@ -235,11 +300,9 @@ nav {
         width: 100% !important;
     }
 
-    .body-center {
-    }
 
     .body-center-img {
-        width: 100%;
+        width: 100% !important;
     }
 
     .formnav input[type="search"],
@@ -279,21 +342,28 @@ nav {
         margin-top: 25%;
         margin-left: 2px;
     }
-
-    .body-center-if {
+    
+    .body-center-content .col-3{
         margin: 0px !important;
-        width: 100%;
-        margin-left: 10px !important;
+        width: 100% !important;
+        border-left: none !important;
+    }
+    .body-center-content .col-3 p{
+        margin-left: 42% !important;
+    }
+    .body-center-content .col-3 h3{
+        margin-left: 36% !important;
+    }
+    .body-center-content .col-3 button{
+        margin-left: 29% !important;
     }
 
-    .body-center-js {
-        border-left: none !important;
-        margin-left: 55px;
-    }
+
 
     .body-center-footer {
-        margin-right: 0px !important;
-        margin-left: 30px !important;
+        
+        padding:23px  !important;
+        text-align: center !important;
     }
 
     .footer-manager {
@@ -327,8 +397,168 @@ nav {
     .infor h6 {
         margin-bottom: 0px !important;
     }
+    .container-fluid .container .row{
+        width: 100% !important;
+    }
+    .col-4{
+        width: 100% !important;
+    }
 }
+@media only screen and (max-width: 431px) {
+    .formnav li {
+        width: 20%;
+    }
 
+    .formnav input,
+    .formnav select,
+    .formnav button {
+        width: 100%;
+    }
+    .col-8{
+        width: 90% !important;
+        margin: 0px !important;
+        margin-left: 6% !important;
+    }
+    .col-10{
+        margin: 0px !important;
+    }
+    .col-9{
+        margin: 0px !important;
+        width: 100% !important;
+    }
+    .body-center .col-5{
+        margin: 0px !important;
+        width: 100% !important;
+    }
+    .formnav input,
+    .formnav a {
+        padding: 0px !important;
+        height: 40px;
+    }
+
+    .formnav a {
+        font-size: 0.6rem !important;
+        height: 20px;
+    }
+
+    .nav-item select option {
+        font-size: 0.6rem;
+    }
+
+    .formnav {
+        flex-direction: row !important;
+
+    }
+    .body-center img{
+        width: 516px !important;
+    }
+    .body-center,
+    .body-center-content {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+
+    .body-center-img {
+        width: 100% !important;
+    }
+
+    .formnav input[type="search"],
+    .formnav input[type="date"],
+    .formnav select,
+    .formnav button {
+        height: 30px;
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    .formnav .nav-item {
+        flex: 1;
+        text-align: center;
+        margin: 5px !important;
+
+    }
+
+    .body-center-manger {
+        width: 100%;
+    }
+
+    .formnav li {
+        padding: 0px !important;
+    }
+
+
+    .a_search {
+        margin: 0px !important;
+    }
+
+    .bt_search {
+        margin: 0px !important;
+    }
+
+    .boxsadow_nav {
+        margin-top: 25%;
+        margin-left: 2px;
+    }
+    
+    .body-center-content .col-3{
+        margin: 0px !important;
+        width: 100% !important;
+        border-left: none !important;
+    }
+    .body-center-content .col-3 p{
+        margin-left: 40% !important;
+    }
+    .body-center-content .col-3 h3{
+        margin-left: 32% !important;
+    }
+    .body-center-content .col-3 button{
+        margin-left: 25% !important;
+    }
+
+
+
+    .body-center-footer {
+        
+        padding:23px  !important;
+        text-align: center !important;
+    }
+
+    .footer-manager {
+        width: 100%;
+    }
+
+    .sa {
+        order: 1 !important;
+    }
+
+    .as {
+        order: 2 !important;
+    }
+
+    .footer_content {
+        grid-template-columns: auto;
+    }
+
+    .top_destination {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .text-light {}
+
+    .infor {
+        margin-left: 40px !important;
+        margin-bottom: 40px !important;
+    }
+
+    .infor h6 {
+        margin-bottom: 0px !important;
+    }
+    .col-4{
+        width: 100% !important;
+    }
+}
 
 
 
