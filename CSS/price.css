@@ -503,18 +503,27 @@ main .card:hover img,
     transform: scale(1.1);
 }
 @media screen and (max-width:900px) {
+    .slideShowEnd{
+        height: 30%;
+    }
     .slideShowEnd .caurousel{
         grid-auto-columns: calc((100%/2)-9px);
+        height: 10%;
+    }
+    .caurousel .card {
+       height:100%;
+       font-size: 10px;
     }
 }
 @media screen and (max-width:600px) {
     .slideShowEnd .caurousel{
         grid-auto-columns: calc((100%/3)-30px);
     }
+
 }
 .pprev{
     position: absolute;
-    top: 40%;
+    top: 50%;
     font-weight: bolder;
     left: 10px;
     font-size: 40px;
@@ -523,7 +532,7 @@ main .card:hover img,
   }
 .nnext{
     position: absolute;
-    top: 40%;
+    top: 50%;
     right: 10px;
     font-size: 40px;
     cursor: pointer;
