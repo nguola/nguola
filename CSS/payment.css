@@ -3,6 +3,88 @@
     height: 40%;
 }
 
+.slide_btn {
+    transition: 0.3s ease;
+    padding: 5px;
+    width: 50%;
+}
+
+.slide_btn:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1);
+    background-color: rgba(233, 233, 233, 0.286);
+    box-shadow: 2px 5px 7px;
+}
+
+.slides {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+}
+
+.slide:last-child {
+    right: -100%;
+}
+
+@keyframes show_bank {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+@keyframes hidden_bank {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes show_momo {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 0%;
+    }
+}
+
+@keyframes hidden_momo {
+    from {
+        right: 0%;
+    }
+
+    to {
+        right: -100%;
+    }
+}
+
+#QRcode_btn {
+    background-color: rgba(0, 0, 0, 0.632);
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+#QRcode_btn:hover {
+    cursor: pointer;
+    background-color: rgba(50, 75, 187, 0.632);
+    color: black;
+}
+
 .footer_content {
     display: grid;
     grid-template-columns: 30% 40% 30%;
@@ -93,9 +175,21 @@
         display: grid;
         grid-template-columns: auto auto;
     }
+
+    #Verification {
+        width: 80%;
+    }
+
+    .slides {
+        height: 550px;
+    }
 }
 
 @media screen and (max-width: 570px) {
+    #Verification {
+        width: 80%;
+    }
+
     .top_destination {
         grid-template-columns: auto auto;
     }
