@@ -1,88 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.css">
     <link rel="stylesheet" href="../CSS/tourGuide.css">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
+
     <title>HyperTravel</title>
 </head>
+
 <body>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="header_left col-lg-2 col-md-12">
+                <a href="index.html">◀ Go back</a>
+            </div>
+            <div class="header_right col-lg-4 col-md-12">
+                <div class="row">
+                    <div class="profile-image col-lg-2 col-md-12"></div>
+                    <div class="header-text col-lg-9 col-md-12">
+                        <h1>Trịnh Quang Toàn Hảo</h1>
+                        <p>Hướng Dẫn Viên Du Lịch</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9 col-md-12">
+                <section id="about">
+                    <h2>Giới Thiệu</h2>
+                    <p>
+                        Chào mừng bạn đến với HyperTravel! Tôi là là một hướng dẫn viên du lịch giàu kinh nghiệm và sâu
+                        rộng
+                        về văn hóa. Tôi đã tốt nghiệp tại Harvard University và đã có đi hơn 80 quốc gia trên thế giới.
+                        Kinh nghiệm dày dạn của tôi không chỉ đến từ việc học hỏi mà còn từ việc trải nghiệm trực tiếp
+                        cuộc
+                        sống và văn hóa ở quốc gia mà tôi đã đến.
 
-    <header>
-        <div class="header_left">
-            <a href="index.html">◀ Go back</a>
-        </div>
-        <div class="header_right">
-            <div class="profile-image"></div>
-            <div class="header-text">
-                <h1>Trịnh Quang Toàn Hảo</h1>
-                <p>Hướng Dẫn Viên Du Lịch</p>
+                        Tôi có khả năng nắm bắt tâm lý hành vi tư tưởng của du khách và tạo ra các chuyến tham quan độc
+                        đáo
+                        và sâu sắc. Bạn sẽ cảm nhận sự sẻ chia, nhiệt tình, thân thiện và tận tâm của các tour mà tôi là
+                        người dẫn đầu, tôi sẽ giúp bạn khám phá những địa điểm nơi mà bạn chưa bao giờ đặt chân đến một
+                        cách chân thực và ý nghĩa.
+                    </p>
+                </section>
+                <section id="infor" class="contact-info">
+                    <h2>Thông tin liên hệ</h2>
+                    <p><strong>Họ và Tên:</strong> Trịnh Quang Toàn Hảo</p>
+                    <p><strong>Nghề Nghiệp:</strong> Hướng Dẫn Viên Du Lịch</p>
+                    <p><strong>Email:</strong> example@example.com</p>
+                    <p><strong>Điện Thoại:</strong> +84 123 456 789</p>
+                </section>
+                <section id="services">
+                    <h2>Dịch Vụ</h2>
+                    <ul>
+                        <li>
+                            <div class="service-item">
+                                <img src="../IMAGE/price-img/lm_240119045944_961541_tfd_230419101802_388101.jpg"
+                                    alt="Tham quan du lịch chuyên nghiệp">
+                                <p>Tham quan du lịch chuyên nghiệp</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="service-item">
+                                <img src="../IMAGE/price-img/bn_231116_Twleve-Apostles-Helicopter-Flight-3-1.webp"
+                                    alt="Chuyến đi cá nhân hoặc nhóm">
+                                <p>Chuyến đi cá nhân hoặc theo nhóm</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="service-item">
+                                <img src="../IMAGE/price-img/bn_230628_bromo3.jpg" alt="Chương trình du lịch tùy chỉnh">
+                                <p>Chương trình du lịch theo tùy chỉnh</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="service-item">
+                                <img src="../IMAGE/price-img/tf_230427114915_690177.jpg"
+                                    alt="Chương trình du lịch tùy chỉnh">
+                                <p>Chương trình du lịch theo tùy chỉnh</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="experience">
+                    <h2>Kinh Nghiệm</h2>
+                    <div class="experience-item">
+                        <div class="experience-image"
+                            style="background-image: url('../IMAGE/price-img/download\ \(1\).jpg');"></div>
+                        <div class="experience-details">
+                            <h3>Hành Trình Himalaya</h3>
+                            <p>5 năm dẫn dắt khám phá vùng Himalaya, từ Nepal đến Bhutan.</p>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-image"
+                            style="background-image: url('../IMAGE/price-img/download\ \(2\).jpg');"></div>
+                        <div class="experience-details">
+                            <h3>Thám Hiểm Amazon</h3>
+                            <p>Dẫn dắt nhóm khám phá đồng cỏ Amazon và gặp gỡ văn hóa động vật độc đáo.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-lg-3 col-md-12 feedback">
+                <div class="comment">
+                    <h4 class="h4 my-4 pb-3">Comment and rating about tour guide</h4>
+                    <div class="comment_group">
+                        <div class="avatar">
+                            <i class="bi bi-person-circle"></i>
+                        </div>
+                        <div class="comment_content">
+                            <h6>Đức Nam <span class="text-success"><i class="bi bi-check-circle-fill"></i> Đã đặt tour
+                                    tại
+                                    Hypertravel</span> </h6>
+                            <div>⭐⭐⭐⭐⭐</div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. L animi mm omnis eaque, quae
+                                fugit
+                                id sint. Quae?</p>
+                            <div class="date">Ngày 14/01/2023</div>
+                        </div>
+                    </div>
+                    <div class="comment_group">
+                        <div class="avatar">
+                            <i class="bi bi-person-circle"></i>
+                        </div>
+                        <div class="comment_content">
+                            <h6>Phi Hùng <span class="text-success"><i class="bi bi-check-circle-fill"></i> Đã đặt tour
+                                    tại
+                                    Hypertravel</span></h6>
+                            <div>⭐⭐⭐⭐</div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing eli\uptatem exercitationem, quidem o
+                            </p>
+                            <div class="date">Ngày 01/04/2023</div>
+                        </div>
+                    </div>
+                    <div class="comment_group">
+                        <div class="avatar">
+                            <i class="bi bi-person-circle"></i>
+                        </div>
+                        <div class="comment_content">
+                            <h6>Toàn Hảo <span class="text-success"><i class="bi bi-check-circle-fill"></i> Đã đặt tour
+                                    tại
+                                    Hypertravel</span></h6>
+                            <div>⭐⭐⭐⭐⭐</div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit dent et expem, quidem o.</p>
+                            <div class="date">Ngày 08/11/2023</div>
+                        </div>
+                    </div>
+                    <div class="comment_group">
+                        <div class="avatar">
+                            <i class="bi bi-person-circle"></i>
+                        </div>
+                        <div class="comment_content">
+                            <h6>Đức Duy <span class="text-success"><i class="bi bi-check-circle-fill"></i> Đã đặt tour
+                                    tại
+                                    Hypertravel</span></h6>
+                            <div>⭐⭐⭐</div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. dent e exercitationem, quidem o
+                            </p>
+                            <div class="date">Ngày 30/3/2023</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tag-cloud">
+                    <h4>TAG CLOUD</h4>
+                    <div class="tag-items">
+                        <p>Article</p>
+                        <p>Building</p>
+                        <p>Constructions</p>
+                        <p>Industry</p>
+                        <p>Metal</p>
+                        <p>Mining</p>
+                        <p>Nature</p>
+                        <p>News</p>
+                        <p>Oil</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
-
-    <section id="about">
-        <h2>Giới Thiệu</h2>
-        <p>
-            Chào mừng bạn đến với HyperTravel! Tôi là là một hướng dẫn viên du lịch giàu kinh nghiệm và sâu rộng về văn hóa. Tôi đã tốt nghiệp tại Harvard University và đã có đi hơn 80 quốc gia trên thế giới.
-            Kinh nghiệm dày dạn của tôi không chỉ đến từ việc học hỏi mà còn từ việc trải nghiệm trực tiếp cuộc sống và văn hóa ở quốc gia mà tôi đã đến.
-
-            Tôi có khả năng nắm bắt tâm lý hành vi tư tưởng của du khách và tạo ra các chuyến tham quan độc đáo và sâu sắc. Bạn sẽ cảm nhận sự sẻ chia, nhiệt tình, thân thiện và tận tâm của các tour mà tôi là người dẫn đầu, tôi sẽ giúp bạn khám phá những địa điểm nơi mà bạn chưa bao giờ đặt chân đến một
-            cách chân thực và ý nghĩa.
-        </p>
-    </section>
-
-    <section id="services">
-        <h2>Dịch Vụ</h2>
-        <ul>
-            <li>
-                <div class="service-item">
-                    <img src="../IMAGE/lm_240119045944_961541_tfd_230419101802_388101.jpg" alt="Tham quan du lịch chuyên nghiệp">
-                    <p>Tham quan du lịch chuyên nghiệp</p>
-                </div>
-            </li>
-            <li>
-                <div class="service-item">
-                    <img src="../IMAGE/bn_231116_Twleve-Apostles-Helicopter-Flight-3-1.webp" alt="Chuyến đi cá nhân hoặc nhóm">
-                    <p>Chuyến đi cá nhân hoặc theo nhóm</p>
-                </div>
-            </li>
-            <li>
-                <div class="service-item">
-                    <img src="../IMAGE/bn_230628_bromo3.jpg" alt="Chương trình du lịch tùy chỉnh">
-                    <p>Chương trình du lịch theo tùy chỉnh</p>
-                </div>
-            </li>
-            <li>
-                <div class="service-item">
-                    <img src="../IMAGE/tf_230427114915_690177.jpg" alt="Chương trình du lịch tùy chỉnh">
-                    <p>Chương trình du lịch theo tùy chỉnh</p>
-                </div>
-            </li>
-        </ul>
-    </section>
-
-    <section id="experience">
-        <h2>Kinh Nghiệm</h2>
-        <div class="experience-item">
-            <div class="experience-image" style="background-image: url('../IMAGE/download\ \(1\).jpg');"></div>
-            <div class="experience-details">
-                <h3>Hành Trình Himalaya</h3>
-                <p>5 năm dẫn dắt khám phá vùng Himalaya, từ Nepal đến Bhutan.</p>
-            </div>
-        </div>
-        <div class="experience-item">
-            <div class="experience-image" style="background-image: url('../IMAGE/download\ \(2\).jpg');"></div>
-            <div class="experience-details">
-                <h3>Thám Hiểm Amazon</h3>
-                <p>Dẫn dắt nhóm khám phá đồng cỏ Amazon và gặp gỡ văn hóa động vật độc đáo.</p>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <footer>
-        <p>&copy; 2024 Trịnh Quang Toàn Hảo - Hướng Dẫn Viên Du Lịch</p>
+        <div class="container-fluid bg-dark p-0">
+            <div class="container">
+                <div class="row p-2">
+                    <div class="content_1 col-sm">
+                        <p class="text-uppercase text-light h4"><i class="bi bi-send"></i> <span
+                                class="text-primary">Hyper</span> Travel</p>
+                        <br>
+                        <p class="text-light">Far far away, behind the word mountains, far from the countries
+                            Vokalia and Consonantia, there live the blind texts</p>
+                    </div>
+                    <div class="content_2 col-sm text-light">
+                        <p class="text-uppercase h5 text-warning">Top Destionation</p>
+                        <div class="top_destination">
+                            <div class="destination">
+                                <p>Cố đô Huế</p>
+                                <img src="../IMAGE/index-img/codohue.jpg" alt="">
+                            </div>
+                            <div class="destination">
+                                <p>Cambrirge</p>
+                                <img src="../IMAGE/index-img/cambirge.jpg" alt="">
+                            </div>
+                            <div class="destination">
+                                <p>Đà Lạt</p>
+                                <img src="../IMAGE/index-img/dalat.jpg" alt="">
+                            </div>
+                            <div class="destination">
+                                <p>Hà Lan</p>
+                                <img src="../IMAGE/index-img/halan-img.jpg" alt="">
+                            </div>
+                            <div class="destination">
+                                <p>Hội an</p>
+                                <img src="../IMAGE/index-img/hoian.jpg" alt="">
+                            </div>
+                            <div class="destination">
+                                <p>Nha Trang</p>
+                                <img src="../IMAGE/index-img/nhatrang.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_3 col-sm text-light">
+                        <p class="text-uppercase text-success h5">Contact info</p>
+                        <br>
+                        <p>Address: 12 Nguyễn Văn Bảo, Phường 3, Gò Vấp</p>
+                        <p>Phone: +840........</p>
+                        <p>Email: Hypertravel@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_detail text-uppercase h6 m-0">
+                copyright 2024 goodplayer all rightreserved
+            </div>
+        </div>
     </footer>
-
 </body>
+
 </html>
