@@ -40,7 +40,7 @@ const autoPlay = () => {
             carousel.scrollLeft = 0; // Nếu đến cuối, quay về slide đầu
         }
         autoPlay();
-    }, 3000);
+    }, 2000);
 }
 autoPlay();
 const infiniteScroll = () =>{

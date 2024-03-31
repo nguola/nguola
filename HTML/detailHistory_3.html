@@ -1,68 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/detailHistory_3.css">
-    <title>Detail History</title>
+    <link rel="stylesheet" href="../CSS/detailHistory_1.css">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/css-icon/css/all.css">
+    <title>Detail History3</title>
 </head>
+
 <body>
+    <header style="background-image: url('../IMAGE/tour-img/pand_1.webp'); opacity: 90%;">
+        <div class="row">
+            <div class="header_img col-lg-2 col-md-12"><img src="../IMAGE/price-img/tf_220113012438_670677.jpg" alt=""></div>
+            <div class="address col-lg-10 col-md-12">
+                <p style="font-size: 30px; font-weight: bolder;">Tour Quy Nhơn - FLC Sea Tower</p>
+                <p><strong style="color: rgb(113, 169, 253); font-weight: bolder;">Địa chỉ: </strong> 123 Đường Nguyễn Nhược Pháp, Quy Nhơn, Việt Nam</p>
+                <p> <strong style="color: rgb(113, 169, 253); font-weight: bolder;">Điện thoại: </strong>+84 394.......
+                </p>
+            </div>
+        </div>
+    </header>
     <div class="container">
-        <header>
-            <div class="header_img"><img src="../IMAGE/price-img/hotel.jpg" alt=""></div>
-            <div class="address"> 
-                <p style="font-size: 20px; font-weight: bolder; ">Quy Nhon Pearl - FLC Sea Tower</p>
-                <p><strong style="color: black; font-weight: lighter;">Địa chỉ: </strong> 123 Đường Nguyễn Nhược Pháp, Quy Nhơn, Việt Nam</p>
-                <p> <strong style="color: black; font-weight: lighter;">Điện thoại: </strong>+84 123 456 789</p>
-            </div>
-        </header>
         <section class="tour-details">
-            <div class="tour-info">
-                <h2>Thông tin Tour:</h2>
-                <p><strong>Tên Tour:</strong> Khám phá Quy Nhơn Pearl</p>
-                <p><strong>Thời gian:</strong> 21 tháng 7, 2023 - 23 tháng 7, 2023</p>
-            </div>
-            <div class="room-info">
-                <h2>Thông tin Phòng:</h2>
-                <p><strong>Loại phòng:</strong> Phòng Ocean View</p>
-                <p><strong>Ngày nhận phòng:</strong> 21 tháng 7, 2023</p>
-                <p><strong>Ngày trả phòng:</strong> 23 tháng 7, 2023</p>
-                <p><strong>Địa chỉ phòng:</strong> Quy Nhon Pearl - FLC Sea Tower</p>
-                <p><strong>Thuế giá:</strong> VND 1.162.000</p>
-            </div>
-            <div class="capacity">
-                <h2>Sức Chứa tối đa:</h2>
-                <p>Tối đa 4 người lớn </p>
-            </div>
-            <div class="itinerary">
-                <h2>Lịch trình:</h2>
-                <ul>
-                    <li>Ngày 1: Tham quan Quy Hoạch Thành Phố, thưởng thức đặc sản vùng</li>
-                    <li>Ngày 2: Thư giãn tại bãi biển Ky Co, tham quan Khu du lịch FLC Sea Tower</li>
-                    <li>Ngày 3: Dạo chơi tại trung tâm thành phố, kết thúc chuyến đi</li>
-                </ul>
-            </div>
-            <div class="price-info">
-                <h2>Giá Tour:</h2>
-                <p><strong>Giá cơ bản:</strong> VND 1.162.000</p>
-                <p><strong>Bao gồm:</strong> Chỗ ở, ăn sáng, hướng dẫn viên</p>
-            </div>
-            <div class="policy">
-                <h2>Chính sách hủy đặt phòng:</h2>
-                <p><strong>Phí hủy: Toàn bộ tiền phòng</strong> </p>
-            </div>
-            <div class="map">
-                <h2>Địa chỉ:</h2>
-                <img src="../IMAGE/price-img/mapQuiNhon.png" alt="">
-            </div>
-            <div class="information_more">
-                <h2>Thông tin bổ sung:</h2>
-                <p style="line-height: 1.5;">
-                    Vui lòng lưu ý: các khoản phí phụ thu (ví dụ: thêm giường phụ) không được tính trong giá tổng cộng này.
-                    Chỗ nghỉ có thể tính thuế theo quy định kể cả khi bạn vắng mặt hoặc hủy phòng.
-                    Hãy nhớ đọc qua thông tin quan trọng bên dưới, vì phần này có thể chứa chi tiết quan trọng không hiển thị tại đây.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12">
+                        <div class="tour-info">
+                            <h3>Thông tin Tour:</h3>
+                            <p><strong>Tên Tour:</strong> Khám phá Quy Nhơn Pearl</p>
+                            <p><strong>Thời gian:</strong> 21 tháng 7, 2023 - 23 tháng 7, 2023</p>
+                        </div>
+                        <div class="room-info">
+                            <h3 style="margin-top:5%;">Thông tin Phòng:</h3>
+                            <p><strong>Loại phòng:</strong> Phòng Ocean View</p>
+                            <p><strong>Ngày nhận phòng:</strong> 21 tháng 7, 2023</p>
+                            <p><strong>Ngày trả phòng:</strong> 23 tháng 7, 2023</p>
+                            <p><strong>Địa chỉ phòng:</strong>Quy Nhon Pearl</p>
+                            <p><strong>Thuế giá:</strong> VND 1.162.000</p>
+                        </div>
+                        <!-- tính năng phòng -->
+                        <div class="room-content">
+                            <div class="room-name">
+                                <span class="h3">Tính năng phòng</span>
+                            </div>
+                            <div class="room-service">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="inner">
+                                            <i class="fa-solid fa-bed"></i>
+                                            <h3>Giường</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="inner">
+                                            <i class="fa-solid fa-users-line"></i>
+                                            <h3>Số khách Tối Đa</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="inner">
+                                            <i class="fa-solid fa-maximize"></i>
+                                            <h3>Diện Tích Phòng</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="inner">
+                                            <i class="fa-solid fa-tree"></i>
+                                            <h3>Quang Cảnh Phòng</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="capacity">
+                            <h3>Sức Chứa tối đa:</h3>
+                            <p>Tối đa 4 người lớn </p>
+                        </div>
+                        <div class="itinerary">
+                            <h3 style="margin-top:5%;">Lịch trình:</h3>
+                            <ul>
+                                <li>Ngày 1: Tham quan Quy Hoạch Thành Phố, thưởng thức đặc sản vùng</li>
+                                <li>Ngày 2: Thư giãn tại bãi biển Ky Co, tham quan Khu du lịch FLC Sea Tower</li>
+                                <li>Ngày 3: Dạo chơi tại trung tâm thành phố, kết thúc chuyến đi</li>
+                            </ul>
+                        </div>
+                        <div class="price-info">
+                            <h3 style="margin-top:5%;">Giá Tour:</h3>
+                            <p><strong>Giá cơ bản:</strong> VND 3.500.000</p>
+                            <p><strong>Bao gồm:</strong> Vận chuyển, ăn trưa, hướng dẫn viên</p>
+                        </div>
+                        <div class="policy">
+                            <h3 style="margin-top:5%;">Chính sách hủy đặt phòng:</h3>
+                            <p><strong>Phí hủy: Toàn bộ tiền phòng</strong> </p>
+                        </div>
+                    </div>
+                    <!-- chỉnh phân bên cạnh -->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="booking">
+                            <div class="text">
+                                <h4>TEXT WIDGET</h4>
+                                <p>
+                                    No life is free from the vibrations of propaganda. No life is free from the
+                                    vibrations of propaganda.
+                                    No life is free from the vibrations of propaganda. Unfortunately, I hate you. Even
+                                    the gate is expected.
+                                </p>
+                            </div>
+                            <div class="recent-comments">
+                                <h4>RECENT COMMENTS</h4>
+                                <div class="recent-work">
+                                    <img src="../IMAGE/price-img/tf_220113042956_869488.jpg" alt="" class="col-4">
+                                    <img src="../IMAGE/tour-img/pand_1.webp" alt="" class="col-4">
+                                    <img src="../IMAGE/index-img/article4.webp" alt="" class="col-4">
+                                    <img src="../IMAGE/index-img/europe.webp" alt="" class="col-4">
+                                    <img src="../IMAGE/index-img/halan-img.jpg" alt="" class="col-4">
+                                    <img src="../IMAGE/price-img/tf_231117021819_056639_Lang Gom Bau Truc - Hinh Quy COC Tu (2).webp" alt="" class="col-4">
+                                    <img src="../IMAGE/price-img/tf_230630023851_307950_Doc let.webp" alt="" class="col-4">
+                                    <img src="../IMAGE/price-img/download (1).jpg" alt="" class="col-4">
+                                    <img src="../IMAGE/price-img/download (2).jpg" alt="" class="col-4">
+                                </div>
+                            </div>
+                            <div class="tag-cloud">
+                                <h4>TAG CLOUD</h4>
+                                <div class="tag-items">
+                                    <p>Article</p>
+                                    <p>Building</p>
+                                    <p>Constructions</p>
+                                    <p>Industry</p>
+                                    <p>Metal</p>
+                                    <p>Mining</p>
+                                    <p>Nature</p>
+                                    <p>News</p>
+                                    <p>Oil</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map" style="height: 20rem;">
+                    <h3>Địa chỉ:</h3>
+                    <!-- <img src="../IMAGE/price-img/mapDalat.png" alt=""> -->
+                    <iframe id="map"
+                        src="https://storage.googleapis.com/maps-solutions-rnr89mul4m/locator-plus/zm2j/locator-plus.html"
+                        width="100%" height="100%" style="border:4;" loading="lazy">
+                        <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCevP3Z0E30qo_HaQgXPhj0oW7bk0ZasIk&libraries=places,marker&callback=initMap&solution_channel=GMP_QB_addressselection_v2_cABC"></script>
+
+                    </iframe>
+                </div>
+                <div class="information_more">
+                    <h3 style="margin-top:5%;">Thông tin bổ sung:</h3>
+                    <p style="line-height: 1.5;">
+                        Vui lòng lưu ý: các khoản phí phụ thu không được tính trong giá tổng
+                        cộng này.
+                        Chỗ nghỉ có thể tính thuế theo quy định kể cả khi bạn vắng mặt hoặc hủy phòng.
+                        Hãy nhớ đọc qua thông tin quan trọng bên dưới, vì phần này có thể chứa chi tiết quan trọng không
+                        hiển thị tại đây.</p>
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-9">
+                        <!-- tiện ích phòng -->
+                        <div class="room-amenities">
+                            <h3>Tiện ích phòng</h3>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="inner">
+                                        <img src="../IMAGE/icon/wifi.png" alt="">
+                                        <h3>Wifi</h3>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="inner">
+                                        <img src="../IMAGE/icon/parking.png" alt="">
+                                        <h3>Bãi Đỗ Xe</h3>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="inner">
+                                        <img src="../IMAGE/icon/safety-box.png" alt="">
+                                        <h3>Két Sắt</h3>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="inner">
+                                        <img src="../IMAGE/icon/spa.png" alt="">
+                                        <h3>Spa</h3>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="inner">
+                                        <img src="../IMAGE/icon/gym.png" alt="">
+                                        <h3>Gym</h3>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="inner">
+                                        <img src="../IMAGE/icon/break-fast.png" alt="">
+                                        <h3>Ăn Sáng</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tiện ích khi đặt tour -->
+                        <div class="room-amenities">
+                            <h3>Tiện Ích Tour</h3>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="inner">
+                                        <img src="../IMAGE/icon/break-fast.png" alt="">
+                                        <h3>Ăn Sáng</h3>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="inner">
+                                        <img src="../IMAGE/icon/gym.png" alt="">
+                                        <h3>Gym</h3>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="inner">
+                                        <img src="../IMAGE/icon/parking.png" alt="">
+                                        <h3>Bãi Đỗ Xe</h3>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="inner">
+                                        <img src="../IMAGE/icon/pool.png" alt="">
+                                        <h3>Bể Bơi</h3>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="inner">
+                                        <img src="../IMAGE/icon/safety-box.png" alt="">
+                                        <h3>Két Sắt</h3>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="inner">
+                                        <img src="../IMAGE/icon/spa.png" alt="">
+                                        <h3>Spa</h3>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="inner">
+                                        <img src="../IMAGE/icon/wifi.png" alt="">
+                                        <h3>Wifi</h3>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="inner">
+                                        <img src="../IMAGE/service-img/restaurant_icon.png" alt="" style="opacity: 60%;">
+                                        <h3>Nhà hàng</h3>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="inner">
+                                        <img src="../IMAGE/service-img/resort_icon.png" alt="" style="opacity: 60%;">
+                                        <h3>Resort</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- nội quy KS -->
+                        <div class="room-rules">
+                            <h3>
+                                Nội quy khách sạn
+                            </h3>
+                            <ul class="list-rules">
+                                <li>
+                                    Không được hút thuốc
+                                </li>
+                                <li>
+                                    Không được mang thú cưng
+                                </li>
+                                <li>
+                                    Hồ bơi đóng cửa từ 8.00 tối - 6.00 sáng
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
 </body>
+
 </html>
