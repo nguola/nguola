@@ -129,7 +129,7 @@ aside {
     max-width: 40%;
 }
 
-/* #form_apply {
+#form_apply {
     position: sticky;
 }
 
@@ -164,7 +164,7 @@ aside {
 .open_form:hover {
     background-color: rgba(208, 203, 203, 0.514);
     color: rgb(25, 23, 23);
-} */
+}
 
 aside {
     flex: 3;
