@@ -2,8 +2,8 @@ let carouselDom = document.querySelector('.carousel');
 let listItemDom = document.querySelector('.carousel .list');
 let thumbnailDom = document.querySelector('.carousel .thumbnail');
 
-setInterval(showSlider, 3000);
-let timeRunning = 2000;
+setInterval(showSlider, 2500);
+let timeRunning = 1500;
 let runTimeOut;
 function showSlider() {
   let itemSlider = document.querySelectorAll('.carousel .list .item');
