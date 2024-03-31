@@ -14,6 +14,10 @@ nav {
     top: 0%;
 }
 
+#logo {
+    z-index: 20;
+}
+
 @keyframes showNavbar {
     from {
         top: -100%;
@@ -76,13 +80,11 @@ nav {
     box-shadow: 2px 3px 7px;
 }
 
-section {
-    flex: 6;
-}
-
 .slider {
     position: relative;
-    height: 160vh;
+    height: 130vh;
+    width: 60%;
+    float: left;
 }
 
 .slides {
@@ -124,12 +126,9 @@ section {
     border-radius: 10px;
 }
 
-aside {
-    flex: 4;
-    max-width: 40%;
-}
-
-#form_apply {
+#form_apply{
+    width: 40%;
+    float: right;
     position: sticky;
 }
 
@@ -291,14 +290,14 @@ aside .booking .form-group input:nth-last-child(1){
 
     .slider {
         width: 100%;
+        height: 130vh;
     }
 
     #open_form {
         display: block;
         position: fixed;
-        top: 90px;
-        right: -100%;
-        top: 20%;
+        top: 17%;
+        right: -15px;
         z-index: 10;
     }
 
@@ -326,6 +325,15 @@ aside .booking .form-group input:nth-last-child(1){
 }
 
 @media screen and (max-width: 570px) {
+    #head_content p{
+        font-size: 15px;
+    }
+
+    #head_content img{
+        width: 30px;
+        height: 30px;
+    }
+
     .slide_item:hover>.content {
         transform: translateX(0%);
     }

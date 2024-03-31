@@ -2,7 +2,7 @@ const nav = document.getElementsByTagName('nav');
 const logo = document.getElementById('logo');
 
 window.onscroll = function () {
-    if (document.documentElement.scrollTop > 400) {
+    if (document.documentElement.scrollTop > 300) {
         nav[0].style.position = 'fixed'
         nav[0].style.width = '100%'
         nav[0].style.animation = 'showNavbar 1s forwards';

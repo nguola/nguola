@@ -30,7 +30,7 @@ function updateSlide(n){
 }
 
 window.onscroll = function () {
-    if (document.documentElement.scrollTop > 400) {
+    if (document.documentElement.scrollTop > 300) {
         nav[0].style.position = 'fixed'
         nav[0].style.width = '100%'
         nav[0].style.animation = 'showNavbar 1s forwards';
@@ -38,7 +38,7 @@ window.onscroll = function () {
         logo.style.width = '5%'
         logo.style.animation = 'showNavbar 1s forwards';
 
-        open_btn.style.right = '50px'
+        open_btn.style.right = '10px'
     } 
     else {
         nav[0].style.animation = 'hiddenNavbar 1.5s forwards';

@@ -81,7 +81,7 @@
         </header>
         <main>
             <div class="container-fluid bg-dark">
-                <div class="container d-flex align-contents p-2">
+                <div class="container d-flex p-2" id="head_content">
                     <p class="h3 p-3 text-light">We provide you with the best amenities</p>
                     <img src="../IMAGE/service-img/like_icon.png" alt="" width="50px" height="50px" class="img">
                 </div>
@@ -105,344 +105,340 @@
                     </div>
                 </div>
             </div>
-            <div class="container position-relative overflow-hidden mt-3 d-flex">
-                <section>
-                    <div class="slider">
-                        <div>
-                            <i class="bi bi-arrow-bar-left" id="open_form" onclick="open_form()"></i>
+            <div class="container position-relative mt-3">
+                <div class="slider">
+                    <i class="bi bi-arrow-bar-left" id="open_form" onclick="open_form()"></i>
+
+                    <!-- slide hotel -->
+                    <div class="slides">
+                        <div class="slide current">
+                            <div class="slide_item">
+                                <img src="../IMAGE/service-img/hotel1.jpg" alt="">
+                                <div class="slide_content">
+                                    <h4>Hotel Casvaca</h4>
+                                    <h5>Bed: 1</h5>
+                                    <h6>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </h6>
+                                    <h5>8.4 rate</h5>
+                                    <h4>Price: 200$</h4>
+                                </div>
+                            </div>
+
+                            <div class="slide_item">
+                                <img src="../IMAGE/service-img/hotel2.jpg" alt="">
+                                <div class="slide_content">
+                                    <h4>Nicecy Boutique Hotel</h4>
+                                    <h5>Bed: 2</h5>
+                                    <h6>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                    </h6>
+                                    <h5>9.6 rate</h5>
+                                    <h4>Price: 1200$</h4>
+                                </div>
+                            </div>
+
+                            <div class="slide_item">
+                                <img src="../IMAGE/service-img/hotel3.jpg" alt="">
+                                <div class="slide_content">
+                                    <h4>The Blue Airport Hotel</h4>
+                                    <h5>Bed: 1</h5>
+                                    <h6>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </h6>
+                                    <h5>8.7 rate</h5>
+                                    <h4>Price: 300$</h4>
+                                </div>
+                            </div>
+
+                            <div class="slide_item">
+                                <img src="../IMAGE/service-img/hotel4.jpg" alt="">
+                                <div class="slide_content">
+                                    <h4>Royal Night Hotel</h4>
+                                    <h5>Bed: 1</h5>
+                                    <h6>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                    </h6>
+                                    <h5>9.5 rate</h5>
+                                    <h4>Price: 1000$</h4>
+                                </div>
+                            </div>
                         </div>
 
-                        <!-- slide hotel -->
-                        <div class="slides">
-                            <div class="slide current">
-                                <div class="slide_item">
-                                    <img src="../IMAGE/service-img/hotel1.jpg" alt="">
-                                    <div class="slide_content">
-                                        <h4>Hotel Casvaca</h4>
-                                        <h5>Bed: 1</h5>
-                                        <h6>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                        </h6>
-                                        <h5>8.4 rate</h5>
-                                        <h4>Price: 200$</h4>
-                                    </div>
-                                </div>
-
-                                <div class="slide_item">
-                                    <img src="../IMAGE/service-img/hotel2.jpg" alt="">
-                                    <div class="slide_content">
-                                        <h4>Nicecy Boutique Hotel</h4>
-                                        <h5>Bed: 2</h5>
-                                        <h6>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                        </h6>
-                                        <h5>9.6 rate</h5>
-                                        <h4>Price: 1200$</h4>
-                                    </div>
-                                </div>
-
-                                <div class="slide_item">
-                                    <img src="../IMAGE/service-img/hotel3.jpg" alt="">
-                                    <div class="slide_content">
-                                        <h4>The Blue Airport Hotel</h4>
-                                        <h5>Bed: 1</h5>
-                                        <h6>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                        </h6>
-                                        <h5>8.7 rate</h5>
-                                        <h4>Price: 300$</h4>
-                                    </div>
-                                </div>
-
-                                <div class="slide_item">
-                                    <img src="../IMAGE/service-img/hotel4.jpg" alt="">
-                                    <div class="slide_content">
-                                        <h4>Royal Night Hotel</h4>
-                                        <h5>Bed: 1</h5>
-                                        <h6>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                        </h6>
-                                        <h5>9.5 rate</h5>
-                                        <h4>Price: 1000$</h4>
-                                    </div>
+                        <!-- slide Restaurant -->
+                        <div class="slide">
+                            <div class="slide_item">
+                                <img src="../IMAGE/service-img/restaurant1.jpg" alt="">
+                                <div class="slide_content">
+                                    <h4>Phuong Nam Restaurant</h4>
+                                    <h5>Ho Chi Minh City</h5>
+                                    <h6>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </h6>
+                                    <h5>8.8 rate</h5>
+                                    <h4>Price: 500$</h4>
                                 </div>
                             </div>
 
-                            <!-- slide Restaurant -->
-                            <div class="slide">
-                                <div class="slide_item">
-                                    <img src="../IMAGE/service-img/restaurant1.jpg" alt="">
-                                    <div class="slide_content">
-                                        <h4>Phuong Nam Restaurant</h4>
-                                        <h5>Ho Chi Minh City</h5>
-                                        <h6>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                        </h6>
-                                        <h5>8.8 rate</h5>
-                                        <h4>Price: 500$</h4>
-                                    </div>
-                                </div>
-
-                                <div class="slide_item">
-                                    <img src="../IMAGE/service-img/restaurant2.jpg" alt="">
-                                    <div class="slide_content">
-                                        <h4>Gordon Ramsay Restaurant</h4>
-                                        <h5>Scotland</h5>
-                                        <h6>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                        </h6>
-                                        <h5>9.4 rate</h5>
-                                        <h4>Price: 950$</h4>
-                                    </div>
-                                </div>
-
-                                <div class="slide_item">
-                                    <img src="../IMAGE/service-img/restaurant3.jpg" alt="">
-                                    <div class="slide_content">
-                                        <h4>Slow River</h4>
-                                        <h5>Bangkok</h5>
-                                        <h6>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                        </h6>
-                                        <h5>8.2 rate</h5>
-                                        <h4>Price: 260$</h4>
-                                    </div>
-                                </div>
-
-                                <div class="slide_item">
-                                    <img src="../IMAGE/service-img/restaurant4.jpg" alt="">
-                                    <div class="slide_content">
-                                        <h4>Tokyo Soy Ramen</h4>
-                                        <h5>Tokyo</h5>
-                                        <h6>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                        </h6>
-                                        <h5>8.3 rate</h5>
-                                        <h4>Price: 310$</h4>
-                                    </div>
-                                </div>
-
-                                <div class="slide_item">
-                                    <img src="../IMAGE/service-img/restaurant5.jpg" alt="">
-                                    <div class="slide_content">
-                                        <h4>Sushi Kei</h4>
-                                        <h5>Busan</h5>
-                                        <h6>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                        </h6>
-                                        <h5>9.1 rate</h5>
-                                        <h4>Price: 400$</h4>
-                                    </div>
+                            <div class="slide_item">
+                                <img src="../IMAGE/service-img/restaurant2.jpg" alt="">
+                                <div class="slide_content">
+                                    <h4>Gordon Ramsay Restaurant</h4>
+                                    <h5>Scotland</h5>
+                                    <h6>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                    </h6>
+                                    <h5>9.4 rate</h5>
+                                    <h4>Price: 950$</h4>
                                 </div>
                             </div>
 
-                            <!-- slide Resort -->
-                            <div class="slide">
-                                <div class="slide_item">
-                                    <img src="../IMAGE/service-img/resort1.jpg" alt="">
-                                    <div class="slide_content">
-                                        <h4>Flamingo Đại Lãi</h4>
-                                        <h5>Vĩnh Phúc</h5>
-                                        <h6>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                        </h6>
-                                        <h5>9.5 rate</h5>
-                                        <h4>Price: 500$</h4>
-                                    </div>
-                                </div>
-
-                                <div class="slide_item">
-                                    <img src="../IMAGE/service-img/resort2.jpg" alt="">
-                                    <div class="slide_content">
-                                        <h4>Four Seasons</h4>
-                                        <h5>Hawaii</h5>
-                                        <h6>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                        </h6>
-                                        <h5>8.6 rate</h5>
-                                        <h4>Price: 400$</h4>
-                                    </div>
-                                </div>
-
-                                <div class="slide_item">
-                                    <img src="../IMAGE/service-img/resort3.jpg" alt="">
-                                    <div class="slide_content">
-                                        <h4>Royal Kona</h4>
-                                        <h5>Hawaii</h5>
-                                        <h6>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                        </h6>
-                                        <h5>8.9 rate</h5>
-                                        <h4>Price: 480$</h4>
-                                    </div>
-                                </div>
-
-                                <div class="slide_item">
-                                    <img src="../IMAGE/service-img/resort4.jpg" alt="">
-                                    <div class="slide_content">
-                                        <h4>Green Island Resort</h4>
-                                        <h5>Australia</h5>
-                                        <h6>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                        </h6>
-                                        <h5>9.3 rate:</h5>
-                                        <h4>Price: 540$</h4>
-                                    </div>
-                                </div>
-
-                                <div class="slide_item">
-                                    <img src="../IMAGE/service-img/resort5.jpg" alt="">
-                                    <div class="slide_content">
-                                        <h4>Lizard Resort</h4>
-                                        <h5>Australia</h5>
-                                        <h6>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                        </h6>
-                                        <h5>8.4 rate</h5>
-                                        <h4>Price: 340$</h4>
-                                    </div>
+                            <div class="slide_item">
+                                <img src="../IMAGE/service-img/restaurant3.jpg" alt="">
+                                <div class="slide_content">
+                                    <h4>Slow River</h4>
+                                    <h5>Bangkok</h5>
+                                    <h6>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </h6>
+                                    <h5>8.2 rate</h5>
+                                    <h4>Price: 260$</h4>
                                 </div>
                             </div>
 
-                            <!-- slide Hospital -->
-                            <div class="slide">
-                                <div class="slide_item">
-                                    <img src="../IMAGE/service-img/hospital1.webp" alt="">
-                                    <div class="slide_content">
-                                        <h4>Cleveland Clinic</h4>
-                                        <h5>United States</h5>
-                                        <h6>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                        </h6>
-                                    </div>
+                            <div class="slide_item">
+                                <img src="../IMAGE/service-img/restaurant4.jpg" alt="">
+                                <div class="slide_content">
+                                    <h4>Tokyo Soy Ramen</h4>
+                                    <h5>Tokyo</h5>
+                                    <h6>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </h6>
+                                    <h5>8.3 rate</h5>
+                                    <h4>Price: 310$</h4>
                                 </div>
+                            </div>
 
-                                <div class="slide_item">
-                                    <img src="../IMAGE/service-img/hospital2.jpg" alt="">
-                                    <div class="slide_content">
-                                        <h4>Toronto</h4>
-                                        <h5>Cannada</h5>
-                                        <h6>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                        </h6>
-                                    </div>
+                            <div class="slide_item">
+                                <img src="../IMAGE/service-img/restaurant5.jpg" alt="">
+                                <div class="slide_content">
+                                    <h4>Sushi Kei</h4>
+                                    <h5>Busan</h5>
+                                    <h6>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                    </h6>
+                                    <h5>9.1 rate</h5>
+                                    <h4>Price: 400$</h4>
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="slide_item">
-                                    <img src="../IMAGE/service-img/hospital3.jpg" alt="">
-                                    <div class="slide_content">
-                                        <h4>Johns Hopkins</h4>
-                                        <h5>United States</h5>
-                                        <h6>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                        </h6>
-                                    </div>
+                        <!-- slide Resort -->
+                        <div class="slide">
+                            <div class="slide_item">
+                                <img src="../IMAGE/service-img/resort1.jpg" alt="">
+                                <div class="slide_content">
+                                    <h4>Flamingo Đại Lãi</h4>
+                                    <h5>Vĩnh Phúc</h5>
+                                    <h6>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                    </h6>
+                                    <h5>9.5 rate</h5>
+                                    <h4>Price: 500$</h4>
                                 </div>
+                            </div>
 
-                                <div class="slide_item">
-                                    <img src="../IMAGE/service-img/hospital4.jpg" alt="">
-                                    <div class="slide_content">
-                                        <h4>Spital Zurich</h4>
-                                        <h5>Switzerland</h5>
-                                        <h6>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                        </h6>
-                                    </div>
+                            <div class="slide_item">
+                                <img src="../IMAGE/service-img/resort2.jpg" alt="">
+                                <div class="slide_content">
+                                    <h4>Four Seasons</h4>
+                                    <h5>Hawaii</h5>
+                                    <h6>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </h6>
+                                    <h5>8.6 rate</h5>
+                                    <h4>Price: 400$</h4>
                                 </div>
+                            </div>
 
-                                <div class="slide_item">
-                                    <img src="../IMAGE/service-img/hospital5.jpg" alt="">
-                                    <div class="slide_content">
-                                        <h4>Charité Berlin</h4>
-                                        <h5>Germany</h5>
-                                        <h6>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                            <i class="bi bi-star-fill" style="color: yellow;"></i>
-                                        </h6>
-                                    </div>
+                            <div class="slide_item">
+                                <img src="../IMAGE/service-img/resort3.jpg" alt="">
+                                <div class="slide_content">
+                                    <h4>Royal Kona</h4>
+                                    <h5>Hawaii</h5>
+                                    <h6>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </h6>
+                                    <h5>8.9 rate</h5>
+                                    <h4>Price: 480$</h4>
+                                </div>
+                            </div>
+
+                            <div class="slide_item">
+                                <img src="../IMAGE/service-img/resort4.jpg" alt="">
+                                <div class="slide_content">
+                                    <h4>Green Island Resort</h4>
+                                    <h5>Australia</h5>
+                                    <h6>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                    </h6>
+                                    <h5>9.3 rate:</h5>
+                                    <h4>Price: 540$</h4>
+                                </div>
+                            </div>
+
+                            <div class="slide_item">
+                                <img src="../IMAGE/service-img/resort5.jpg" alt="">
+                                <div class="slide_content">
+                                    <h4>Lizard Resort</h4>
+                                    <h5>Australia</h5>
+                                    <h6>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </h6>
+                                    <h5>8.4 rate</h5>
+                                    <h4>Price: 340$</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide Hospital -->
+                        <div class="slide">
+                            <div class="slide_item">
+                                <img src="../IMAGE/service-img/hospital1.webp" alt="">
+                                <div class="slide_content">
+                                    <h4>Cleveland Clinic</h4>
+                                    <h5>United States</h5>
+                                    <h6>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div class="slide_item">
+                                <img src="../IMAGE/service-img/hospital2.jpg" alt="">
+                                <div class="slide_content">
+                                    <h4>Toronto</h4>
+                                    <h5>Cannada</h5>
+                                    <h6>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div class="slide_item">
+                                <img src="../IMAGE/service-img/hospital3.jpg" alt="">
+                                <div class="slide_content">
+                                    <h4>Johns Hopkins</h4>
+                                    <h5>United States</h5>
+                                    <h6>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div class="slide_item">
+                                <img src="../IMAGE/service-img/hospital4.jpg" alt="">
+                                <div class="slide_content">
+                                    <h4>Spital Zurich</h4>
+                                    <h5>Switzerland</h5>
+                                    <h6>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div class="slide_item">
+                                <img src="../IMAGE/service-img/hospital5.jpg" alt="">
+                                <div class="slide_content">
+                                    <h4>Charité Berlin</h4>
+                                    <h5>Germany</h5>
+                                    <h6>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                        <i class="bi bi-star-fill" style="color: yellow;"></i>
+                                    </h6>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
 
                 <div id="form_apply">
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center bg-info">
                         <ul class="nav nav-tabs">
                             <li class="nav-item">
                                 <a class="nav-link active btn_slide text-dark" onclick="updateSlide(0)">Hotel</a>
@@ -489,7 +485,7 @@
                 </div>
             </div>
         </main>
-        <footer>
+        <footer style="clear: both;">
             <div class="container-fluid bg-dark p-0">
                 <div class="container">
                     <div class="row p-2">
@@ -565,7 +561,6 @@
             </div>
         </div>
     </div>
-
     <script src="../JAVASCRIPT/service.js"></script>
 </body>
 
