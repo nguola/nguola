@@ -193,7 +193,7 @@ li:hover {
 #tourGuideOther .card {
   overflow: hidden;
 }
-#tourGuideOther .card img:hover {
+#tourGuideOther .card:hover img {
   transform: scale(1.05);
 }
 /* feedback */
@@ -299,6 +299,12 @@ li:hover {
   margin: 5% 0;
 }
 @media screen and (max-width:768px){
+    p{
+      font-size: 13px;
+    }
+    #about p{
+      font-size: 13px;
+    }
     .service-item {
         text-align: center;
         max-width: 110px;
