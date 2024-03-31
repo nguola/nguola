@@ -131,15 +131,19 @@ nav {
     .formnav button {
         width: 100%;
     }
-    .col-8{
-        margin: 0px !important;
-        width: 90% !important;
+    .Slide .col-10{
+        width: 80% !important;
+        margin-left: 10% !important;
     }
-    .col-10{
+    .Slide .col-9 .col-5{
+        margin-left: 6% !important;
+    }
+    .Slide .col-9 .col-5 img{
         width: 100% !important;
+        border-radius: 10px !important;
     }
-    .body-center-if{
-        width: 400px !important;
+    .col-9{
+        width: 80% !important;
     }
     .body-center-if p{
         font-size: 1.5rem !important;
@@ -170,14 +174,6 @@ nav {
         width: 100% !important;
         
     }
-    .body-center-img img{
-        width: 150% !important;
-    }
-    .body-center{
-        width: 100%;
-        margin: 0px;
-        margin-left: 13%;
-    }
     .footer-manager {
         display: inline-block;
         width: 400% !important;
@@ -202,7 +198,7 @@ nav {
     }
     .col-9{
         margin: 0px !important;
-        width: 100% !important;
+        width: 90% !important;
     }
     .body-center .col-5{
         margin: 0px !important;
@@ -255,6 +251,14 @@ nav {
     .formnav select,
     .formnav button {
         width: 100%;
+    }
+    .Slide .col-9 .col-5 img{
+        border-radius: 10px !important;
+    }
+    .Slide .col-9 .col-5{
+        width: 90% !important;
+        margin-left: 5% !important;
+        margin-right: 5% !important;
     }
     .col-8{
         width: 90% !important;
@@ -413,6 +417,14 @@ nav {
     .formnav select,
     .formnav button {
         width: 100%;
+    }
+    .Slide .col-9 .col-5 img{
+        border-radius: 10px !important;
+    }
+    .Slide .col-9 .col-5{
+        width: 90% !important;
+        margin-left: 5% !important;
+        margin-right: 5% !important;
     }
     .col-8{
         width: 90% !important;
