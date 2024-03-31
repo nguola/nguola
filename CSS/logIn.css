@@ -48,3 +48,55 @@
 .log_in {
   box-shadow: 1px 1px 5px rgba(23, 23, 23, 0.44);
 }
+
+/* alert */
+
+#errorAlert {
+  display: none;
+  position: fixed;
+  top: 65px;
+  right: 0;
+  width: 25vw;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  #errorAlert {
+    display: none;
+    position: fixed;
+    top: 90px;
+    right: 0;
+    width: 80vw;
+    font-size: 1.3rem;
+  }
+  
+}
+
+.move-right {
+  animation: moveRight 1s forwards;
+}
+
+.move-left {
+  animation: moveLeft 2s forwards;
+}
+
+@keyframes moveRight {
+  from {
+    right: -100vw;
+  }
+  to {
+    right: 0; 
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    right: 0
+  }
+  to {
+    right: -100vw;
+  }
+}
+
+
+/* end alert */

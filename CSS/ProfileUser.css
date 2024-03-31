@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  body {
+      font-size: 14px; 
+  }
+}
+
+p {
+  font-size: 1em;
+}
+
+.content {
+  display: flex;
+}
+
+aside {
+  flex: 3;
+  border: none;
+  position: sticky;
+  top: 50px;
+}
+
+.select_content {
+  border: 1px solid rgb(235, 232, 232);
+  margin: 40px;
+}
+
+section {
+  flex: 7;
+}
+
+tr td {
+  min-width: 90px;
+}
+
+@media screen and (max-width: 768px) {
+  aside {
+    flex: 0;
+  }
+
+  section {
+    flex: 1;
+  }
+}
+
+#btnoffcanvas {
+  position: fixed;
+  top: 50px;
+}
+
+.title .title_content {
+  width: 75%;
+  float: left;
+}
+.title .avatar {
+  float: right;
+  width: 20%;
+  font-size: 4em;
+}
