@@ -23,14 +23,19 @@ p {
 }
 
 aside {
-  flex: 2;
+  flex: 3;
   border: none;
   position: sticky;
   top: 50px;
 }
 
+.select_content {
+  border: 1px solid rgb(235, 232, 232);
+  margin: 40px;
+}
+
 section {
-  flex: 8;
+  flex: 7;
 }
 
 tr td {
