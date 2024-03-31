@@ -38,7 +38,7 @@ window.onscroll = function () {
         logo.style.width = '5%'
         logo.style.animation = 'showNavbar 1s forwards';
 
-        open_btn.style.right = '10px'
+        open_btn.style.right = '8%'
     } 
     else {
         nav[0].style.animation = 'hiddenNavbar 1.5s forwards';
