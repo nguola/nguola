@@ -544,6 +544,10 @@ nav {
         transform: translate(-20%, -50%);
     }
 
+    .infor{
+        top: 1px;
+    }
+ 
     .infor-tour-link h4,
     .infor p {
         font-size: 0.6rem;
@@ -642,6 +646,9 @@ nav {
     .favorite-slide-item-footer,
     .favorite-slide-item-footer img {
         width: 100% !important;
+    }
+    .favorite-slide-item-footer{
+        margin-top: 10px;
     }
 
     .service-show {
