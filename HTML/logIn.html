@@ -210,8 +210,8 @@
 
     let login_btn = $('#login_btn');
     login_btn.on('click', () => {
-      let username = $('#username').val();
-      let pass = $('#pass').val()
+      let username = $('#username').val().trim();
+      let pass = $('#pass').val().trim();
 
       if (!username || !pass) {
         showErrorAlert("Vui lòng điền đầy đủ thông tin", 3000);
