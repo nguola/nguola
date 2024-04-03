@@ -26,6 +26,7 @@ function check_login(){
         let account = JSON.parse(localStorage.getItem(user_current))
         account.status = 0;
         localStorage.setItem(user_current, JSON.stringify(account));
+        localStorage.removeItem('user_current')
         localStorage.removeItem('status')
         login_display[0].style.display = 'flex'
         account_display[0].style.display = 'none'
