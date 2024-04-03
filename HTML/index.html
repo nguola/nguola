@@ -18,7 +18,7 @@
             <div class="top-bar bg-dark pt-3">
                 <div class="container d-flex justify-content-between">
                     <img src="../IMAGE/logo.png" alt="" style="width: 100px;" class="img-fluid" id="logo">
-                    <div class="login_signin" style="display: flex;">
+                    <div class="login_signin">
                         <div class="login d-flex mr-3 align-items-center">
                             <i class="bi bi-box-arrow-in-right" style="size: 1rem; color: white;"></i>
                             <a href="logIn.html" class="h6 text-light ml-2 mt-1"
@@ -30,7 +30,7 @@
                                 up</a>
                         </div>
                     </div>
-                    <div class="account" style="display: none;">
+                    <div class="account">
                         <div class="dropdown">
                             <i class="bi bi-person-check" style="color: white; font-size: 40px;" data-bs-toggle="dropdown"></i>
                             <ul class="dropdown-menu">
@@ -559,19 +559,6 @@
 
     <script>
         $(document).ready(function () {
-            let sts = localStorage.getItem('status')
-
-            if (sts !== null) {
-                $('.login_signin').css('display', 'none')
-                $('.account').css('display', 'block')
-            }
-
-            $('#logout').click(function(){
-                localStorage.removeItem('status')
-                $('.login_signin').css('display', 'flex')
-                $('.account').css('display', 'none')
-            })
-
             function subcribe() {
                 let email = document.getElementById('customer_email').value
 
@@ -587,6 +574,7 @@
         })
     </script>
 
+    <script src="../JAVASCRIPT/check_login.js"></script>
     <script src="../JAVASCRIPT/showmenu.js"></script>
     <script src="../JAVASCRIPT/index.js"></script>
 </body>
