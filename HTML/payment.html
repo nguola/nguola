@@ -86,8 +86,7 @@
                                 </tr>
                             </table>
                         </form>
-                        <button class="btn btn-primary form-control" id="btn_continue"
-                            onclick="show_payment()">Continue</button>
+                        <button class="btn btn-primary form-control" id="btn_continue">Continue</button>
                     </div>
                 </div>
             </div>
@@ -290,7 +289,7 @@
                 img_bank.src = src
             })
 
-            $(btn_continue).click(function () {
+            function check_inf(){
                 let name = $('#name').val()
                 let phone = $('#name').val()
                 let address = $('#name').val()
@@ -298,30 +297,36 @@
                 let members = $('#members').val()
                 let children = $('#children').val()
 
-                // if ($.trim(name) == "" || $.trim(phone) == "" || $.trim(address) == "" || $.trim(members) == "") {
+                if ($.trim(name) == "" || $.trim(phone) == "" || $.trim(address) == "" || $.trim(members) == "") {
+                    return false
+                }
 
-                //     return false
-                // }
+                if (/[A-Z][a-z]+/.test(name)) {
+                    return false
+                }
 
-                // if (/[A-Z][a-z]+/.test(name)) {
-                //     return false
-                // }
+                if (/[0-9]{10}]/.test(phone)) {
 
-                // if (/[0-9]{10}]/.test(phone)) {
+                    return false
+                }
 
-                //     return false
-                // }
+                if (/[A-Z][a-z]+/.test(address)) {
+                    return false
+                }
 
-                // if (/[A-Z][a-z]+/.test(address)) {
-                //     return false
-                // }
+                if (email != "" && /[a-z].+@gmail\.\w*\.com/.test(email)) {
+                    return false
+                }
 
-                // if (email != "" && /[a-z].+@gmail\.\w*\.com/.test(email)) {
-                //     return false
-                // }
+                return true
+            }
 
-                show_payment()
-            })
+            // $(btn_continue).click(function () {
+            //     if(check_inf() === true)
+            //         show_payment()
+            //     else
+
+            // })
         })
     </script>
 

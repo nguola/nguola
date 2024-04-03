@@ -224,6 +224,7 @@
           temp.status = 1;
           localStorage.setItem(username, JSON.stringify(temp));
           localStorage.setItem('status', true)
+          localStorage.setItem('user_current', username)
           window.location.href = "index.html";
         } else {
           showErrorAlert("Mật khẩu không đúng", 3000);
