@@ -374,9 +374,12 @@ nav {
     .infor p {
         margin-left: 0px !important;
     }
+    .col-sm{
+        padding: 0px !important;
+    }
 }
 
-@media only screen and (min-width: 666x) and (max-width: 739px) {
+@media only screen and (min-width: 666px) and (max-width: 739px) {
     .description {
         transform: translate(-20%, -50%);
     }
@@ -415,12 +418,17 @@ nav {
         flex-direction: column;
     }
 
-    .show-experience-info-item {
+    .show-experience-info-item p {
         width: 100% !important;
     }
-
     .show-experience-info-item video {
-        width: 320px !important;
+        max-width: 100% !important;
+        padding: 0px;
+        margin-left: 35% !important;
+    }
+    .show .show-experience-info .col-5 {
+        max-width: 100% !important;
+        padding: 0px;
     }
 
     .first-letter-big {
@@ -455,7 +463,6 @@ nav {
 
     .row .slide-show-first-item>* {
         width: 400px !important;
-        background-color: chartreuse !important;
     }
 
     .favorite-slide-item {
@@ -464,10 +471,18 @@ nav {
         margin-right: 10px;
         margin-left: 10px;
     }
+    .slide-show-first-item .col-sm {
+        width: 50%;
+        margin-top: 10px;
+    }
 
     .slide-show-second {
         flex-direction: column !important;
         margin-top: 20px;
+    }
+
+    .slide-show-second .col-5 {
+        max-width: 100% !important;
     }
 
     .favorite-slide-item-content {
@@ -475,30 +490,34 @@ nav {
         width: 250px;
     }
 
+    .favorite-slide-item-info {
+        top: 45%;
+        left: 0%;
+        padding: 0px;
+        background-position: center;
+    }
+
+    .favorite-slide-item-info p,
     .favorite-slide-item-info a {
         font-size: 0.6rem;
-    }
-
-    .favorite-slide-item-info {
-        top: 35px;
-        left: 0px;
-        padding: 0px;
-    }
-
-    .favorite-slide-item-info p {
-        font-size: 0.6rem;
-        left: 3px;
+        margin-left: 5%;
     }
 
     .slide-show-three {
         flex-direction: column !important;
-        width: 400px !important;
+        width: 100% !important;
     }
 
-    .favorite-slide-item-footer {
-        margin-left: 12px;
-        margin-top: 20px;
-        width: 250px;
+    .slide-show-three .col-4 {
+        max-width: 100% !important;
+    }
+
+    .favorite-slide-item-footer,
+    .favorite-slide-item-footer img {
+        width: 100% !important;
+    }
+    .favorite-slide-item-footer{
+        margin-top: 10px;
     }
 
     .service-show {
@@ -667,5 +686,14 @@ nav {
     .col-md-6 .image-container button {
         padding: 5px !important;
         transform: translate(-20%, 20%) !important;
+    }
+    .service-show-item-img-info a{
+        font-size: 0.7rem;
+    }
+    .service-show-item-img-info p{
+        font-size: 0.6rem;
+    }
+    .service-show-item-img img{
+        height: 90%;
     }
 }
