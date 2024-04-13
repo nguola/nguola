@@ -168,3 +168,26 @@ h3{
     margin: 10px 0px 10px 0px;
   }
 }
+
+
+@media screen and (max-width: 430px) {
+  section {
+    width: 70%;
+  }
+
+  table {
+    font-size: 11px;
+  }
+
+  .avatar {
+    width: 5%;
+  }
+
+  .title_content h1{
+    font-size: 20px;
+  }
+
+  .title_content p {
+    font-size: 15px;
+  }
+}
