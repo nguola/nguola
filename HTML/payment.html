@@ -7,6 +7,7 @@
     <title>Payment</title>
     <link rel="stylesheet" href="../Bootstrap/bootstrap.css">
     <link rel="stylesheet" href="../CSS/payment.css">
+    <link rel="stylesheet" href="../CSS/header_footer.css">
     <link rel="stylesheet" href="../Bootstrap/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
     <script src="../jquery/jquery-3.7.1.min.js"></script>
     <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
@@ -15,13 +16,38 @@
 <body>
     <div class="container-fluid p-0">
         <header>
-            <div class="container-fluid">
-                <div class="container p-3 d-flex justify-content-between">
-                    <button class="btn btn-primary d-flex align-items-center rounded-pill"><i
-                            class="bi bi-skip-backward" style="font-size: 20px; margin-right: 3px;"></i><span>Back
-                            Page</span></button>
-                    <a href="#"><i class="bi bi-person-fill-check"
-                            style="font-size: 30px; transform: translateX(100%);"></i></a>
+            <div class="top-bar bg-dark pt-3">
+                <div class="container d-flex justify-content-between" id="top_content">
+                    <img src="../IMAGE/logo.png" alt="" style="width: 80px;" class="img" id="logo">
+                    <div class="login_signin">
+                        <div class="login d-flex mr-3 align-items-center">
+                            <i class="bi bi-box-arrow-in-right" style="size: 1rem; color: white;"></i>
+                            <a href="logIn.html" class="h6 text-light ml-2 mt-1"
+                                style="text-decoration: none;">Login</a>
+                        </div>
+                        <div class="Signup d-flex align-items-center text-align-center">
+                            <i class="bi bi-person-fill pt-0" style="color: white;"></i>
+                            <a href="signUp.html" class="h6 text-light ml-2 mt-1" style="text-decoration: none;">Sign
+                                up</a>
+                        </div>
+                    </div>
+                    <div class="account">
+                        <div class="dropdown d-flex align-items-end">
+                            <p id="user_name" class="text-light h6"></p>
+                            <i class="bi bi-person-check" style="color: white; font-size: 30px;"
+                                data-bs-toggle="dropdown"></i>
+                            <ul class="dropdown-menu">
+                                <li><a href="ProfileUser.html" class="dropdown-item">Profile</a></li>
+                                <li><a href="#" class="dropdown-item" id="logout">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container d-flex justify-content-end pb-3">
+                    <a href="" class="text-decoration-none" id="btn_back_page"><button
+                            class="btn btn-light d-flex align-items-center rounded-pill font-weight-bolder"><i
+                                class="bi bi-skip-backward" style="font-size: 20px; margin-right: 3px;"></i><span>Back
+                                Page</span></button></a>
                 </div>
             </div>
         </header>
@@ -31,58 +57,42 @@
                     <div class="col-sm">
                         <div class="container">
                             <div id="infor_tour" class="text-center">
-                                <img src="../IMAGE/index-img/codohue.jpg" class="img img-fluid"
-                                    style="border-radius: 10px;">
-                                <h1>Price:</h1>
+                                <img src="" class="img img-fluid" style="border-radius: 10px;" id="tour_img">
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm">
-                        <form action="" class="was-validated">
+                    <div class="col-sm rounded-sm p-3" style="box-shadow: 5px 5px 15px;">
+                        <form action="">
                             <table class="table table-borderless">
                                 <tr>
-                                    <td><label for="name">Name(*):</label></td>
+                                    <td><label for="tour">Tour:</label></td>
                                     <td>
-                                        <input type="text" class="form-control" id="name" placeholder="Fill your name!"
-                                            required>
-                                        <div class="valid-feedback">Valid.</div>
-                                        <div class="invalid-feedback">Please fill out your name.</div>
+                                        <input type="text" class="form-control" id="tour" disabled>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><label for="phone">Phone(*):</label></td>
+                                    <td><label for="price">Price:</label></td>
                                     <td>
-                                        <input type="text" class="form-control" id="phone"
-                                            placeholder="Fill your phone!" required>
-                                        <div class="valid-feedback">Valid.</div>
-                                        <div class="invalid-feedback">Please fill out your phone.</div>
+                                        <input type="text" class="form-control" id="price" disabled>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><label for="address">Address(*):</label></td>
+                                    <td><label for="check_in">Check in:</label></td>
                                     <td>
-                                        <input type="text" class="form-control" id="address"
-                                            placeholder="Fill your address!" required>
-                                        <div class="valid-feedback">Valid.</div>
-                                        <div class="invalid-feedback">Please fill out your address.</div>
+                                        <input type="date" class="form-control" id="check_in" disabled>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><label for="email">Email:</label></td>
-                                    <td><input type="text" class="form-control" id="email"
-                                            placeholder="Fill your email!"></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="members">Number Of Members(*):</label></td>
+                                    <td><label for="check_out">Check out:</label></td>
                                     <td>
-                                        <input type="text" class="form-control" id="members" required>
-                                        <div class="valid-feedback">Valid.</div>
-                                        <div class="invalid-feedback">Please fill out number of members.</div>
+                                        <input type="date" class="form-control" id="check_out" disabled>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><label for="children">Number Of Children:</label></td>
-                                    <td><input type="text" class="form-control" id="children"></td>
+                                    <td><label for="num_people">Num Of People:</label></td>
+                                    <td>
+                                        <input type="number" class="form-control" id="num_people" disabled>
+                                    </td>
                                 </tr>
                             </table>
                         </form>
@@ -90,16 +100,49 @@
                     </div>
                 </div>
             </div>
+            <div class="container my-5 rounded-sm p-3 w-auto" style="box-shadow: 5px 5px 15px; display: none;"
+                id="information_form">
+                <form action="">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td><label for="Name">Name: <span id="name_err"></span></label></td>
+                            <td>
+                                <input type="text" class="form-control" id="Name" placeholder="Fill your name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="Phone">Phone: <span id="phone_err"></span></label></td>
+                            <td>
+                                <input type="text" class="form-control" id="Phone" placeholder="Fill your phone">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="Email">Email: <span id="email_err"></span></label></td>
+                            <td>
+                                <input type="text" class="form-control" id="Email" placeholder="Fill your email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="address">Address: <span id="address_err"></span></label></td>
+                            <td>
+                                <input type="text" class="form-control" id="address" placeholder="Fill your address">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <button class="btn btn-info form-control w-25" id="btn_next" disabled>Next</button>
+            </div>
+
             <div id="payment" style="display: none;">
-                <div class="payment_item container p-5 text-center">
+                <div class="payment_item container pb-2 text-center">
                     <div class="row">
-                        <div class="col-sm">
+                        <div class="col-sm d-flex justify-content-center">
                             <div class="slide_btn" onclick="show_bank()">
                                 <img src="../IMAGE/payment-img/bank_icon.png" alt="" width="50px" height="50px">
                                 <span>Bank</span>
                             </div>
                         </div>
-                        <div class="col-sm">
+                        <div class="col-sm d-flex justify-content-center">
                             <div class="slide_btn" onclick="show_momo()">
                                 <img src="../IMAGE/payment-img/momo_icon.webp" alt="" width="50px" height="50px">
                                 <span>Momo</span>
@@ -107,12 +150,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="slider container p-5">
+                <div class="slider container p-2 mb-5" style="box-shadow: 5px 5px 15px;">
                     <div class="slides">
-
                         <!-- slide bank payment -->
                         <div class="slide">
-                            <form action="" class="was-validated">
+                            <form action="">
                                 <table class="table table-borderless">
                                     <tr>
                                         <td colspan="2">
@@ -136,59 +178,56 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2"><img src="../IMAGE/payment-img/bidv_icon.png" alt=""
-                                                id="img_bank" width="60%" height="80px">
+                                        <td colspan="2" class="d-flex"><img src="../IMAGE/payment-img/bidv_icon.png"
+                                                alt="" id="img_bank" width="60%" height="80px">
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><label for="Beneficiaryname">Beneficiary name:</label></td>
+                                        <td><label for="Beneficiaryname">Beneficiary name: <span
+                                                    id="beneficiary_err"></span></label></td>
                                         <td>
-                                            <input type="text" id="Beneficiaryname" class="form-control" required>
-                                            <div class="valid-feedback">Valid.</div>
-                                            <div class="invalid-feedback">Please fill out this beneficiary name.</div>
+                                            <input type="text" id="beneficiary" class="form-control">
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><label for="code">Code:</label></td>
+                                        <td><label for="code">Code: <span id="code_err"></span></label></td>
                                         <td>
-                                            <input type="text" id="code" class="form-control" required>
-                                            <div class="valid-feedback">Valid.</div>
-                                            <div class="invalid-feedback">Please fill out this code.</div>
+                                            <input type="text" id="code" class="form-control" id="code">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <div class="row">
                                                 <div class="col-sm">
-                                                    <span>Verification:</span>
+                                                    <span>Verification: <span id="verification_err"></span></span>
                                                 </div>
                                                 <div class="col-sm">
-                                                    <img src="../IMAGE/payment-img/verification.png" alt="" id="Verification">
+                                                    <img src="../IMAGE/payment-img/verification.png" alt=""
+                                                        id="Verification">
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
-                                            <input type="text" id="verification" class="form-control" required>
-                                            <div class="valid-feedback">Valid.</div>
-                                            <div class="invalid-feedback">Please fill out this verification.</div>
+                                            <input type="text" id="verification_inp" class="form-control" required>
                                         </td>
                                     </tr>
                                 </table>
                             </form>
-                            <button class="btn btn-primary form-control" data-bs-toggle="modal"
-                                data-bs-target="#modal_success">Accept</button>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-success form-control w-50" data-bs-toggle="modal"
+                                    data-bs-target="#modal_success" id="btn_pay_bank" disabled>Pay</button>
+                            </div>
                         </div>
 
                         <!-- slide momo payment -->
                         <div class="slide">
-                            <form action="" class="was-validated">
+                            <form action="">
                                 <table class="table table-borderless">
                                     <tr>
-                                        <td><label for="momo_code">Momo code:</label></td>
+                                        <td><label for="momo_code">Momo code: <span id="momo_code_err"></span></label>
+                                        </td>
                                         <td>
-                                            <input type="text" id="momo_code" class="form-control" required>
-                                            <div class="valid-feedback">Greate!!</div>
-                                            <div class="invalid-feedback">Please fill out this momo code!!</div>
+                                            <input type="text" id="momo_code" class="form-control">
                                         </td>
                                     </tr>
                                     <tr>
@@ -196,15 +235,17 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2" class="text-center">
+                                        <td colspan="2" class="text-center d-flex justify-content-center">
                                             <img src="../IMAGE/payment-img/Qrcode.png" alt="" style="display: none;"
                                                 id="qr">
                                         </td>
                                     </tr>
                                 </table>
                             </form>
-                            <button class="btn btn-primary form-control" data-bs-toggle="modal"
-                                data-bs-target="#modal_success">Accept</button>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-success form-control w-50" data-bs-toggle="modal"
+                                    data-bs-target="#modal_success" id="btn_pay_momo" disabled>Pay</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -283,54 +324,214 @@
 
     <script>
         $(document).ready(function () {
+            let tour = JSON.parse(localStorage.getItem('pre_tour'))
+            $('#tour_img').attr('src', tour.img)
+            $('#btn_back_page').attr('href', tour.url)
+            $('#tour').val(tour.name)
+            $('#price').val(tour.price)
+            $('#check_in').val(tour.date_check_in)
+            $('#check_out').val(tour.date_check_out)
+            $('#num_people').val(parseInt(tour.numP))
+
             $('#bank').change(function () {
                 let src = $('option:checked').val()
                 let img_bank = document.getElementById('img_bank')
                 img_bank.src = src
             })
 
-            function check_inf(){
-                let name = $('#name').val()
-                let phone = $('#name').val()
-                let address = $('#name').val()
-                let email = $('#name').val()
-                let members = $('#members').val()
-                let children = $('#children').val()
+            let nameValid = false
+            let phoneValid = false
+            let emailValid = false
+            let addressValid = false
 
-                if ($.trim(name) == "" || $.trim(phone) == "" || $.trim(address) == "" || $.trim(members) == "") {
-                    return false
+            $('#Name').blur(function () {
+                let name = $('#Name').val();
+                if (name == "") {
+                    $('#name_err').text("Fill your name");
+                    $('#name_err').css('color', 'red');
+                    nameValid = false;
+                } else {
+                    $('#name_err').css('color', 'green');
+                    $('#name_err').text("look good");
+                    nameValid = true;
                 }
+                update_btn()
+            });
 
-                if (/[A-Z][a-z]+/.test(name)) {
-                    return false
+            $('#Phone').blur(function () {
+                let phone = $('#Phone').val();
+                if (phone == "") {
+                    $('#phone_err').text("Fill your phone");
+                    $('#phone_err').css('color', 'red');
+                    phoneValid = false;
+                } else if (isNaN(phone)) {
+                    $('#phone_err').text("Phone is number");
+                    $('#phone_err').css('color', 'red');
+                    phoneValid = false;
+                } else if (!/\d{10}/.test(phone)) {
+                    $('#phone_err').text("Phone number must have 10 num");
+                    $('#phone_err').css('color', 'red');
+                    phoneValid = false;
+                } else if (!/^(084|085|086)/.test(phone)) {
+                    $('#phone_err').text("Phone number must begin by 084, 085 or 086");
+                    $('#phone_err').css('color', 'red');
+                    phoneValid = false;
+                } else {
+                    $('#phone_err').text("look good");
+                    $('#phone_err').css('color', 'green');
+                    phoneValid = true;
                 }
+                update_btn()
+            });
 
-                if (/[0-9]{10}]/.test(phone)) {
-
-                    return false
+            $('#Email').blur(function () {
+                let email = $('#Email').val();
+                if (email == "") {
+                    $('#email_err').text("Fill your email");
+                    $('#email_err').css('color', 'red');
+                    emailValid = false;
+                } else if (!/^[a-z]\S*@gmail.com$/.test(email)) {
+                    $('#email_err').text("Email wrong format");
+                    $('#email_err').css('color', 'red');
+                    emailValid = false;
+                } else {
+                    $('#email_err').text("look good");
+                    $('#email_err').css('color', 'green');
+                    emailValid = true;
                 }
+                update_btn()
+            });
 
-                if (/[A-Z][a-z]+/.test(address)) {
-                    return false
+            $('#address').blur(function () {
+                let address = $('#address').val();
+                if (address == "") {
+                    $('#address_err').text("Fill your address");
+                    $('#address_err').css('color', 'red');
+                    addressValid = false;
+                } else {
+                    $('#address_err').text("look good");
+                    $('#address_err').css('color', 'green');
+                    addressValid = true;
                 }
+                update_btn()
+            });
 
-                if (email != "" && /[a-z].+@gmail\.\w*\.com/.test(email)) {
-                    return false
+            function update_btn() {
+                if (nameValid && phoneValid && emailValid && addressValid) {
+                    $('#btn_next').prop('disabled', false);
+                } else {
+                    $('#btn_next').prop('disabled', true);
                 }
-
-                return true
             }
 
-            // $(btn_continue).click(function () {
-            //     if(check_inf() === true)
-            //         show_payment()
-            //     else
+            $('#btn_next').click(function () {
+                $('#payment').css('display', 'block')
+                $('#btn_next').prop('disabled', true);
+            })
 
-            // })
+            $('#btn_continue').click(function () {
+                $('#information_form').css('display', 'block')
+                $('#btn_continue').prop('disabled', true);
+            })
+
+            //
+            let beneValid = false
+            let codeValid = false
+            let verificationValid = false
+
+            $('#beneficiary').blur(function () {
+                let beneficiary = $('#beneficiary').val();
+                if (beneficiary == "") {
+                    $('#beneficiary_err').text("Fill your beneficiary name");
+                    $('#beneficiary_err').css('color', 'red');
+                    beneValid = false;
+                } else {
+                    $('#beneficiary_err').text("look good");
+                    $('#beneficiary_err').css('color', 'green');
+                    beneValid = true;
+                }
+                update_btn_bank()
+            });
+
+            $('#code').blur(function () {
+                let code = $('#code').val();
+                if (code == "") {
+                    $('#code_err').text("Fill your address");
+                    $('#code_err').css('color', 'red');
+                    codeValid = false;
+                } else {
+                    $('#code_err').text("look good");
+                    $('#code_err').css('color', 'green');
+                    codeValid = true;
+                }
+                update_btn_bank()
+            });
+
+            $('#verification_inp').blur(function () {
+                let verification_inp = $('#verification_inp').val();
+                console.log(verification_inp)
+                if (verification_inp != "1PB8") {
+                    $('#verification_err').text("Wrong verification");
+                    $('#verification_err').css('color', 'red');
+                    verificationValid = false;
+                } else {
+                    $('#verification_err').text("look good");
+                    $('#verification_err').css('color', 'green');
+                    verificationValid = true;
+                }
+                update_btn_bank()
+            });
+
+            function update_btn_bank() {
+                if (beneValid && codeValid && verificationValid) {
+                    $('#btn_pay_bank').prop('disabled', false);
+                } else {
+                    $('#btn_pay_bank').prop('disabled', true);
+                }
+            }
+
+            //
+            let momoCodeValid = false
+
+            $('#momo_code').blur(function () {
+                let momo_code = $('#momo_code').val();
+                if (momo_code == "") {
+                    $('#momo_code_err').text("Fill your momo code");
+                    $('#momo_code_err').css('color', 'red');
+                    momoCodeValid = false;
+                } else {
+                    $('#momo_code_err').text("look good");
+                    $('#momo_code_err').css('color', 'green');
+                    momoCodeValid = true;
+                }
+                update_btn_momo()
+            })
+
+            function update_btn_momo() {
+                if (momoCodeValid) {
+                    $('#btn_pay_momo').prop('disabled', false);
+                } else {
+                    $('#btn_pay_momo').prop('disabled', true);
+                }
+            }
+
+            function back_home() {
+                setTimeout(function () {
+                    window.location.href = "index.html"
+                }, 3000);
+            }
+
+            $('#btn_pay_bank').click(function () {
+                back_home()
+            })
+
+            $('#btn_pay_momo').click(function () {
+                back_home()
+            })
         })
     </script>
 
-    <script src="../JAVASCRIPT/showmenu.js"></script>
+    <script src="../JAVASCRIPT/check_login.js"></script>
     <script src="../JAVASCRIPT/payment.js"></script>
 </body>
 

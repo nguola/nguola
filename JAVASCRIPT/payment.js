@@ -1,16 +1,19 @@
 const qr = document.getElementById('qr')
 const slides = document.getElementsByClassName('slide')
 const payment = document.getElementById('payment')
+const btn_momo_pay = document.getElementById('btn_pay_momo')
 let Status = 0
 
 function show_qr() {
     if (Status == 0) {
         qr.style.display = 'block'
         Status = 1
+        btn_momo_pay.style.display = 'none'
     }
     else {
         qr.style.display = 'none'
         Status = 0
+        btn_momo_pay.style.display = 'unset'
     }
 }
 

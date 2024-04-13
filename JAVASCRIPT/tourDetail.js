@@ -54,11 +54,17 @@ function goToThanhToan() {
   let img = $('.list .item img').eq(0).attr('src');
   let currentURL = window.location.href;
   let url = currentURL.substring(currentURL.lastIndexOf("/") + 1);
+  let date_check_in = check_in.val()
+  let date_check_out = check_out.val()
+  let numP = parseInt(numPeople.val())
   let pre_tour = {
     img,
     name,
     price,
-    url
+    url,
+    date_check_in,
+    date_check_out,
+    numP
   }
   localStorage.setItem('pre_tour', JSON.stringify(pre_tour));
 
