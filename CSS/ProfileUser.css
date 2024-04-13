@@ -1,67 +1,3 @@
-.login:hover>*,
-.Signup:hover>* {
-    color: yellow !important;
-    cursor: pointer;
-}
-
-#logo {
-    z-index: 20;
-}
-
-nav {
-    z-index: 10;
-    transition: 0.3s ease;
-    top: 0%;
-}
-
-@keyframes showNavbar {
-    from {
-        top: -100%;
-    }
-    to {
-        top: 0px;
-    }
-}
-
-@keyframes hiddenNavbar {
-    from {
-        top: 0px;
-    }
-    to {
-        top: -100%;
-        position: unset;
-    }
-}
-
-.nav-item {
-    position: relative !important;
-    overflow: hidden;
-    transition: 0.4s ease-in-out;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.nav-item div {
-    background-color: rgba(241, 139, 139, 0.688);
-    height: 5px;
-    position: absolute;
-    width: 100%;
-    z-index: 10;
-    bottom: 0px;
-    left: -100%;
-    transition: 0.7s ease-in-out;
-}
-
-.nav-item:hover {
-    background-color: rgba(0, 0, 0, 0.252);
-}
-
-.nav-item:hover>.nav-link {
-    color: rgba(241, 139, 139, 0.688) !important;
-}
-
-.nav-item:hover>div {
-    left: -0px;
-}
 /* ------------------------- */
 /* chỉnh main */
 @media (max-width: 768px) {
@@ -98,16 +34,6 @@ tr td {
   min-width: 90px;
 }
 
-@media screen and (max-width: 768px) {
-  aside {
-    flex: 0;
-  }
-
-  section {
-    flex: 1;
-  }
-}
-
 #btnoffcanvas {
   position: fixed;
   top: 50px;
@@ -122,85 +48,123 @@ tr td {
   width: 20%;
   font-size: 4em;
 }
-/* chỉnh footer */
-.footer_content {
-  display: grid;
-  grid-template-columns: 30% 40% 30%;
-}
 
-.footer_content > * {
-  margin-top: 20px;
-}
-
-.footer_content > *:not(:last-child) {
-  margin-right: 20px;
-}
-
-.footer_detail {
-  text-align: center;
-  padding: 20px 0px 10px 0px;
-  color: rgba(153, 150, 150, 0.693);
-  background-color: rgba(18, 18, 18, 0.573);
-  border-top: 1px solid white;
-}
-
-.top_destination {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-
-.destination {
-  margin: 0px auto;
-  width: 120px;
-  height: 120px;
-  background-color: rgba(0, 0, 0, 0.418);
-  margin: 10px;
-  overflow: hidden;
-  transition: 1s ease-in-out;
+.address{
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #EEEEEE;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
   position: relative;
 }
-
-.destination > img {
-  width: 120px;
-  height: 120px;
-  opacity: 60%;
+.address{
+  transition: transform 0.3s ease-in-out;
 }
-
-.destination > p {
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
+.address:hover {
+  transform: scale(1.05);
+  transform: translateY(-5px); 
+  transform: translateX(-5px);
+  box-shadow: 0 4px 30px #c2b4b4; 
+}
+a{
+  text-decoration: none;
+}
+.done{
+  color: #CC9933;
+}
+.information p{
+ margin: 20px 0;
+}
+.title{
+  font-size: 20px;
+  font-weight: bolder;
+}
+h3{
+  font-size: 25px;
+  font-weight: bolder;
+  max-width: 1000px;
+  margin:0 auto;
+  margin-top: 30px;
+}
+.address .priceAndOrder{
   position: absolute;
-  z-index: 10;
-  bottom: 10%;
-  left: 10%;
-  display: none;
-  font-weight: bold;
+  right: 20px;
+  top: 40px;
+}
+.priceAndOrder .order_again{
+  margin-top: 50px;
+  width: fit-content;
+  padding: 10px;
+  background-color: red;
+  border-radius: 10px;
+  color: aliceblue;
+  font-weight: lighter;
+  font-size: 20px;
+  animation: changeColorForOrder 3s infinite alternate;
 }
 
-.destination:hover img {
-  cursor: pointer;
-  opacity: 100%;
-  scale: 1.1;
-}
-
-.destination:hover p {
-  cursor: pointer;
-  display: block;
-}
-
-@media screen and (max-width: 1194px) {
-  .footer_content {
-    grid-template-columns: 40% 60%;
+@keyframes changeColorForOrder {
+  0% {
+      background-color: red;
+  }
+  25% {
+      background-color: red;
+  }
+  50% {
+      background-color: orange;
+  }
+  75% {
+      background-color: blue;
+  }
+  100% {
+      background-color: blue;
   }
 }
 
-@media screen and (max-width: 770px) {
-  .footer_content {
-    grid-template-columns: auto;
+.priceAndOrder .order_again:hover{
+  background-color: #66CCFF;
+
+}
+
+.address_img img {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+.address:hover img{
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1350px) {
+  .priceAndOrder h2{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .priceAndOrder{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  aside {
+    flex: 0;
   }
 
-  .top_destination {
-    display: grid;
-    grid-template-columns: auto auto;
+  section {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .information>p{
+    margin: 10px 0px 10px 0px;
   }
 }

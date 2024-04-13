@@ -7,6 +7,7 @@
     <title>index</title>
     <link rel="stylesheet" href="../Bootstrap/bootstrap.css">
     <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/header_footer.css">
     <link rel="stylesheet" href="../Bootstrap/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
     <script src="../jquery/jquery-3.7.1.min.js"></script>
     <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
@@ -16,8 +17,8 @@
     <div class="container-fluid p-0">
         <header>
             <div class="top-bar bg-dark pt-3">
-                <div class="container d-flex justify-content-between">
-                    <img src="../IMAGE/logo.png" alt="" style="width: 100px;" class="img-fluid" id="logo">
+                <div class="container d-flex justify-content-between" id="top_content">
+                    <img src="../IMAGE/logo.png" alt="" style="width: 80px;" class="img" id="logo">
                     <div class="login_signin">
                         <div class="login d-flex mr-3 align-items-center">
                             <i class="bi bi-box-arrow-in-right" style="size: 1rem; color: white;"></i>
@@ -31,15 +32,13 @@
                         </div>
                     </div>
                     <div class="account">
-                        <div class="dropdown">
-                            <i class="bi bi-person-check" style="color: white; font-size: 40px;" data-bs-toggle="dropdown"></i>
-                            <p id="user_name" class="text-light h5"></p>
+                        <div class="dropdown d-flex align-items-end">
+                            <p id="user_name" class="text-light h6"></p>
+                            <i class="bi bi-person-check" style="color: white; font-size: 30px;" data-bs-toggle="dropdown"></i>
                             <ul class="dropdown-menu">
                                 <li><a href="ProfileUser.html" class="dropdown-item">Profile</a></li>
-                                <li><a href="historyTour.html" class="dropdown-item">History</a></li>
                                 <li><a href="#" class="dropdown-item" id="logout">Logout</a></li>
                             </ul>
-                            
                         </div>
                     </div>
                 </div>
