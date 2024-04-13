@@ -565,6 +565,9 @@
 
                 if (email == '')
                     alert("Fill Your Email!!")
+                else if(!/^[a-z].+@gmail.com$/.test(email)){
+                    alert("Email is wrong format!!")
+                }
                 else
                     alert("Thanks For Subcribe My Web!!")
             }

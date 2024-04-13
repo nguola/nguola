@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../CSS/header_footer.css">
     <link rel="stylesheet" href="../Bootstrap/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
     <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../jquery/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
@@ -33,7 +34,8 @@
                     <div class="account">
                         <div class="dropdown d-flex align-items-end">
                             <p id="user_name" class="text-light h6"></p>
-                            <i class="bi bi-person-check" style="color: white; font-size: 30px;" data-bs-toggle="dropdown"></i>
+                            <i class="bi bi-person-check" style="color: white; font-size: 30px;"
+                                data-bs-toggle="dropdown"></i>
                             <ul class="dropdown-menu">
                                 <li><a href="ProfileUser.html" class="dropdown-item">Profile</a></li>
                                 <li><a href="#" class="dropdown-item" id="logout">Logout</a></li>
@@ -455,7 +457,12 @@
                     </div>
                 </section>
 
-                <aside>
+                <aside class="position-relative">
+                    <div class="alert alert-success"
+                        style="position: fixed; z-index: 900; top: 90px; right: -100%; transition: 1.5s;"
+                        id="success_alert">
+                        <strong>Success!</strong> Thank you for trusting me
+                    </div>
                     <div id="form_apply">
                         <div class="d-flex justify-content-center bg-info" style="border-radius: 10px 10px 0px 0px;">
                             <ul class="nav nav-tabs">
@@ -477,134 +484,144 @@
                             <div class="d-flex justify-content-end">
                                 <i class="bi bi-arrow-bar-right" id="close_form" onclick="close_form()"></i>
                             </div>
-                            <form action="">
+                            <form action="" id="form_check">
                                 <div>
                                     <p class="h6">Provide me your information to receive the latest notifications</p>
                                 </div>
                                 <div>
-                                    <label for="Name">Name:</label>
-                                    <input type="text" class="form-control">
+                                    <label for="Name">Name:</label><span id="name_err"
+                                        style="color: red; margin-left: 20px;"></span>
+                                    <input type="text" class="form-control" id="Name">
                                 </div>
                                 <div>
-                                    <label for="Name">Phone:</label>
-                                    <input type="text" class="form-control">
+                                    <label for="Phone">Phone:</label><span id="phone_err"
+                                        style="color: red; margin-left: 20px;"></span>
+                                    <input type="text" class="form-control" id="Phone">
                                 </div>
                                 <div>
-                                    <label for="Name">Email:</label>
-                                    <input type="text" class="form-control">
+                                    <label for="Email">Email:</label><span id="email_err"
+                                        style="color: red; margin-left: 20px;"></span>
+                                    <input type="text" class="form-control" id="Email">
                                 </div>
                             </form>
-                            <button class="btn btn-primary mt-3 form-control">Apply</button>
+                            <button class="btn btn-primary mt-3 form-control" id="btn_apply" disabled>Apply</button>
                         </div>
                     </div>
                 </aside>
             </div>
             <div class="container-fluid">
                 <div class="feedback">
-                  <h4>Đánh giá</h4>
-                  <div class="feedback_content">
-                    <div class="avgfeedback">
-                      <p>Đánh giá trung bình</p>
-                      <h1>5/5</h1>
-                      <p>⭐⭐⭐⭐⭐</p>
-                      <p>2515 đánh giá</p>
-                    </div>
-                    <div class="avgstart">
-                      <div class="progress_block">
-                        <span>5 ⭐</span>
-                        <div class="progress">
-                          <div class="progress-bar bg-success w-75" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                            aria-valuemax="100"></div>
+                    <h4>Đánh giá</h4>
+                    <div class="feedback_content">
+                        <div class="avgfeedback">
+                            <p>Đánh giá trung bình</p>
+                            <h1>5/5</h1>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>2515 đánh giá</p>
                         </div>
-                        <span class="num_comment">2147</span>
-                      </div>
-                      <div class="progress_block">
-                        <span>4 ⭐</span>
-                        <div class="progress">
-                          <div class="progress-bar bg-success w-25" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                            aria-valuemax="100"></div>
+                        <div class="avgstart">
+                            <div class="progress_block">
+                                <span>5 ⭐</span>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success w-75" role="progressbar" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="num_comment">2147</span>
+                            </div>
+                            <div class="progress_block">
+                                <span>4 ⭐</span>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success w-25" role="progressbar" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="num_comment">517</span>
+                            </div>
+                            <div class="progress_block">
+                                <span>3 ⭐</span>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="num_comment">0</span>
+                            </div>
+                            <div class="progress_block">
+                                <span>2 ⭐</span>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="num_comment">0</span>
+                            </div>
+                            <div class="progress_block">
+                                <span>1 ⭐</span>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="num_comment">0</span>
+                            </div>
                         </div>
-                        <span class="num_comment">517</span>
-                      </div>
-                      <div class="progress_block">
-                        <span>3 ⭐</span>
-                        <div class="progress">
-                          <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                            aria-valuemax="100"></div>
+                    </div>
+                    <div class="comment">
+                        <div class="comment_group">
+                            <div class="avatar">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+                            <div class="comment_content">
+                                <h6>Đức Nam <span class="text-success"><i class="bi bi-check-circle-fill"></i> Đã đặt
+                                        tour tại
+                                        Hypertravel</span> </h6>
+                                <div>⭐⭐⭐⭐⭐</div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. L animi mm omnis eaque,
+                                    quae fugit id sint.
+                                    Quae?</p>
+                                <div class="date">Ngày 08/11/2023</div>
+                            </div>
                         </div>
-                        <span class="num_comment">0</span>
-                      </div>
-                      <div class="progress_block">
-                        <span>2 ⭐</span>
-                        <div class="progress">
-                          <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                            aria-valuemax="100"></div>
+                        <div class="comment_group">
+                            <div class="avatar">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+                            <div class="comment_content">
+                                <h6>Đức Nam <span class="text-success"><i class="bi bi-check-circle-fill"></i> Đã đặt
+                                        tour tại
+                                        Hypertravel</span></h6>
+                                <div>⭐⭐⭐⭐</div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing eli\uptatem exercitationem,
+                                    quidem o</p>
+                                <div class="date">Ngày 08/11/2023</div>
+                            </div>
                         </div>
-                        <span class="num_comment">0</span>
-                      </div>
-                      <div class="progress_block">
-                        <span>1 ⭐</span>
-                        <div class="progress">
-                          <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                            aria-valuemax="100"></div>
+                        <div class="comment_group">
+                            <div class="avatar">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+                            <div class="comment_content">
+                                <h6>Đức Nam <span class="text-success"><i class="bi bi-check-circle-fill"></i> Đã đặt
+                                        tour tại
+                                        Hypertravel</span></h6>
+                                <div>⭐⭐⭐⭐⭐</div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit dent et expem, quidem o.</p>
+                                <div class="date">Ngày 08/11/2023</div>
+                            </div>
                         </div>
-                        <span class="num_comment">0</span>
-                      </div>
+                        <div class="comment_group">
+                            <div class="avatar">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+                            <div class="comment_content">
+                                <h6>Đức Nam <span class="text-success"><i class="bi bi-check-circle-fill"></i> Đã đặt
+                                        tour tại
+                                        Hypertravel</span></h6>
+                                <div>⭐⭐⭐</div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. dent e exercitationem,
+                                    quidem o</p>
+                                <div class="date">Ngày 08/11/2023</div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="comment">
-                    <div class="comment_group">
-                      <div class="avatar">
-                        <i class="bi bi-person-circle"></i>
-                      </div>
-                      <div class="comment_content">
-                        <h6>Đức Nam <span class="text-success"><i class="bi bi-check-circle-fill"></i> Đã đặt tour tại
-                            Hypertravel</span> </h6>
-                        <div>⭐⭐⭐⭐⭐</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. L animi mm omnis eaque, quae fugit id sint.
-                          Quae?</p>
-                        <div class="date">Ngày 08/11/2023</div>
-                      </div>
-                    </div>
-                    <div class="comment_group">
-                      <div class="avatar">
-                        <i class="bi bi-person-circle"></i>
-                      </div>
-                      <div class="comment_content">
-                        <h6>Đức Nam <span class="text-success"><i class="bi bi-check-circle-fill"></i> Đã đặt tour tại
-                            Hypertravel</span></h6>
-                        <div>⭐⭐⭐⭐</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing eli\uptatem exercitationem, quidem o</p>
-                        <div class="date">Ngày 08/11/2023</div>
-                      </div>
-                    </div>
-                    <div class="comment_group">
-                      <div class="avatar">
-                        <i class="bi bi-person-circle"></i>
-                      </div>
-                      <div class="comment_content">
-                        <h6>Đức Nam <span class="text-success"><i class="bi bi-check-circle-fill"></i> Đã đặt tour tại
-                            Hypertravel</span></h6>
-                        <div>⭐⭐⭐⭐⭐</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit dent et expem, quidem o.</p>
-                        <div class="date">Ngày 08/11/2023</div>
-                      </div>
-                    </div>
-                    <div class="comment_group">
-                      <div class="avatar">
-                        <i class="bi bi-person-circle"></i>
-                      </div>
-                      <div class="comment_content">
-                        <h6>Đức Nam <span class="text-success"><i class="bi bi-check-circle-fill"></i> Đã đặt tour tại
-                            Hypertravel</span></h6>
-                        <div>⭐⭐⭐</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. dent e exercitationem, quidem o</p>
-                        <div class="date">Ngày 08/11/2023</div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
+            </div>
         </main>
         <footer style="clear: both;">
             <div class="container-fluid bg-dark p-0">
@@ -682,6 +699,102 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $(document).ready(function () {
+            let nameValid = false
+            let phoneValid = false
+            let emailValid = false
+
+            $('#Name').blur(function () {
+                let name = $('#Name').val();
+                if (name == "") {
+                    $('#name_err').text("Fill your name");
+                    $('#name_err').css('color', 'red');
+                    nameValid = false;
+                } else {
+                    $('#name_err').css('color', 'green');
+                    $('#name_err').text("look good");
+                    nameValid = true;
+                }
+                update_btn()
+            });
+
+            $('#Phone').blur(function () {
+                let phone = $('#Phone').val();
+                if (phone == "") {
+                    $('#phone_err').text("Fill your phone");
+                    $('#phone_err').css('color', 'red');
+                    phoneValid = false;
+                } else if (isNaN(phone)) {
+                    $('#phone_err').text("Phone is number");
+                    $('#phone_err').css('color', 'red');
+                    phoneValid = false;
+                } else if (!/\d{10}/.test(phone)) {
+                    $('#phone_err').text("Phone number must have 10 num");
+                    $('#phone_err').css('color', 'red');
+                    phoneValid = false;
+                } else if (!/^(084|085|086)/.test(phone)) {
+                    $('#phone_err').text("Phone number must begin by 084, 085 or 086");
+                    $('#phone_err').css('color', 'red');
+                    phoneValid = false;
+                } else {
+                    $('#phone_err').text("look good");
+                    $('#phone_err').css('color', 'green');
+                    phoneValid = true;
+                }
+                update_btn()
+            });
+
+            $('#Email').blur(function () {
+                let email = $('#Email').val();
+                if (email == "") {
+                    $('#email_err').text("Fill your email");
+                    $('#email_err').css('color', 'red');
+                    emailValid = false;
+                } else if (!/^[a-z]\S*@gmail.com$/.test(email)) {
+                    $('#email_err').text("Email wrong format");
+                    $('#email_err').css('color', 'red');
+                    emailValid = false;
+                } else {
+                    $('#email_err').text("look good");
+                    $('#email_err').css('color', 'green');
+                    emailValid = true;
+                }
+                update_btn()
+            });
+
+            function update_btn() {
+                if (nameValid && phoneValid && emailValid) {
+                    $('#btn_apply').prop('disabled', false);
+                } else {
+                    $('#btn_apply').prop('disabled', true);
+                }
+            }
+
+            $('#btn_apply').click(function () {
+                clear_input()
+                $('#success_alert').css('right', '5%');
+
+                setTimeout(function () {
+                    $('#success_alert').css('right', '-100%');
+                }, 4000);
+            });
+
+            function clear_input() {
+                $('#Name').val("");
+                $('#Phone').val("");
+                $('#Email').val("");
+                $('#name_err').text("");
+                $('#phone_err').text("");
+                $('#email_err').text("");
+                nameValid = false
+                phoneValid = false
+                emailValid = false
+                update_btn()
+            }
+        });
+    </script>
 
     <script src="../JAVASCRIPT/check_login.js"></script>
     <script src="../JAVASCRIPT/service.js"></script>
