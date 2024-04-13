@@ -25,6 +25,8 @@ header {
   border-radius: 8px;
   transition: 0.3s ease-in;
   margin-left: 3rem;
+  width: fit-content;
+  padding: 2px;
 }
 
 .header_left:hover a {
