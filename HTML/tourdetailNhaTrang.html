@@ -11,41 +11,34 @@
   <link rel="stylesheet" href="../CSS/header_footer.css">
   <script src="../jquery/jquery-3.7.1.min.js"></script>
   <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body>
   <div class="container-fluid p-0">
     <header>
       <div class="top-bar bg-dark pt-3">
-        <div class="container d-flex justify-content-between" id="top_content">
-          <img src="../IMAGE/logo.png" alt="" style="width: 80px;" class="img" id="logo">
-          <div class="login_signin">
-            <div class="login d-flex mr-3 align-items-center">
-              <i class="bi bi-box-arrow-in-right" style="size: 1rem; color: white;"></i>
-              <a href="logIn.html" class="h6 text-light ml-2 mt-1" style="text-decoration: none;">Login</a>
-            </div>
-            <div class="Signup d-flex align-items-center text-align-center">
-              <i class="bi bi-person-fill pt-0" style="color: white;"></i>
-              <a href="signUp.html" class="h6 text-light ml-2 mt-1" style="text-decoration: none;">Sign
-                up</a>
-            </div>
+          <div class="container d-flex justify-content-between">
+              <img src="../IMAGE/logo.png" alt="" style="width: 100px;" class="img-fluid" id="logo">
+              <div class="login_signin d-flex">
+                  <div class="login d-flex mr-3 align-items-center">
+                      <i class="bi bi-box-arrow-in-right" style="size: 1rem; color: white;"></i>
+                      <a href="logIn.html" class="h6 text-light ml-2 mt-1"
+                          style="text-decoration: none;">Login</a>
+                  </div>
+                  <div class="Signup d-flex align-items-center text-align-center">
+                      <i class="bi bi-person-fill pt-0" style="color: white;"></i>
+                      <a href="signUp.html" class="h6 text-light ml-2 mt-1" style="text-decoration: none;">Sign
+                          up</a>
+                  </div>
+              </div>
           </div>
-          <div class="account">
-            <div class="dropdown d-flex align-items-end">
-              <p id="user_name" class="text-light h6"></p>
-              <i class="bi bi-person-check" style="color: white; font-size: 30px;" data-bs-toggle="dropdown"></i>
-              <ul class="dropdown-menu">
-                <li><a href="ProfileUser.html" class="dropdown-item">Profile</a></li>
-                <li><a href="#" class="dropdown-item" id="logout">Logout</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-          <div class="container d-flex justify-content-end">
-            <button class="navbar-toggler m-1 " type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+          <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+              <div class="container d-flex justify-content-end">
+                  <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#menu">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="menu">
               <ul class="navbar-nav">
@@ -86,7 +79,7 @@
         </nav>
       </div>
       <div class="container-fluid d-flex justify-content-center">
-        <video src="../VIDEO/intro.mp4" style="width: 100%;" autoplay loop></video>
+          <video src="../VIDEO/intro.mp4" style="width: 100%;" autoplay loop></video>
       </div>
     </header>
     <main>
@@ -339,58 +332,58 @@
     </main>
     <footer>
       <div class="container-fluid bg-dark p-0">
-        <div class="container">
-          <div class="row p-2">
-            <div class="content_1 col-sm">
-              <p class="text-uppercase text-light h4"><i class="bi bi-send"></i> <span class="text-primary">Hyper</span>
-                Travel</p>
-              <br>
-              <p class="text-light">Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts</p>
-            </div>
-            <div class="content_2 col-sm text-light">
-              <p class="text-uppercase h5 text-warning">Top Destionation</p>
-              <div class="top_destination">
-                <div class="destination">
-                  <p>Cố đô Huế</p>
-                  <img src="../IMAGE/index-img/codohue.jpg" alt="">
-                </div>
-                <div class="destination">
-                  <p>Cambrirge</p>
-                  <img src="../IMAGE/index-img/cambirge.jpg" alt="">
-                </div>
-                <div class="destination">
-                  <p>Đà Lạt</p>
-                  <img src="../IMAGE/index-img/dalat.jpg" alt="">
-                </div>
-                <div class="destination">
-                  <p>Hà Lan</p>
-                  <img src="../IMAGE/index-img/halan-img.jpg" alt="">
-                </div>
-                <div class="destination">
-                  <p>Hội an</p>
-                  <img src="../IMAGE/index-img/hoian.jpg" alt="">
-                </div>
-                <div class="destination">
-                  <p>Nha Trang</p>
-                  <img src="../IMAGE/index-img/nhatrang.jpg" alt="">
-                </div>
+          <div class="container">
+              <div class="row p-2">
+                  <div class="content_1 col-sm">
+                      <p class="text-uppercase text-light h4"><i class="bi bi-send"></i> <span
+                              class="text-primary">Hyper</span> Travel</p>
+                      <br>
+                      <p class="text-light">Far far away, behind the word mountains, far from the countries
+                          Vokalia and Consonantia, there live the blind texts</p>
+                  </div>
+                  <div class="content_2 col-sm text-light">
+                      <p class="text-uppercase h5 text-warning">Top Destionation</p>
+                      <div class="top_destination">
+                          <div class="destination">
+                              <p>Cố đô Huế</p>
+                              <img src="../IMAGE/index-img/codohue.jpg" alt="">
+                          </div>
+                          <div class="destination">
+                              <p>Cambrirge</p>
+                              <img src="../IMAGE/index-img/cambirge.jpg" alt="">
+                          </div>
+                          <div class="destination">
+                              <p>Đà Lạt</p>
+                              <img src="../IMAGE/index-img/dalat.jpg" alt="">
+                          </div>
+                          <div class="destination">
+                              <p>Hà Lan</p>
+                              <img src="../IMAGE/index-img/halan-img.jpg" alt="">
+                          </div>
+                          <div class="destination">
+                              <p>Hội an</p>
+                              <img src="../IMAGE/index-img/hoian.jpg" alt="">
+                          </div>
+                          <div class="destination">
+                              <p>Nha Trang</p>
+                              <img src="../IMAGE/index-img/nhatrang.jpg" alt="">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="content_3 col-sm text-light">
+                      <p class="text-uppercase text-success h5">Contact info</p>
+                      <br>
+                      <p>Address: 12 Nguyễn Văn Bảo, Phường 3, Gò Vấp</p>
+                      <p>Phone: +840........</p>
+                      <p>Email: Hypertravel@gmail.com</p>
+                  </div>
               </div>
-            </div>
-            <div class="content_3 col-sm text-light">
-              <p class="text-uppercase text-success h5">Contact info</p>
-              <br>
-              <p>Address: 12 Nguyễn Văn Bảo, Phường 3, Gò Vấp</p>
-              <p>Phone: +840........</p>
-              <p>Email: Hypertravel@gmail.com</p>
-            </div>
           </div>
-        </div>
-        <div class="footer_detail text-uppercase h6 m-0">
-          copyright 2024 goodplayer all rightreserved
-        </div>
+          <div class="footer_detail text-uppercase h6 m-0">
+              copyright 2024 goodplayer all rightreserved
+          </div>
       </div>
-    </footer>
+  </footer>
   </div>
 
   <div class="modal" id="modal_search">
@@ -414,8 +407,9 @@
     </div>
   </div>
 
-  <script src="../JAVASCRIPT/showmenu.js"></script>
   <script src="../JAVASCRIPT/check_login.js"></script>
+  <script src="../JAVASCRIPT/showmenu.js"></script>
+  <script src="../JAVASCRIPT/index.js"></script>
   <script src="../JAVASCRIPT/tourDetail.js"></script>
 </body>
 

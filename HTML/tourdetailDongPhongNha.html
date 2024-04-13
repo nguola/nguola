@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="../Bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="../Bootstrap/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../CSS/tourdetail.css">
+  <link rel="stylesheet" href="../CSS/index.css">
+  <script src="../jquery/jquery-3.7.1.min.js"></script>
+  <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+    <header>
+      <div class="top-bar bg-dark pt-3">
+          <div class="container d-flex justify-content-between">
+              <img src="../IMAGE/logo.png" alt="" style="width: 100px;" class="img-fluid" id="logo">
+              <div class="login_signin">
+                  <div class="login d-flex mr-3 align-items-center">
+                      <i class="bi bi-box-arrow-in-right" style="size: 1rem; color: white;"></i>
+                      <a href="logIn.html" class="h6 text-light ml-2 mt-1"
+                          style="text-decoration: none;">Login</a>
+                  </div>
+                  <div class="Signup d-flex align-items-center text-align-center">
+                      <i class="bi bi-person-fill pt-0" style="color: white;"></i>
+                      <a href="signUp.html" class="h6 text-light ml-2 mt-1" style="text-decoration: none;">Sign
+                          up</a>
+                  </div>
+              </div>
+              <div class="account">
+                  <div class="dropdown">
+                      <i class="bi bi-person-check" style="color: white; font-size: 40px;" data-bs-toggle="dropdown"></i>
+                      <p id="user_name" class="text-light h5"></p>
+                      <ul class="dropdown-menu">
+                          <li><a href="ProfileUser.html" class="dropdown-item">Profile</a></li>
+                          <li><a href="historyTour.html" class="dropdown-item">History</a></li>
+                          <li><a href="#" class="dropdown-item" id="logout">Logout</a></li>
+                      </ul>
+                      
+                  </div>
+              </div>
+          </div>
+          <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+              <div class="container d-flex justify-content-end">
+                  <button class="navbar-toggler m-1 " type="button" data-bs-toggle="collapse"
+                      data-bs-target="#menu">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse justify-content-end" id="menu">
+                      <ul class="navbar-nav">
+                          <li class="nav-item">
+                              <a class="nav-link h5 text-light text-uppercase mr-2" href="index.html"><i
+                                      class="bi bi-house"></i> Home</a>
+                              <div></div>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link h5 text-light text-uppercase mr-2" href="tour.html"><i
+                                      class="bi bi-airplane"></i> Tour</a>
+                              <div></div>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link h5 text-light text-uppercase mr-2" href="tourGuide.html"><i
+                                      class="bi bi-book-half"></i> Tour
+                                  Guide</a>
+                              <div></div>
+                          </li>
+                          <div class="nav-item">
+                              <a class="nav-link h5 text-light text-uppercase mr-2" href="price.html"><i
+                                      class="bi bi-coin"></i> Price</a>
+                              <div></div>
+                          </div>
+                          <li class="nav-item">
+                              <a class="nav-link h5 text-light text-uppercase mr-2" href="service.html"><i
+                                      class="bi bi-database-fill-gear"></i> Service</a>
+                              <div></div>
+                          </li>
+                          <li class="nav-item">
+                              <button class="btn text-light" data-bs-toggle="modal"
+                                  data-bs-target="#modal_search"><i class="bi bi-search"></i></button>
+                              <div></div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </div>
+      <div class="container-fluid d-flex justify-content-center">
+          <video src="../VIDEO/intro.mp4" style="width: 100%;" autoplay loop></video>
+      </div>
+  </header>
+    <main>
+      <div class="container">
+        <div class="carousel">
+          <div class="list">
+            <div class="item">
+              <img src="../IMAGE/price-img/dongPhongNha/image.png" alt="">
+            </div>
+            <div class="item">
+              <img src="../IMAGE/price-img/dongPhongNha/image copy 3.png" alt="">
+            </div>
+            <div class="item">
+              <img src="../IMAGE/price-img/dongPhongNha/image copy.png" alt="">
+            </div>
+            <div class="item">
+              <img src="../IMAGE/price-img/dongPhongNha/image copy 2.png" alt="">
+            </div>
+          </div>
+          <div class="thumbnail">
+            <div class="item">
+              <img src="../IMAGE/price-img/dongPhongNha/image copy 3.png" alt="">
+            </div>
+            <div class="item">
+              <img src="../IMAGE/price-img/dongPhongNha/image copy.png" alt="">
+            </div>
+            <div class="item">
+              <img src="../IMAGE/price-img/dongPhongNha/image copy 2.png" alt="">
+            </div>
+            <div class="item">
+              <img src="../IMAGE/price-img/dongPhongNha/image.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid hero">
+        <section>
+          <div class="header">
+            <h1>Động Phong Nha</h1>
+            <p class="price">Từ 750.000VND</p>
+          </div>
+          <div class="description">
+            <h5>Giới thiệu</h5>
+            <div class="place row">
+              <div class="group_place col-sm">
+                <i class="bi bi-1-circle-fill"></i>
+                <span>Hang Sơn Đoòng</span>
+              </div>
+              <div class="group_place col-sm">
+                <i class="bi bi-2-circle-fill"></i>
+                <span>Hang Phong Nha</span>
+              </div>
+              <div class="group_place col-sm">
+                <i class="bi bi-3-circle-fill"></i>
+                <span>Hang Thiên Đường</span>
+              </div>
+              <div class="group_place col-sm">
+                <i class="bi bi-4-circle-fill"></i>
+                <span>Hang Tối</span>
+              </div>
+            </div>
+            <div class="content">
+              <p>
+                Động Phong Nha - Kẻ Bàng, một trong những di sản thiên nhiên hàng đầu của thế giới, 
+                là một kỳ quan đầy kỳ diệu của tự nhiên nằm tại tỉnh Quảng Bình, Việt Nam. Với hệ thống 
+                hang động phong phú và đa dạng, Động Phong Nha không chỉ là một điểm đến hấp dẫn cho 
+                những ai yêu thích phiêu lưu mạo hiểm mà còn là một điểm đến tuyệt vời cho những ai 
+                muốn khám phá vẻ đẹp thiên nhiên độc đáo. <br> <br> 
+                Trải dài trên diện tích hơn 126,000 ha, với hàng chục hang động khác nhau, Động Phong 
+                Nha - Kẻ Bàng là một vùng đất huyền bí, nơi mà động và dơi, nước và đá, sự yên bình và 
+                huyền bí hòa quyện vào nhau, tạo nên một bức tranh tự nhiên đầy ấn tượng.
+              </p>
+            </div>
+          </div>
+          <div class="more">
+            <h1>More Tour</h1>
+            <div class="card_group">
+              <div class="card">
+                <img src="../IMAGE/price-img/nhatrang.jpg" alt="">
+                <div class="layer"></div>
+                <div class="infor">
+                  <h1>Nha Trang</h1>
+                  <p>Nha Trang - Chùa Long Sơn - Biển Nhũ Tiên - Vinwonder - Làng Gốm Bàu Trúc - Khám Phá Cao
+                    Tốc
+                    Mới - Khách Sạn 4 sao</p>
+                  <button style="background-color: #F2CB05; color: #D95032;">Ưu đãi:10%</button>
+                  <button><a href="tourdetailNhaTrang.html">Đặt ngay</a></button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="../IMAGE/price-img/tf_231117021819_056639_Lang Gom Bau Truc - Hinh Quy COC Tu (2).webp"
+                  alt="">
+                <div class="layer"></div>
+                <div class="infor">
+                  <h1>Ninh Chữ</h1>
+                  <p>Ninh Chữ - Vịnh Vĩnh Hy - Trùng Sơn Cổ Tự - Vườn Nho - Hang Rái - Làng gốm Bàu Trúc</p>
+                  <button style="background-color: #F2CB05; color: #D95032;">Ưu đãi:15%</button>
+                  <button><a href="tourdetailNinhChu.html">Đặt ngay</a></button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="../IMAGE/price-img/tf_220113042956_869488.jpg" alt="">
+                <div class="layer"></div>
+                <div class="infor">
+                  <h1>Đà Lạt</h1>
+                  <p>Hành trình Hoa và Biển: Đà Lạt - Nha Trang</p>
+                  <button style="background-color: #F2CB05; color: #D95032;">Ưu đãi:30%</button>
+                  <button><a href="tourdetailDaLat.html">Đặt ngay</a></button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="../IMAGE/price-img/hoian.jpg" alt="">
+                <div class="layer"></div>
+                <div class="infor">
+                  <h1>Hội an</h1>
+                  <p>Vinwonder - Làng Gốm Bàu Trúc - Khám Phá Cao Tốc Mới - Khách Sạn 4 sao</p>
+                  <button style="background-color: #F2CB05; color: #D95032;">Ưu đãi:10%</button>
+                  <button><a href="tourdetailHoiAn.html">Đặt ngay</a></button>
+                </div>
+              </div>
+            </div>
+
+        </section>
+        <aside>
+          <div class="booking">
+            <h4>Book Tour</h4>
+            <div class="form-group">
+              <label for="" class="form-label">Check in</label>
+              <input type="date" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="" class="form-label">Check out</label>
+              <input type="date" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="" class="form-label">Number people</label>
+              <input type="number" class="form-control">
+            </div>
+            <div class="form-group">
+              <a href="payment.html"><input class="btn btn-outline-dark" type="submit" value="Đặt tour"></a>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <div class="container-fluid">
+        <div class="feedback">
+          <h4>Đánh giá</h4>
+          <div class="feedback_content">
+            <div class="avgfeedback">
+              <p>Đánh giá trung bình</p>
+              <h1>5/5</h1>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p>2515 đánh giá</p>
+            </div>
+            <div class="avgstart">
+              <div class="progress_block">
+                <span>5 ⭐</span>
+                <div class="progress">
+                  <div class="progress-bar bg-success w-75" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <span class="num_comment">2147</span>
+              </div>
+              <div class="progress_block">
+                <span>4 ⭐</span>
+                <div class="progress">
+                  <div class="progress-bar bg-success w-25" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <span class="num_comment">517</span>
+              </div>
+              <div class="progress_block">
+                <span>3 ⭐</span>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <span class="num_comment">0</span>
+              </div>
+              <div class="progress_block">
+                <span>2 ⭐</span>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <span class="num_comment">0</span>
+              </div>
+              <div class="progress_block">
+                <span>1 ⭐</span>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <span class="num_comment">0</span>
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="comment_group">
+              <div class="avatar">
+                <i class="bi bi-person-circle"></i>
+              </div>
+              <div class="comment_content">
+                <h6>Đức Nam <span class="text-success"><i class="bi bi-check-circle-fill"></i> Đã đặt tour tại
+                    Hypertravel</span> </h6>
+                <div>⭐⭐⭐⭐⭐</div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. L animi mm omnis eaque, quae fugit id sint.
+                  Quae?</p>
+                <div class="date">Ngày 08/11/2023</div>
+              </div>
+            </div>
+            <div class="comment_group">
+              <div class="avatar">
+                <i class="bi bi-person-circle"></i>
+              </div>
+              <div class="comment_content">
+                <h6>Đức Nam <span class="text-success"><i class="bi bi-check-circle-fill"></i> Đã đặt tour tại
+                    Hypertravel</span></h6>
+                <div>⭐⭐⭐⭐</div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing eli\uptatem exercitationem, quidem o</p>
+                <div class="date">Ngày 08/11/2023</div>
+              </div>
+            </div>
+            <div class="comment_group">
+              <div class="avatar">
+                <i class="bi bi-person-circle"></i>
+              </div>
+              <div class="comment_content">
+                <h6>Đức Nam <span class="text-success"><i class="bi bi-check-circle-fill"></i> Đã đặt tour tại
+                    Hypertravel</span></h6>
+                <div>⭐⭐⭐⭐⭐</div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit dent et expem, quidem o.</p>
+                <div class="date">Ngày 08/11/2023</div>
+              </div>
+            </div>
+            <div class="comment_group">
+              <div class="avatar">
+                <i class="bi bi-person-circle"></i>
+              </div>
+              <div class="comment_content">
+                <h6>Đức Nam <span class="text-success"><i class="bi bi-check-circle-fill"></i> Đã đặt tour tại
+                    Hypertravel</span></h6>
+                <div>⭐⭐⭐</div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. dent e exercitationem, quidem o</p>
+                <div class="date">Ngày 08/11/2023</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-fluid bg-dark p-0">
+          <div class="container">
+              <div class="row p-2">
+                  <div class="content_1 col-sm">
+                      <p class="text-uppercase text-light h4"><i class="bi bi-send"></i> <span
+                              class="text-primary">Hyper</span> Travel</p>
+                      <br>
+                      <p class="text-light">Far far away, behind the word mountains, far from the countries
+                          Vokalia and Consonantia, there live the blind texts</p>
+                  </div>
+                  <div class="content_2 col-sm text-light">
+                      <p class="text-uppercase h5 text-warning">Top Destionation</p>
+                      <div class="top_destination">
+                          <div class="destination">
+                              <p>Cố đô Huế</p>
+                              <img src="../IMAGE/index-img/codohue.jpg" alt="">
+                          </div>
+                          <div class="destination">
+                              <p>Cambrirge</p>
+                              <img src="../IMAGE/index-img/cambirge.jpg" alt="">
+                          </div>
+                          <div class="destination">
+                              <p>Đà Lạt</p>
+                              <img src="../IMAGE/index-img/dalat.jpg" alt="">
+                          </div>
+                          <div class="destination">
+                              <p>Hà Lan</p>
+                              <img src="../IMAGE/index-img/halan-img.jpg" alt="">
+                          </div>
+                          <div class="destination">
+                              <p>Hội an</p>
+                              <img src="../IMAGE/index-img/hoian.jpg" alt="">
+                          </div>
+                          <div class="destination">
+                              <p>Nha Trang</p>
+                              <img src="../IMAGE/index-img/nhatrang.jpg" alt="">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="content_3 col-sm text-light">
+                      <p class="text-uppercase text-success h5">Contact info</p>
+                      <br>
+                      <p>Address: 12 Nguyễn Văn Bảo, Phường 3, Gò Vấp</p>
+                      <p>Phone: +840........</p>
+                      <p>Email: Hypertravel@gmail.com</p>
+                  </div>
+              </div>
+          </div>
+          <div class="footer_detail text-uppercase h6 m-0">
+              copyright 2024 goodplayer all rightreserved
+          </div>
+      </div>
+  </footer>
+  </div>
+
+  <div class="modal" id="modal_search">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-8">
+              <input type="text" name="" id="" placeholder="Search" class="form-control mt-2">
+            </div>
+            <div class="col-2 d-flex justify-content-center">
+              <button class="btn btn-primary mr-2 mt-2">Search</button>
+            </div>
+            <div class="col-2 d-flex justify-content-center">
+              <button type="button" class="btn btn-danger btn-close mt-2" data-bs-dismiss="modal"><i
+                  class="bi bi-x-lg"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../JAVASCRIPT/check_login.js"></script>
+  <script src="../JAVASCRIPT/showmenu.js"></script>
+  <script src="../JAVASCRIPT/tourDetail.js"></script>
+</body>
+
+</html>
