@@ -21,7 +21,7 @@ aside {
 
 .slider {
     position: relative;
-    height: 130vh;
+    height: 160vh;
 }
 
 .slides {
@@ -157,19 +157,6 @@ aside {
         font-size: 60px;
         color: gray;
         margin: 10px;
-    }
-}
-
-@media screen and (max-width: 2648px) {
-    .slider {
-        width: 100%;
-        height: 80vh;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .slider {
-        height: 100vh;
     }
 }
 
