@@ -132,8 +132,8 @@ nav {
         width: 100%;
     }
     .Slide .col-10{
-        width: 80% !important;
-        margin-left: 10% !important;
+        width: 100% !important;
+       margin-top: 10% !important;
     }
     .Slide .col-9 .col-5{
         margin-left: 6% !important;
@@ -148,26 +148,20 @@ nav {
     .body-center-if p{
         font-size: 1.5rem !important;
     }
+    .body-center-js h3,
     .body-center-js p{
-        margin-left: 45px !important;
-    }
-    .body-center-js h3{
-        margin-left: 20px !important;
+        text-align: center;
     }
     .body-center-if>*{
         margin-left: 0px !important;
     }
     .body-center-js{
         border-left: none !important;
-        margin-left: 205px;
-    }
-    .body-center-footer{
-        margin-right: 0px !important;
-        margin-left: 50px !important;
+        margin-left: 30%;
     }
     .body-center,.body-center-content{
         flex-direction: column !important;
-
+        margin-top: 10% !important;
     }
 
     .body-center-img{
@@ -180,6 +174,7 @@ nav {
     }
     .sa {
         order: 1 !important;
+        margin-top: 10% !important;
     }
 
     .as {
@@ -193,9 +188,6 @@ nav {
         margin: 0px !important;
         padding: 0px !important;
     }
-    .col-10{
-        margin: 0px !important;
-    }
     .col-9{
         margin: 0px !important;
         width: 90% !important;
@@ -204,23 +196,17 @@ nav {
         margin: 0px !important;
         width: 100% !important;
     }
-    .container-fluid .container .row{
-        width: 100%;
-        margin-left: 1px;
+    .infor>*{
+        font-size: 0.8rem;
     }
     .infor{
         margin-left: 38%;
     }
+    .body-center-content .col-3 h3,
+    .body-center-content .col-3 button,
     .body-center-content .col-3 p{
-        margin-left: 50% !important;
-    }
-    .body-center-content .col-3 h3{
-        margin-left: 33% !important;
-    }
-    .body-center-content .col-3 button{
-        margin-left: 35% !important;
-    }
-    
+        text-align: center;
+    }   
 }
 .footer_content {
     display: grid;
@@ -242,7 +228,7 @@ nav {
     background-color: rgba(18, 18, 18, 0.573);
     border-top: 1px solid white;
 }
-@media only screen and (min-width: 431px) and (max-width: 768px) {
+@media only screen and (min-width: 544px) and (max-width: 768px) {
     .formnav li {
         width: 20%;
     }
@@ -267,6 +253,7 @@ nav {
     }
     .col-10{
         margin: 0px !important;
+        height: 80% !important;
     }
     .col-9{
         margin: 0px !important;
@@ -346,36 +333,26 @@ nav {
         margin-top: 25%;
         margin-left: 2px;
     }
-    
+    .body-center-content {
+        margin-top: 10% !important;
+    }
     .body-center-content .col-3{
         margin: 0px !important;
         width: 100% !important;
         border-left: none !important;
     }
+    .body-center-content .col-3 h3,
+    .body-center-content .col-3 button,
     .body-center-content .col-3 p{
-        margin-left: 42% !important;
+       text-align: center;
     }
-    .body-center-content .col-3 h3{
-        margin-left: 36% !important;
-    }
-    .body-center-content .col-3 button{
-        margin-left: 29% !important;
-    }
-
-
-
-    .body-center-footer {
-        
-        padding:23px  !important;
-        text-align: center !important;
-    }
-
     .footer-manager {
         width: 100%;
     }
 
     .sa {
         order: 1 !important;
+        margin-top: 10% !important;
     }
 
     .as {
@@ -390,8 +367,6 @@ nav {
         display: grid;
         grid-template-columns: auto auto;
     }
-
-    .text-light {}
 
     .infor {
         margin-left: 40px !important;
@@ -407,10 +382,17 @@ nav {
     .col-4{
         width: 100% !important;
     }
+    .body-center-footer{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
 }
-@media only screen and (max-width: 431px) {
+@media only screen and (max-width: 543px) {
     .formnav li {
         width: 20%;
+    }
+    .container .row{
+        flex-direction: column !important;
     }
 
     .formnav input,
@@ -433,6 +415,7 @@ nav {
     }
     .col-10{
         margin: 0px !important;
+        height: 75% !important;
     }
     .col-9{
         margin: 0px !important;
@@ -464,10 +447,12 @@ nav {
     .body-center img{
         width: 516px !important;
     }
+
     .body-center,
     .body-center-content {
         flex-direction: column !important;
         width: 100% !important;
+        margin-top: 13% !important;
     }
 
 
@@ -518,22 +503,10 @@ nav {
         width: 100% !important;
         border-left: none !important;
     }
+    .body-center-content .col-3 h3,
+    .body-center-content .col-3 button,
     .body-center-content .col-3 p{
-        margin-left: 40% !important;
-    }
-    .body-center-content .col-3 h3{
-        margin-left: 32% !important;
-    }
-    .body-center-content .col-3 button{
-        margin-left: 25% !important;
-    }
-
-
-
-    .body-center-footer {
-        
-        padding:23px  !important;
-        text-align: center !important;
+       text-align: center;
     }
 
     .footer-manager {
@@ -542,6 +515,7 @@ nav {
 
     .sa {
         order: 1 !important;
+        margin-top: 10% !important;
     }
 
     .as {
@@ -556,8 +530,9 @@ nav {
         display: grid;
         grid-template-columns: auto auto;
     }
-
-    .text-light {}
+    .infor>*{
+        font-size: 0.6rem;
+    }
 
     .infor {
         margin-left: 40px !important;
@@ -571,7 +546,3 @@ nav {
         width: 100% !important;
     }
 }
-
-
-
-

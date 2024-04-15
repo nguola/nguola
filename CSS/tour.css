@@ -546,4 +546,10 @@
     .service-show-item-img img{
         height: 90%;
     }
+    .service-show-item,
+    .service-show-item-img{
+        padding: 0px !important;
+        margin-top: 5px;
+    }
+    
 }
