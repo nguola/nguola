@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../CSS/tourdetail.css">
+    <link rel="stylesheet" href="../CSS/header_footer.css">
+    <script src="../jquery/jquery-3.7.1.min.js"></script>
+    <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <header>
+            <div class="top-bar bg-dark pt-3">
+                <div class="container d-flex justify-content-between" id="top_content">
+                    <img src="../IMAGE/logo.png" alt="" style="width: 80px;" class="img" id="logo">
+                    <div class="login_signin">
+                        <div class="login d-flex mr-3 align-items-center">
+                            <i class="bi bi-box-arrow-in-right" style="size: 1rem; color: white;"></i>
+                            <a href="logIn.html" class="h6 text-light ml-2 mt-1"
+                                style="text-decoration: none;">Login</a>
+                        </div>
+                        <div class="Signup d-flex align-items-center text-align-center">
+                            <i class="bi bi-person-fill pt-0" style="color: white;"></i>
+                            <a href="signUp.html" class="h6 text-light ml-2 mt-1" style="text-decoration: none;">Sign
+                                up</a>
+                        </div>
+                    </div>
+                    <div class="account">
+                        <div class="dropdown d-flex align-items-end">
+                            <p id="user_name" class="text-light h6"></p>
+                            <i class="bi bi-person-check" style="color: white; font-size: 30px;"
+                                data-bs-toggle="dropdown"></i>
+                            <ul class="dropdown-menu">
+                                <li><a href="ProfileUser.html" class="dropdown-item">Profile</a></li>
+                                <li><a href="#" class="dropdown-item" id="logout">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="" id="go_back_btn" class="btn btn-light m-3 rounded-pill">Go back</a>
+            </div>
+        </header>
+        <main>
+            <div class="d-flex justify-content-center mt-3"><img src="" alt="" id="src_img" style="width: 60%;"></div>
+            <div class="container-fluid">
+                <div class="text-center">
+                    <h1>Hotel: <span id="name" class="h2"></span></h1>
+                    <h2>Price: <span id="price" class="h3"></span></h2>
+                </div>
+                <div class="content d-flex justify-content-center">
+                    <p style="max-width: 80%;" class="h4">
+                        Welcome to a sanctuary of luxury and comfort. At our hotel, indulge in exquisite accommodations,
+                        fine dining, and top-notch amenities. Whether you're here for business or leisure, expect an
+                        exceptional experience. Welcome to your perfect retreat.
+                    </p>
+                </div>
+                <div class="container-fluid">
+                    <div class="feedback">
+                        <h4>Đánh giá</h4>
+                        <div class="feedback_content">
+                            <div class="avgfeedback">
+                                <p>Đánh giá trung bình</p>
+                                <h1>5/5</h1>
+                                <p>⭐⭐⭐⭐⭐</p>
+                                <p>2515 đánh giá</p>
+                            </div>
+                            <div class="avgstart">
+                                <div class="progress_block">
+                                    <span>5 ⭐</span>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success w-75" role="progressbar" aria-valuenow="0"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="num_comment">2147</span>
+                                </div>
+                                <div class="progress_block">
+                                    <span>4 ⭐</span>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success w-25" role="progressbar" aria-valuenow="0"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="num_comment">517</span>
+                                </div>
+                                <div class="progress_block">
+                                    <span>3 ⭐</span>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="num_comment">0</span>
+                                </div>
+                                <div class="progress_block">
+                                    <span>2 ⭐</span>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="num_comment">0</span>
+                                </div>
+                                <div class="progress_block">
+                                    <span>1 ⭐</span>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="num_comment">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="comment_group">
+                                <div class="avatar">
+                                    <i class="bi bi-person-circle"></i>
+                                </div>
+                                <div class="comment_content">
+                                    <h6>Đức Nam <span class="text-success"><i class="bi bi-check-circle-fill"></i> Đã
+                                            đặt
+                                            tour tại
+                                            Hypertravel</span> </h6>
+                                    <div>⭐⭐⭐⭐⭐</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. L animi mm omnis eaque,
+                                        quae fugit id sint.
+                                        Quae?</p>
+                                    <div class="date">Ngày 08/11/2023</div>
+                                </div>
+                            </div>
+                            <div class="comment_group">
+                                <div class="avatar">
+                                    <i class="bi bi-person-circle"></i>
+                                </div>
+                                <div class="comment_content">
+                                    <h6>Đức Nam <span class="text-success"><i class="bi bi-check-circle-fill"></i> Đã
+                                            đặt
+                                            tour tại
+                                            Hypertravel</span></h6>
+                                    <div>⭐⭐⭐⭐</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing eli\uptatem exercitationem,
+                                        quidem o</p>
+                                    <div class="date">Ngày 08/11/2023</div>
+                                </div>
+                            </div>
+                            <div class="comment_group">
+                                <div class="avatar">
+                                    <i class="bi bi-person-circle"></i>
+                                </div>
+                                <div class="comment_content">
+                                    <h6>Đức Nam <span class="text-success"><i class="bi bi-check-circle-fill"></i> Đã
+                                            đặt
+                                            tour tại
+                                            Hypertravel</span></h6>
+                                    <div>⭐⭐⭐⭐⭐</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit dent et expem, quidem o.
+                                    </p>
+                                    <div class="date">Ngày 08/11/2023</div>
+                                </div>
+                            </div>
+                            <div class="comment_group">
+                                <div class="avatar">
+                                    <i class="bi bi-person-circle"></i>
+                                </div>
+                                <div class="comment_content">
+                                    <h6>Đức Nam <span class="text-success"><i class="bi bi-check-circle-fill"></i> Đã
+                                            đặt
+                                            tour tại
+                                            Hypertravel</span></h6>
+                                    <div>⭐⭐⭐</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. dent e exercitationem,
+                                        quidem o</p>
+                                    <div class="date">Ngày 08/11/2023</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+        <footer>
+            <div class="container-fluid bg-dark p-0">
+                <div class="container">
+                    <div class="row p-2">
+                        <div class="content_1 col-sm">
+                            <p class="text-uppercase text-light h4"><i class="bi bi-send"></i> <span
+                                    class="text-primary">Hyper</span>
+                                Travel</p>
+                            <br>
+                            <p class="text-light">Far far away, behind the word mountains, far from the countries
+                                Vokalia and Consonantia, there live the blind texts</p>
+                        </div>
+                        <div class="content_2 col-sm text-light">
+                            <p class="text-uppercase h5 text-warning">Top Destionation</p>
+                            <div class="top_destination">
+                                <div class="destination">
+                                    <p>Cố đô Huế</p>
+                                    <img src="../IMAGE/index-img/codohue.jpg" alt="">
+                                </div>
+                                <div class="destination">
+                                    <p>Cambrirge</p>
+                                    <img src="../IMAGE/index-img/cambirge.jpg" alt="">
+                                </div>
+                                <div class="destination">
+                                    <p>Đà Lạt</p>
+                                    <img src="../IMAGE/index-img/dalat.jpg" alt="">
+                                </div>
+                                <div class="destination">
+                                    <p>Hà Lan</p>
+                                    <img src="../IMAGE/index-img/halan-img.jpg" alt="">
+                                </div>
+                                <div class="destination">
+                                    <p>Hội an</p>
+                                    <img src="../IMAGE/index-img/hoian.jpg" alt="">
+                                </div>
+                                <div class="destination">
+                                    <p>Nha Trang</p>
+                                    <img src="../IMAGE/index-img/nhatrang.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_3 col-sm text-light">
+                            <p class="text-uppercase text-success h5">Contact info</p>
+                            <br>
+                            <p>Address: 12 Nguyễn Văn Bảo, Phường 3, Gò Vấp</p>
+                            <p>Phone: +840........</p>
+                            <p>Email: Hypertravel@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_detail text-uppercase h6 m-0">
+                    copyright 2024 goodplayer all rightreserved
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="../JAVASCRIPT/check_login.js"></script>
+    <script>
+        $(document).ready(function () {
+            let inf = JSON.parse(localStorage.getItem('inf'))
+            $('#go_back_btn').attr('href', inf.url)
+            $('#src_img').attr('src', inf.img_src)
+            $('#name').text(inf.name)
+            $('#price').text(inf.price)
+        })
+    </script>
+</body>
+
+</html>
