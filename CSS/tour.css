@@ -245,6 +245,15 @@
     .col-sm{
         padding: 0px !important;
     }
+    .service-show-item-img img{
+        height: 80% !important;
+    }
+    .service-show-item-img-info a{
+        font-size: 0.7rem;
+    }
+    .service-show-item-img-info p{
+        font-size: 0.6rem;
+    }
 }
 
 @media only screen and (min-width: 666px) and (max-width: 739px) {
@@ -395,6 +404,11 @@
     .col-md-6 .image-container button {
         padding: 5px !important;
         transform: translate(-20%, 20%) !important;
+    }
+    .service-show-item,
+    .service-show-item-img{
+        padding: 0px !important;
+        margin-top: 5px;
     }
 }
 
@@ -552,4 +566,18 @@
         margin-top: 5px;
     }
     
+}
+@media only screen and (max-width: 400px) {
+    .slider {
+        height: 300px;
+    }
+    .favorite-slide-item-info{
+        top: 30%;
+    }
+    .favorite-slide-item-info a{
+        font-size: 0.5rem;
+    }
+    .favorite-slide-item-info p{
+        font-size: 0.4rem;
+    }
 }
