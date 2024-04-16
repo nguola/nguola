@@ -185,7 +185,7 @@
      }
 }
 
-@media only screen and (min-width: 666x) and (max-width: 739px) {
+@media only screen and (min-width: 666px) and (max-width: 739px) {
     .slide-show-second {
         flex-direction: column !important;
         margin-top: 20px;
@@ -209,11 +209,21 @@
         margin-top: 20px;
         width: 250px;
     }
+    .slide-show-three .col-4 {
+        width: 100% !important;
+        height: 100% !important;
+    }
 }
 
 @media screen and (max-width: 465px) {
     .infor{
         padding: 0px !important;
         font-size: 0.5rem;
+    }
+    .favorite-slide-item-info-footer{
+        top: 50%;
+    }
+    .favorite-slide-item-info-footer p{
+        font-size: 0.6rem;
     }
 }
