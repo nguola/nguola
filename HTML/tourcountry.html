@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/tourbroad.css">
+    <link rel="stylesheet" href="../CSS/header_footer.css">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+    <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid px-0" style="background-color: #f5f5f5;">
+        <header>
+            <div class="top-bar bg-dark pt-3">
+                <div class="container d-flex justify-content-between" id="top_content">
+                    <img src="../IMAGE/logo.png" alt="" style="width: 80px;" class="img" id="logo">
+                    <div class="login_signin">
+                        <div class="login d-flex mr-3 align-items-center">
+                            <i class="bi bi-box-arrow-in-right" style="size: 1rem; color: white;"></i>
+                            <a href="logIn.html" class="h6 text-light ml-2 mt-1"
+                                style="text-decoration: none;">Login</a>
+                        </div>
+                        <div class="Signup d-flex align-items-center text-align-center">
+                            <i class="bi bi-person-fill pt-0" style="color: white;"></i>
+                            <a href="signUp.html" class="h6 text-light ml-2 mt-1" style="text-decoration: none;">Sign
+                                up</a>
+                        </div>
+                    </div>
+                    <div class="account">
+                        <div class="dropdown d-flex align-items-end">
+                            <p id="user_name" class="text-light h6"></p>
+                            <i class="bi bi-person-check" style="color: white; font-size: 30px;" data-bs-toggle="dropdown"></i>
+                            <ul class="dropdown-menu">
+                                <li><a href="ProfileUser.html" class="dropdown-item">Profile</a></li>
+                                <li><a href="#" class="dropdown-item" id="logout">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                    <div class="container d-flex justify-content-end">
+                        <button class="navbar-toggler m-1 " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#menu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-end" id="menu">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link h5 text-light text-uppercase mr-2" href="index.html"><i
+                                            class="bi bi-house"></i> Home</a>
+                                    <div></div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link h5 text-light text-uppercase mr-2" href="tour.html"><i
+                                            class="bi bi-airplane"></i> Tour</a>
+                                    <div></div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link h5 text-light text-uppercase mr-2" href="tourGuide.html"><i
+                                            class="bi bi-book-half"></i> Tour
+                                        Guide</a>
+                                    <div></div>
+                                </li>
+                                <div class="nav-item">
+                                    <a class="nav-link h5 text-light text-uppercase mr-2" href="price.html"><i
+                                            class="bi bi-coin"></i> Price</a>
+                                    <div></div>
+                                </div>
+                                <li class="nav-item">
+                                    <a class="nav-link h5 text-light text-uppercase mr-2" href="service.html"><i
+                                            class="bi bi-database-fill-gear"></i> Service</a>
+                                    <div></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="container-fluid d-flex justify-content-center">
+                <video src="../VIDEO/intro.mp4" style="width: 100%;" autoplay loop></video>
+            </div>
+        </header>
+        <main >
+            <div class="container-fluid d-flex" style="background-color: #f5f5f5;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8 body-center-manger" >
+                            <div class="Slide active " style="background-color: #f5f5f5;" >
+                                <div class="col-10 d-flex my-5 bg-white px-0 body-center-content">
+                                    <div class="col-9 d-flex body-center ">
+                                        <div class="col-5 mx-0 body-center-img"><img
+                                                src="../IMAGE/price-img/hoian.jpg" alt=""
+                                                style="height: 250px;background-size: cover;background-position: center;"
+                                                class="mx-0 img-fluid ">
+                                        </div>
+                                        <div class="col-5 mx-5 body-center-if">
+                                            <h4>HOI AN - Quang Nam</h4>
+                                            <div>
+                                                <p class="my-1"><i class="bi bi-clock" style="color: blue;"></i>&nbsp 10
+                                                    Hours
+                                                </p>
+                                                <p class="my-1"><i class="bi bi-bank" style="color: blue;"></i>&nbsp
+                                                    Availability : Jan 16’ -
+                                                    Dec
+                                                    16'
+                                                </p>
+                                                <p class="my-1">
+                                                    Hoi An - Blending history, culture and beauty of the old town.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 my-1 px-3 body-center-js text-center" style="border-left: 2px solid black;">
+                                        <p class="" style="color: #8c8c8c;">From</p>
+                                        <h3 class="px-3">$100</h3>
+                                        <Button class="btn btn-primary body-center-footer my-5 p-3 ">VIEW
+                                            DETAILS</Button>
+                                    </div>
+                                </div>
+                                <div class="col-10 d-flex my-5 bg-white px-0 body-center-content">
+                                    <div class="col-9 d-flex body-center ">
+                                        <div class="col-5 mx-0 body-center-img"><img
+                                                src="../IMAGE/price-img/nhatrang.jpg" alt=""
+                                                style="height: 250px;background-size: cover;background-position: center;"
+                                                class="mx-0 img-fluid ">
+                                        </div>
+                                        <div class="col-5 mx-5 body-center-if">
+                                            <h4>NHU TIEN - NHA TRANG</h4>
+                                            <div>
+                                                <p class="my-1"><i class="bi bi-clock" style="color: blue;"></i>&nbsp 5
+                                                    Hours
+                                                </p>
+                                                <p class="my-1"><i class="bi bi-bank" style="color: blue;"></i>&nbsp
+                                                    Availability : Jan 16’ -
+                                                    Dec
+                                                    16'
+                                                </p>
+                                                <p class="my-1">Nha Trang - Green beach, wild beauty of the Central Coast of Vietnam.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 my-1 px-3 body-center-js text-center" style="border-left: 2px solid black;">
+                                        <p class="" style="color: #8c8c8c;">From</p>
+                                        <h3 class="px-3">$100</h3>
+                                        <Button class="btn btn-primary body-center-footer my-5 p-3 ">VIEW
+                                            DETAILS</Button>
+                                    </div>
+                                </div>
+                                <div class="col-10 d-flex my-5 bg-white px-0 body-center-content">
+                                    <div class="col-9 d-flex body-center ">
+                                        <div class="col-5 mx-0 body-center-img"><img
+                                                src="../IMAGE/price-img/codohue.jpg" alt=""
+                                                style="height: 250px;background-size: cover;background-position: center;"
+                                                class="mx-0 img-fluid ">
+                                        </div>
+                                        <div class="col-5 mx-5 body-center-if">
+                                            <h4>THE ANCIENT CAPITAL OF HUE - HUE</h4>
+                                             <div>
+                                                 <p class="my-1"><i class="bi bi-clock" style="color: blue;"></i>&nbsp 5
+                                                     Hours
+                                                 </p>
+                                                 <p class="my-1"><i class="bi bi-bank" style="color: blue;"></i>&nbsp
+                                                     Availability : Jan 16’ -
+                                                     Dec
+                                                     16'
+                                                 </p>
+                                                 <p class="my-1">
+                                                     Hue - Ancient city, historical royal palace and unique traditional cuisine.
+                                                 </p>
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 my-1 px-3 body-center-js text-center" style="border-left: 2px solid black;">
+                                        <p class="" style="color: #8c8c8c;">From</p>
+                                        <h3 class="px-3">$100</h3>
+                                        <Button class="btn btn-primary body-center-footer my-5 p-3 ">VIEW
+                                            DETAILS</Button>
+                                    </div>
+                                </div>
+                                <div class="col-10 d-flex my-5 bg-white px-0 body-center-content">
+                                    <div class="col-9 d-flex body-center ">
+                                        <div class="col-5 mx-0 body-center-img"><img
+                                                src="../IMAGE/price-img/tf_220113042956_869488.jpg" alt=""
+                                                style="height: 250px;background-size: cover;background-position: center;"
+                                                class="mx-0 img-fluid ">
+                                        </div>
+                                        <div class="col-5 mx-5 body-center-if">
+                                            <h4>PINE FOREST - DA LAT</h4>
+                                             <div>
+                                                 <p class="my-1"><i class="bi bi-clock" style="color: blue;"></i>&nbsp 5
+                                                     Hours
+                                                 </p>
+                                                 <p class="my-1"><i class="bi bi-bank" style="color: blue;"></i>&nbsp
+                                                     Availability : Jan 16’ -
+                                                     Dec
+                                                     16'
+                                                 </p>
+                                                 <p class="my-1">Da Lat - A city of mist, flowers and charming mountains and forests.
+                                                 </p>
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 my-1 px-3 body-center-js text-center" style="border-left: 2px solid black;">
+                                        <p class="" style="color: #8c8c8c;">From</p>
+                                        <h3 class="px-3">$100</h3>
+                                        <Button class="btn btn-primary body-center-footer my-5 p-3 ">VIEW
+                                            DETAILS</Button>
+                                    </div>
+                                </div>
+                                <div class="col-10 d-flex my-5 bg-white px-0 body-center-content">
+                                    <div class="col-9 d-flex body-center ">
+                                        <div class="col-5 mx-0 body-center-img"><img
+                                                src="../IMAGE/price-img/tf_220113012438_670677.jpg" alt=""
+                                                style="height: 250px;background-size: cover;background-position: center;"
+                                                class="mx-0 img-fluid ">
+                                        </div>
+                                        <div class="col-5 mx-5 body-center-if">
+                                            <h4>Quy NHON - BINH DINH</h4>
+                                             <div>
+                                                 <p class="my-1"><i class="bi bi-clock" style="color: blue;"></i>&nbsp 5
+                                                     Hours
+                                                 </p>
+                                                 <p class="my-1"><i class="bi bi-bank" style="color: blue;"></i>&nbsp
+                                                     Availability : Jan 16’ -
+                                                     Dec
+                                                     16'
+                                                 </p>
+                                                 <p class="my-1">
+                                                     Binh Dinh - Land of the blue sea, Champa cultural heritage.
+                                                 </p>
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 my-1 px-3 body-center-js text-center" style="border-left: 2px solid black;">
+                                        <p class="" style="color: #8c8c8c;">From</p>
+                                        <h3 class="px-3">$100</h3>
+                                        <Button class="btn btn-primary body-center-footer my-5 p-3 ">VIEW
+                                            DETAILS</Button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Slide" style="background-color: #f5f5f5;">
+                                <div class="col-10 d-flex my-5 bg-white px-0 body-center-content">
+                                    <div class="col-9 d-flex body-center ">
+                                        <div class="col-5 mx-0 body-center-img"><img
+                                                src="../IMAGE/price-img/tf_220207045018_712738.jpg" alt=""
+                                                style="height: 250px;background-size: cover;background-position: center;"
+                                                class="mx-0 img-fluid ">
+                                        </div>
+                                        <div class="col-5 mx-5 body-center-if">
+                                            <h4>PHONG NHA - QUANG BINH DONG</h4>
+                                             <div>
+                                                 <p class="my-1"><i class="bi bi-clock" style="color: blue;"></i>&nbsp 5
+                                                     Hours
+                                                 </p>
+                                                 <p class="my-1"><i class="bi bi-bank" style="color: blue;"></i>&nbsp
+                                                     Availability : Jan 16’ -
+                                                     Dec
+                                                     16'
+                                                 </p>
+                                                 <p class="my-1">
+                                                     Quang Binh - Majestic land, magnificent caves.
+                                                 </p>
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 my-1 px-3 body-center-js text-center" style="border-left: 2px solid black;">
+                                        <p class="" style="color: #8c8c8c;">From</p>
+                                        <h3 class="px-3">$100</h3>
+                                        <Button class="btn btn-primary body-center-footer my-5 p-3 ">VIEW
+                                            DETAILS</Button>
+                                    </div>
+                                </div>
+                                <div class="col-10 d-flex my-5 bg-white px-0 body-center-content">
+                                    <div class="col-9 d-flex body-center ">
+                                        <div class="col-5 mx-0 body-center-img"><img
+                                                src="../IMAGE/price-img/tf_231117021819_056639_Lang Gom Bau Truc - Hinh Quy COC Tu (2).webp" alt=""
+                                                style="height: 250px;background-size: cover;background-position: center;"
+                                                class="mx-0 img-fluid ">
+                                        </div>
+                                        <div class="col-5 mx-5 body-center-if">
+                                            <h4>NINH CHU - NINH THUAN</h4>
+                                             <div>
+                                                 <p class="my-1"><i class="bi bi-clock" style="color: blue;"></i>&nbsp 5
+                                                     Hours
+                                                 </p>
+                                                 <p class="my-1"><i class="bi bi-bank" style="color: blue;"></i>&nbsp
+                                                     Availability : Jan 16’ -
+                                                     Dec
+                                                     16'
+                                                 </p>
+                                                 <p class="my-1">Ninh Chu - Beautiful beach, white sand, cool blue waves.
+                                                 </p>
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 my-1 px-3 body-center-js text-center" style="border-left: 2px solid black;">
+                                        <p class="" style="color: #8c8c8c;">From</p>
+                                        <h3 class="px-3">$100</h3>
+                                        <Button class="btn btn-primary body-center-footer my-5 p-3 ">VIEW
+                                            DETAILS</Button>
+                                    </div>
+                                </div>
+                                <div class="col-10 d-flex my-5 bg-white px-0 body-center-content">
+                                    <div class="col-9 d-flex body-center ">
+                                        <div class="col-5 mx-0 body-center-img"><img
+                                                src="../IMAGE/price-img/tf_230427114915_690177.jpg" alt=""
+                                                style="height: 250px;background-size: cover;background-position: center;"
+                                                class="mx-0 img-fluid ">
+                                        </div>
+                                        <div class="col-5 mx-5 body-center-if">
+                                            <h4>TU LAN - QUANG BINH</h4>
+                                             <div>
+                                                 <p class="my-1"><i class="bi bi-clock" style="color: blue;"></i>&nbsp 5
+                                                     Hours
+                                                 </p>
+                                                 <p class="my-1"><i class="bi bi-bank" style="color: blue;"></i>&nbsp
+                                                     Availability : Jan 16’ -
+                                                     Dec
+                                                     16'
+                                                 </p>
+                                                 <p class="my-1">Quang Binh - Paradise of caves, rivers, and blue sea.
+                                                 </p>
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 my-1 px-3 body-center-js text-center" style="border-left: 2px solid black;">
+                                        <p class="" style="color: #8c8c8c;">From</p>
+                                        <h3 class="px-3">$100</h3>
+                                        <Button class="btn btn-primary body-center-footer my-5 p-3 ">VIEW
+                                            DETAILS</Button>
+                                    </div>
+                                </div>
+                                <div class="col-10 d-flex my-5 bg-white px-0 body-center-content">
+                                    <div class="col-9 d-flex body-center ">
+                                        <div class="col-5 mx-0 body-center-img"><img
+                                                src="../IMAGE/tour-img/muine-phanthiet.jpg" alt=""
+                                                style="height: 250px;background-size: cover;background-position: center;"
+                                                class="mx-0 img-fluid ">
+                                        </div>
+                                        <div class="col-5 mx-5 body-center-if">
+                                            <h4>Mui Ne - Phan Thiet </h4>
+                                            <div>
+                                                <p class="my-1"><i class="bi bi-clock" style="color: blue;"></i>&nbsp 5
+                                                    Hours
+                                                </p>
+                                                <p class="my-1"><i class="bi bi-bank" style="color: blue;"></i>&nbsp
+                                                    Availability : Jan 16’ -
+                                                    Dec
+                                                    16'
+                                                </p>
+                                                <p class="my-1">Phan Thiet - Mui Ne, where the desert, sea and sand dunes meet.
+                                                    […]
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 my-1 px-3 body-center-js text-center" style="border-left: 2px solid black;">
+                                        <p class="" style="color: #8c8c8c;">From</p>
+                                        <h3 class="px-3">$100</h3>
+                                        <Button class="btn btn-primary body-center-footer my-5 p-3 ">VIEW
+                                            DETAILS</Button>
+                                    </div>
+                                </div>
+                                <div class="col-10 d-flex my-5 bg-white px-0 body-center-content">
+                                    <div class="col-9 d-flex body-center ">
+                                        <div class="col-5 mx-0 body-center-img"><img
+                                                src="../IMAGE/tour-img/myson-quangnam.jpg" alt=""
+                                                style="height: 250px;background-size: cover;background-position: center;"
+                                                class="mx-0 img-fluid ">
+                                        </div>
+                                        <div class="col-5 mx-5 body-center-if">
+                                            <h4>My Son - Quang Nam</h4>
+                                             <div>
+                                                 <p class="my-1"><i class="bi bi-clock" style="color: blue;"></i>&nbsp 5
+                                                     Hours
+                                                 </p>
+                                                 <p class="my-1"><i class="bi bi-bank" style="color: blue;"></i>&nbsp
+                                                     Availability : Jan 16’ -
+                                                     Dec
+                                                     16'
+                                                 </p>
+                                                 <p class="my-1">Son My, Quang Nam - A peaceful land, a place marked by history
+                                                 </p>
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 my-1 px-3 body-center-js text-center" style="border-left: 2px solid black;">
+                                        <p class="" style="color: #8c8c8c;">From</p>
+                                        <h3 class="px-3">$100</h3>
+                                        <Button class="btn btn-primary body-center-footer my-5 p-3 ">VIEW
+                                            DETAILS</Button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 footer-manager as">
+                            <div class="container ">
+                                <div class="col-12 my-5 px-0">
+                                    <h4>LATEST TOURS</h4>
+                                    <div class="row my-5">
+                                        <div class="col-6 px-0 latest-tour">
+                                            <img src="../IMAGE//index-img/codohue.jpg" alt="" style="width: 130px;"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="col-6 px-0">
+                                            <h6>Africa – Amazing African Safari</h6> &nbsp
+                                            <p>From $100</p>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-6 px-0 latest-tour ">
+                                            <img src="../IMAGE/index-img/cambirge.jpg" alt="" style="width: 130px;"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="col-6 px-0 latest-tour">
+                                            <h6>Africa – Amazing African Safari</h6> &nbsp
+                                            <p>From $100</p>
+                                        </div>
+                                    </div>
+                                    <div class="row my-5">
+                                        <div class="col-6 px-0 latest-tour ">
+                                            <img src="../IMAGE/index-img/dalat.jpg" alt="" style="width: 130px;"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="col-6 px-0 latest-tour">
+                                            <h6>Africa – Amazing African Safari</h6> &nbsp
+                                            <p>From $100</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 px-0 latest-tour ">
+                                            <img src="../IMAGE/index-img/halan-img.jpg" alt=""
+                                                style="width: 130px; height: 95px;" class="img-fluid">
+                                        </div>
+                                        <div class="col-6 px-0 latest-tour">
+                                            <h6>Africa – Amazing African Safari</h6> &nbsp
+                                            <p>From $100</p>
+                                        </div>
+                                    </div>
+                                    <div class=" row my-5 text-white ">
+                                        <div class="col-12 position-relative ball">
+                                            <img src="../IMAGE/price-img/download (1).jpg" alt="" width="356px", class="img-fluid ">
+                                        </div>
+                                        <div
+                                            class="col-3 position-absolute d-flex Justify-content-center align-items-center my-4">
+                                            <div class="infor text-center">
+                                                <h6>Get a Question?</h6>
+                                                <p>Do not hesitage to give us a call. We are an
+                                                    expert team and we are happy
+                                                    to
+                                                    talk
+                                                    to
+                                                    you.</p>
+                                                <p><i class="bi bi-telephone"></i> 1.8445.3356.33</p>
+                                                <p>Hypertravel@goodtime.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <h5>TOUR CATEGORY</h5>
+                                        <p class="py-2 px-0" style="border-bottom: 1px solid black;">Outdoor Activites
+                                        </p>
+                                        <p class="py-2 px-0" style="border-bottom: 1px solid black;">City Tours</p>
+                                        <p class="py-2 px-0" style="border-bottom: 1px solid black;">Cultural & Thematic
+                                            Tours
+                                        </p>
+                                        <p class="py-2 px-0" style="border-bottom: 1px solid black;">Indulgence & Luxury
+                                            Tours
+                                        </p>
+                                        <p class="py-2 px-0" style="border-bottom: 1px solid black;">Family Friendly
+                                            Tours
+                                        </p>
+                                        <p class="py-2 px-0" style="border-bottom: 1px solid black;">Holiday & Seasonal
+                                            Tours
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid sa" style="background-color: #f5f5f5;">
+                            <div class="row w-100  py-3">
+                                <div class="col-1"></div>
+                                <div class="col-11 text-align-center btn_function">
+                                    <span onclick="plus(-1)" id="pre">&#10094</span>
+                                    <span onclick="updateSlide(0)">1</span>
+                                    <span onclick="updateSlide(1)">2</span>
+                                    <span onclick="plus(1)" id="next">&#10095</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container-fluid bg-dark p-0">
+                <div class="footer_header container">
+                    <div class="footer_content">
+                        <div class="content_1">
+                            <p class="text-uppercase text-light h4"><i class="bi bi-send"></i> <span
+                                    class="text-primary">Hyper</span> Travel</p>
+                            <br>
+                            <p class="text-light">Far far away, behind the word mountains, far from the countries
+                                Vokalia and Consonantia, there live the blind texts</p>
+                        </div>
+                        <div class="content_2 text-light">
+                            <p class="text-uppercase h6">Top Destionation</p>
+                            <div class="top_destination">
+                                <div class="destination">
+                                    <p>Cố đô Huế</p>
+                                    <img src="../IMAGE/index-img/codohue.jpg" alt="">
+                                </div>
+                                <div class="destination">
+                                    <p>Cambrirge</p>
+                                    <img src="../IMAGE/index-img/cambirge.jpg" alt="">
+                                </div>
+                                <div class="destination">
+                                    <p>Đà Lạt</p>
+                                    <img src="../IMAGE/index-img/dalat.jpg" alt="">
+                                </div>
+                                <div class="destination">
+                                    <p>Hà Lan</p>
+                                    <img src="../IMAGE/index-img/halan-img.jpg" alt="">
+                                </div>
+                                <div class="destination">
+                                    <p>Hội an</p>
+                                    <img src="../IMAGE/index-img/hoian.jpg" alt="">
+                                </div>
+                                <div class="destination">
+                                    <p>Nha Trang</p>
+                                    <img src="../IMAGE/index-img/nhatrang.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_3 text-light">
+                            <p class="text-uppercase">Contact info</p>
+                            <br>
+                            <p>Address: 12 Nguyễn Văn Bảo, Phường 3, Gò Vấp</p>
+                            <p>Phone: +840........</p>
+                            <p>Email: Hypertravel@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_detail text-uppercase">
+                    copyright 2024 goodplayer all rightreserved
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../JAVASCRIPT/tourabroad.js"></script>
+    <script src="../JAVASCRIPT/check_login.js"></script>
+    <script src="../JAVASCRIPT/showmenu.js"></script>
+</body>
+
+</html>
